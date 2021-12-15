@@ -1,0 +1,26 @@
+{
+  "name": "btech_project_src_code",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aayushhyadav/location_based_advertisement_btech_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aayushhyadav/location_based_advertisement_btech_project/issues"
+  },
+  "homepage": "https://github.com/aayushhyadav/location_based_advertisement_btech_project#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.2",
+    "mongoose": "^6.1.2",
+    "nodemon": "^2.0.15"
+  }
+}

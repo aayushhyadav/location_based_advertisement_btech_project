@@ -1,0 +1,6 @@
+/*
+* create your own local .env file under project folder with these entries
+*/
+
+PORT=<port number>
+MONGO_URI=<mongodb://127.0.0.1:27017/lba>
