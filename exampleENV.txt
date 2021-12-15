@@ -4,3 +4,4 @@
 
 PORT=<port number>
 MONGO_URI=<mongodb://127.0.0.1:27017/lba>
+DB_PASSWORD=kad2021
