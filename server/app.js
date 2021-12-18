@@ -1,6 +1,10 @@
 const express = require("express")
+const {json, urlencoded} = require("express")
 const dotenv = require("dotenv")
+const cors = require("cors")
 const connectDB = require("./connectDB")
+const authRouter = require("./routes/auth")
+const indexRouter = require("./routes/index")
 
 const app = express()
 const envVar = dotenv.config()
@@ -12,5 +16,12 @@ if (envVar.error) {
 }
 
 connectDB.connectDB(MONGO_URI)
+
+app.use(cors())
+app.use(json())
+app.use(urlencoded({extended: true}))
+
+app.use("/", indexRouter.homeRouter)
+app.use("/auth", authRouter.authRouter)
 
 app.listen(3000, () => console.log(`Server listening on ${PORT}`))

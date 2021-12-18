@@ -23,6 +23,7 @@ const userSchema = mongoose.Schema({
   },
   radiusOfChoice: {
     type: Number,
+    default: 500,
   },
   notInterestedBusiness: [
     {
