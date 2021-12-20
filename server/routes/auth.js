@@ -1,6 +1,7 @@
 const express = require("express")
 const User = require("../model/user")
 const Store = require("../model/store")
+const geocode = require("../utility/geocode")
 
 const router = express.Router()
 
@@ -17,6 +18,10 @@ router.post("/userSignup", async (req, res) => {
 
 router.post("/businessSignup", async (req, res) => {
   const store = new Store.Store(req.body)
+  const coords = await geocode.geocode(req.body.address)
+
+  // store.location.latitude = coords.latitude
+  // store.location.longitude = coords.longitude
 
   try {
     await store.save()

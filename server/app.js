@@ -2,7 +2,7 @@ const express = require("express")
 const {json, urlencoded} = require("express")
 const dotenv = require("dotenv")
 const cors = require("cors")
-const connectDB = require("./connectDB")
+const connectDB = require("./utility/connectDB")
 const authRouter = require("./routes/auth")
 const indexRouter = require("./routes/index")
 
