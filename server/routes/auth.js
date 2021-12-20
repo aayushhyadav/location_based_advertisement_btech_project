@@ -20,8 +20,8 @@ router.post("/businessSignup", async (req, res) => {
   const store = new Store.Store(req.body)
   const coords = await geocode.geocode(req.body.address)
 
-  // store.location.latitude = coords.latitude
-  // store.location.longitude = coords.longitude
+  store.location.latitude = coords.lat
+  store.location.longitude = coords.lng
 
   try {
     await store.save()

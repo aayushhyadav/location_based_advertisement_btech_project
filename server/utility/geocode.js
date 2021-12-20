@@ -12,8 +12,7 @@ if (envVar.error) {
 const geocode = async (address) => {
   const url = BASE_URL + address + "&key=" + API_KEY
   const res = await axios.get(url)
-  console.log(res)
-  return res
+  return res.data.results[0].geometry.location
 }
 
 module.exports = {geocode}
