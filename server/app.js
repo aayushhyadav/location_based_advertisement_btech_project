@@ -5,6 +5,7 @@ const cors = require("cors")
 const connectDB = require("./utility/connectDB")
 const authRouter = require("./routes/auth")
 const indexRouter = require("./routes/index")
+const adRouter = require("./routes/ad")
 
 const app = express()
 const envVar = dotenv.config()
@@ -23,5 +24,6 @@ app.use(urlencoded({extended: true}))
 
 app.use("/", indexRouter.homeRouter)
 app.use("/auth", authRouter.authRouter)
+app.use("/ad", adRouter.adRouter)
 
 app.listen(3000, () => console.log(`Server listening on ${PORT}`))

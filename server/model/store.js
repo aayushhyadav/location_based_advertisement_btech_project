@@ -30,6 +30,13 @@ const storeSchema = mongoose.Schema({
   contact: {
     type: Number,
   },
+  advertisement: [
+    {
+      offer: {
+        type: String,
+      },
+    },
+  ],
 })
 
 const Store = mongoose.model("Store", storeSchema)
