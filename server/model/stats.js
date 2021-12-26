@@ -77,8 +77,8 @@ const statSchema = mongoose.Schema({
       },
       review: [
         {
-          user: {
-            type: mongoose.Schema.Types.ObjectId,
+          username: {
+            type: String,
           },
           rating: {
             type: Number,

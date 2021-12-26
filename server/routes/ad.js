@@ -31,7 +31,7 @@ router.post("/delete", async (req, res) => {
 
 router.get("/view", async (req, res) => {
   try {
-    const store = await Store.Store.findById(req.body.id)
+    const store = await Store.Store.findById(req.query.id)
     const adList = store.advertisement
     res.status(200).send(adList)
   } catch (error) {
