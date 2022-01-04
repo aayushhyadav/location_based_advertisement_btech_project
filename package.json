@@ -23,6 +23,7 @@
     "express": "^4.17.1",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.2",
+    "node-kmeans": "^1.1.9",
     "nodemon": "^2.0.15"
   }
 }
