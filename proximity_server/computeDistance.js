@@ -26,6 +26,4 @@ const computeDistance = (lat1, long1, lat2, long2) => {
   return distance
 }
 
-console.log(
-  computeDistance(19.25455, 72.98165, 19.253658911386747, 72.98202344052585)
-)
+module.exports = {computeDistance}
