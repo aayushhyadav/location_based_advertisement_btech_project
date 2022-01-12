@@ -1,6 +1,6 @@
 const epsilon = 0.5,
-  latitude = 19.25455,
-  longitude = 72.98165,
+  latitude = 41.89103355,
+  longitude = -87.75530965,
   earthRadius = 6371e3
 
 const lambert = (x) => {
