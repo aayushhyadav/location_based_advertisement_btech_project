@@ -25,8 +25,8 @@ router.post("/businessSignup", async (req, res) => {
       req.body.name + ", " + req.body.streetAddress + ", " + req.body.city
     )
 
-    store.location.latitude = coords.lat
-    store.location.longitude = coords.lng
+    store.latitude = coords.lat
+    store.longitude = coords.lng
 
     await store.save()
 

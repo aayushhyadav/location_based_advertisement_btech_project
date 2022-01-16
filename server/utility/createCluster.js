@@ -22,9 +22,9 @@ const create = async (cluster) => {
   var long = ""
 
   stores.forEach((store) => {
-    vector.push([store.location.latitude, store.location.longitude])
-    lat += store.location.latitude.toString() + ","
-    long += store.location.longitude.toString() + ","
+    vector.push([store.latitude, store.longitude])
+    lat += store.latitude.toString() + ","
+    long += store.longitude.toString() + ","
   })
 
   lat = lat.substring(0, lat.length - 1)

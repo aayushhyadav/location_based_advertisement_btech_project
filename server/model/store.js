@@ -21,15 +21,13 @@ const storeSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  location: {
-    longitude: {
-      type: Number,
-      required: true,
-    },
-    latitude: {
-      type: Number,
-      required: true,
-    },
+  longitude: {
+    type: Number,
+    required: true,
+  },
+  latitude: {
+    type: Number,
+    required: true,
   },
   contact: {
     type: Number,

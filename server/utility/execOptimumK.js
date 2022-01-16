@@ -14,7 +14,7 @@ const exec = async (lat, long) => {
     error
 
   const process = spawn("python", [
-    appDir + "/utility/getOptimumK.py",
+    appDir + "/server/utility/getOptimumK.py",
     lat,
     long,
   ])
