@@ -12,7 +12,6 @@ const reviewRouter = require("./routes/review")
 
 const app = express()
 const envVar = dotenv.config()
-const PORT = Number(process.env.PORT)
 const MONGO_URI = process.env.MONGO_URI
 
 if (envVar.error) {
@@ -31,4 +30,4 @@ app.use("/ad", adRouter.adRouter)
 app.use("/stats", statsRouter.statsRouter)
 app.use("/review", reviewRouter.reviewRouter)
 
-app.listen(3000, () => console.log(`Server listening on ${PORT}`))
+module.exports = app
