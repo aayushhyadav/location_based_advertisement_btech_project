@@ -15,7 +15,7 @@ def slope(x1, y1, x2, y2):
 '''
 def compute_wcss(data_points, scaled_data):
   wcss = []
-  for i in range(1, data_points + 1):
+  for i in range(1, 11):
     kmeans = KMeans(i, init = 'k-means++', random_state = 42)
     kmeans.fit(scaled_data)
     wcss.append(kmeans.inertia_)
@@ -95,7 +95,7 @@ def compute_k(optimal_k, data_points, scaled_data, data_frame):
     cluster_centers = kmeans.cluster_centers_
     mean = (calMeanDistance(cluster, cluster_centers))
 
-    if(mean <= 1.5):
+    if(mean <= 2):
         break
   return i
 
