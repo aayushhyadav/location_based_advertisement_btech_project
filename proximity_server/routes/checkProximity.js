@@ -22,6 +22,10 @@ router.get("/checkProximity", async (req, res) => {
       minDistance = Number.MAX_VALUE,
       closestCluster
 
+    /*
+     *  finds clusters within 2km proximity
+     *  if none then, finds the closest cluster
+     */
     for (const cluster of cityClusters.clusters) {
       const curDistance = await computeDistance.computeDistance(
         latitude,
@@ -43,6 +47,7 @@ router.get("/checkProximity", async (req, res) => {
       closestClusters.push(closestCluster)
     }
 
+    /* find stores within 500m proximity of user's location */
     for (const cluster of closestClusters) {
       for (var i = 0; i < cluster.clusterInd.length; i++) {
         const curDistance = await computeDistance.computeDistance(
@@ -58,6 +63,7 @@ router.get("/checkProximity", async (req, res) => {
       }
     }
 
+    /* add the stores which have advertisements */
     for (const storeNum of storeIds) {
       const store = await Store.Store.findById(storeNum)
       if (store.advertisement.length !== 0) {
@@ -69,7 +75,7 @@ router.get("/checkProximity", async (req, res) => {
     if (closestClusters.length == 1) {
       epsilon = closestClusters[0].epsilon
     }
-    console.log(closestClusters.length)
+
     res.status(200).send({
       epsilon,
       storeNames,
