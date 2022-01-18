@@ -69,7 +69,7 @@ router.get("/checkProximity", async (req, res) => {
     if (closestClusters.length == 1) {
       epsilon = closestClusters[0].epsilon
     }
-    console.log(closestClusters.length)
+
     res.status(200).send({
       epsilon,
       storeNames,

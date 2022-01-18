@@ -1,0 +1,6073 @@
+[{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e929"
+  },
+  "name": "3600 COMMISSARY",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94868367,
+  "longitude": -87.64364976
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e92a"
+  },
+  "name": "4343 PETES FRESH MARKET",
+  "streetAddress": "ARCHER HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81391431,
+  "longitude": -87.72366494
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e92b"
+  },
+  "name": "4700 PETE'S FRESH MARKET",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80804727,
+  "longitude": -87.70411882
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e92c"
+  },
+  "name": "5659 W. DIVERSEY",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9311354,
+  "longitude": -87.76861213
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e92d"
+  },
+  "name": "7400 S HALSTED FOOD AND LIQUORS, INC.",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75967458,
+  "longitude": -87.64442024
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e92e"
+  },
+  "name": "79 FOOD BASKET",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75032112,
+  "longitude": -87.65818905
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e92f"
+  },
+  "name": "AARAY GROCERY",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92920982,
+  "longitude": -87.64874627
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e930"
+  },
+  "name": "A & B FOOD MARKET INC",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90216644,
+  "longitude": -87.75318235
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e931"
+  },
+  "name": "ADA FOODS",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76489418,
+  "longitude": -87.6573078
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e932"
+  },
+  "name": "ADAMS FOOD MART",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89103355,
+  "longitude": -87.75530965
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e933"
+  },
+  "name": "A & G LIQUORS",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76783128,
+  "longitude": -87.62476594
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e934"
+  },
+  "name": "AL BAYAN GROCERY INC.",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93756465,
+  "longitude": -87.78605437
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e935"
+  },
+  "name": "ALDI",
+  "streetAddress": "WOODLAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77430588,
+  "longitude": -87.60564803
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e936"
+  },
+  "name": "ALDI",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99521146,
+  "longitude": -87.66027799
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e937"
+  },
+  "name": "ALDI #28",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80344571,
+  "longitude": -87.70398627
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e938"
+  },
+  "name": "ALDI #30",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83811415,
+  "longitude": -87.70499446
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e939"
+  },
+  "name": "ALDI #32",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91442371,
+  "longitude": -87.65462784
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e93a"
+  },
+  "name": "ALDI #70",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75499092,
+  "longitude": -87.66340416
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e93b"
+  },
+  "name": "ALDI #79",
+  "streetAddress": "AVALON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75274564,
+  "longitude": -87.58752349
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e93c"
+  },
+  "name": "ALDI FOODS #91",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88065941,
+  "longitude": -87.72219367
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e93d"
+  },
+  "name": "ALDI FOODS -STORE #04",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89561531,
+  "longitude": -87.70670533
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e93e"
+  },
+  "name": "ALDI FOODS STORE #2",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93146094,
+  "longitude": -87.74371731
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e93f"
+  },
+  "name": "ALDI FOODS STORE #26",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.928695,
+  "longitude": -87.67419508
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e940"
+  },
+  "name": "ALDI FOODS-STORE #27",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94238351,
+  "longitude": -87.72901086
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e941"
+  },
+  "name": "ALDI FOODS STORE #30",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92820785,
+  "longitude": -87.72815856
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e942"
+  },
+  "name": "ALDI FOODS STORE #90B",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93215768,
+  "longitude": -87.7664246
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e943"
+  },
+  "name": "ALDI INC #06",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97198122,
+  "longitude": -87.7279869
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e944"
+  },
+  "name": "ALDI INC #10",
+  "streetAddress": "ARCHER HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81145154,
+  "longitude": -87.72357465
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e945"
+  },
+  "name": "ALDI INC #53",
+  "streetAddress": "GARFIELD RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79638049,
+  "longitude": -87.75734757
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e946"
+  },
+  "name": "ALDI INC #58",
+  "streetAddress": "NORTH CENTER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9611941,
+  "longitude": -87.68996697
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e947"
+  },
+  "name": "ALDI INC # 62",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99462096,
+  "longitude": -87.69968686
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e948"
+  },
+  "name": "ALDI INC #64",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91358779,
+  "longitude": -87.68220284
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e949"
+  },
+  "name": "ALDI INC #83",
+  "streetAddress": "ASHBURN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.74091107,
+  "longitude": -87.74092286
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e94a"
+  },
+  "name": "ALDI INC #92",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77992005,
+  "longitude": -87.64092551
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e94b"
+  },
+  "name": "ALDI INC.#94",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78396584,
+  "longitude": -87.68362338
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e94c"
+  },
+  "name": "ALDI INC. #96",
+  "streetAddress": "WEST PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.68496064,
+  "longitude": -87.64302231
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e94d"
+  },
+  "name": "ALDI INC STORE 14",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.86731565,
+  "longitude": -87.76559794
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e94e"
+  },
+  "name": "ALDI INC STORE #16",
+  "streetAddress": "AVALON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73691535,
+  "longitude": -87.59365662
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e94f"
+  },
+  "name": "ALDI INC STORE #62",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8521512,
+  "longitude": -87.6700746
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e950"
+  },
+  "name": "ALDI INC STORE #90",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73029727,
+  "longitude": -87.64330909
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e951"
+  },
+  "name": "ALDI INC STORE #95",
+  "streetAddress": "SOUTH DEERING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72246624,
+  "longitude": -87.56667305
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e952"
+  },
+  "name": "ALDI'S",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96378896,
+  "longitude": -87.65660649
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e953"
+  },
+  "name": "ALDI'S",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9237604,
+  "longitude": -87.78874776
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e954"
+  },
+  "name": "ALDI'S #08",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76088087,
+  "longitude": -87.62466578
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e955"
+  },
+  "name": "ALDI'S # 26",
+  "streetAddress": "EAST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70366236,
+  "longitude": -87.52571243
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e956"
+  },
+  "name": "ALDI'S #47",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80874139,
+  "longitude": -87.66291163
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e957"
+  },
+  "name": "ALDI'S #93",
+  "streetAddress": "ASHBURN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75603509,
+  "longitude": -87.68285832
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e958"
+  },
+  "name": "ALDI'S FOODS BELMONT",
+  "streetAddress": "AVONDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93940519,
+  "longitude": -87.71090059
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e959"
+  },
+  "name": "ALLA'S FOOD",
+  "streetAddress": "CALUMET HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72624035,
+  "longitude": -87.57429226
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e95a"
+  },
+  "name": "ALL STAR FOOD & LIQUOR",
+  "streetAddress": "BRIDGEPORT",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84148404,
+  "longitude": -87.65802198
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e95b"
+  },
+  "name": "ALMUFLIHI FOOD & LIQUOR",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7958708,
+  "longitude": -87.64534412
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e95c"
+  },
+  "name": "AM-PM FOOD MART & CELLULAR",
+  "streetAddress": "AVALON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73714625,
+  "longitude": -87.57708099
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e95d"
+  },
+  "name": "ANAR INC",
+  "streetAddress": "CHATHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75121793,
+  "longitude": -87.60140141
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e95e"
+  },
+  "name": "ANDYS FRUIT RANCH",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96762916,
+  "longitude": -87.70830369
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e95f"
+  },
+  "name": "A & R FOOD MART",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92059646,
+  "longitude": -87.77519268
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e960"
+  },
+  "name": "A & R FOOD MART",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92059646,
+  "longitude": -87.77519268
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e961"
+  },
+  "name": "ARISTA FOODS",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88340212,
+  "longitude": -87.65572529
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e962"
+  },
+  "name": "ARMITAGE PRODUCE INC",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91756242,
+  "longitude": -87.71175511
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e963"
+  },
+  "name": "AROUND THE CLOCK",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.01926518,
+  "longitude": -87.67157207
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e964"
+  },
+  "name": "ASHLAND FOOD AND LIQUORS",
+  "streetAddress": "WASHINGTON HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72132699,
+  "longitude": -87.66253366
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e965"
+  },
+  "name": "ATHENS GROCERY",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87716213,
+  "longitude": -87.64736429
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e966"
+  },
+  "name": "AVENUE FOOD MAR INC",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93823738,
+  "longitude": -87.79776035
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e967"
+  },
+  "name": "AWAMI BAZAAR & ZABIHA MEAT",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99785369,
+  "longitude": -87.68906427
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e968"
+  },
+  "name": "Baltimore Food & Liquor",
+  "streetAddress": "HEGEWISCH",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.65296461,
+  "longitude": -87.54729865
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e969"
+  },
+  "name": "BARI",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89121012,
+  "longitude": -87.65556024
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e96a"
+  },
+  "name": "BERBATE FRUIT MARKET",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95273156,
+  "longitude": -87.78669844
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e96b"
+  },
+  "name": "B & H FOOD & GROCERY",
+  "streetAddress": "EAST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87235004,
+  "longitude": -87.70327264
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e96c"
+  },
+  "name": "BIG APPLE FINER FOODS INC",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92496618,
+  "longitude": -87.63992602
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e96d"
+  },
+  "name": "BOB'S LIQUORS & GROCERIES",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88029609,
+  "longitude": -87.7524942
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e96e"
+  },
+  "name": "BOCKWINKELS",
+  "streetAddress": "LOOP",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88633942,
+  "longitude": -87.62083615
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e96f"
+  },
+  "name": "BOULEVARD FOOD & LIQUOR LLC",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95318259,
+  "longitude": -87.77525938
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e970"
+  },
+  "name": "BROADWAY SUPERMARKET",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97117118,
+  "longitude": -87.65958098
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e971"
+  },
+  "name": "BUDGET FINER FOODS",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00272611,
+  "longitude": -87.66093837
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e972"
+  },
+  "name": "BURNHAM PLAZA MART",
+  "streetAddress": "LOOP",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8714442,
+  "longitude": -87.62607513
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e973"
+  },
+  "name": "BUSY BEE SUPERMARKET",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79048002,
+  "longitude": -87.66434507
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e974"
+  },
+  "name": "BUY -N- SAVE",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70713532,
+  "longitude": -87.61824173
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e975"
+  },
+  "name": "CAESAR'S FOODS INC",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89777928,
+  "longitude": -87.67695887
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e976"
+  },
+  "name": "CALABRIA IMPORTS, INC.",
+  "streetAddress": "BEVERLY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70647332,
+  "longitude": -87.66935499
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e977"
+  },
+  "name": "CALMA OPTIMAL DELI, INC.",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9458951,
+  "longitude": -87.75664585
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e978"
+  },
+  "name": "CARNICERIA DEL RIO",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85203474,
+  "longitude": -87.69369691
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e979"
+  },
+  "name": "CARNICERIA EL PORVENIR",
+  "streetAddress": "WEST PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.6840632,
+  "longitude": -87.61874297
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e97a"
+  },
+  "name": "CARNICERIA&FRUTERIA EL MITOTE",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93881951,
+  "longitude": -87.7394338
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e97b"
+  },
+  "name": "CARNICERIA GUANAJUATO",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92418915,
+  "longitude": -87.75822974
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e97c"
+  },
+  "name": "CARNICERIA GUANAJUATO #3",
+  "streetAddress": "AVONDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93856972,
+  "longitude": -87.69794595
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e97d"
+  },
+  "name": "CARNICERIA GUANJUATO #3",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90811537,
+  "longitude": -87.66776383
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e97e"
+  },
+  "name": "CARNICERIA JIMENEZ #2",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92462832,
+  "longitude": -87.72395332
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e97f"
+  },
+  "name": "CARNICERIA JIMENEZ INC",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90992525,
+  "longitude": -87.73155722
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e980"
+  },
+  "name": "CARNICERIA LA AZTECA",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.01096295,
+  "longitude": -87.67421466
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e981"
+  },
+  "name": "CARNICERIA LA GLORIA",
+  "streetAddress": "GAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80096928,
+  "longitude": -87.6887221
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e982"
+  },
+  "name": "CARNICERIA LA GLORIA NO. 2, INC.",
+  "streetAddress": "GAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79381183,
+  "longitude": -87.6931506
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e983"
+  },
+  "name": "CARNICERIA LA HACIENDA, INC.",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7860244,
+  "longitude": -87.71060478
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e984"
+  },
+  "name": "CARNICERIA LA MEJOR PRODUCE, INC.",
+  "streetAddress": "AVONDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9343144,
+  "longitude": -87.715772
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e985"
+  },
+  "name": "CARNICERIA LA VILLA #2",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9197749,
+  "longitude": -87.77072653
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e986"
+  },
+  "name": "CARNICERIA RICARDO",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93154075,
+  "longitude": -87.73757251
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e987"
+  },
+  "name": "CENTRAL PARK FOODS INC",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90247367,
+  "longitude": -87.71681747
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e988"
+  },
+  "name": "CENTRO MARKET",
+  "streetAddress": "GAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79925704,
+  "longitude": -87.70357471
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e989"
+  },
+  "name": "CERMAK PRODUCE",
+  "streetAddress": "WEST ELSDON",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79799187,
+  "longitude": -87.72344374
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e98a"
+  },
+  "name": "CERMAK PRODUCE",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95859672,
+  "longitude": -87.70830958
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e98b"
+  },
+  "name": "CERMAK PRODUCE",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93164142,
+  "longitude": -87.74671991
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e98c"
+  },
+  "name": "CERMAK PRODUCE",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91693444,
+  "longitude": -87.73638715
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e98d"
+  },
+  "name": "CERMAK PRODUCE",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85216786,
+  "longitude": -87.66897504
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e98e"
+  },
+  "name": "CERMAK PRODUCE",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84436673,
+  "longitude": -87.70789805
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e98f"
+  },
+  "name": "CERMAK PRODUCE #5 LTD",
+  "streetAddress": "MCKINLEY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8313499,
+  "longitude": -87.67584785
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e990"
+  },
+  "name": "CERMAK PRODUCE NO.4",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91013224,
+  "longitude": -87.69460039
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e991"
+  },
+  "name": "CHARLIES  SUPERMARKET INC.",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96111443,
+  "longitude": -87.70258694
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e992"
+  },
+  "name": "CHATHAM FOOD MARKET",
+  "streetAddress": "CHATHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75097268,
+  "longitude": -87.61695788
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e993"
+  },
+  "name": "CHICAGO FOOD CORP",
+  "streetAddress": "NORTH PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98592799,
+  "longitude": -87.72866342
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e994"
+  },
+  "name": "CHICAGO GROCERS",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99794589,
+  "longitude": -87.68356871
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e995"
+  },
+  "name": "Chicago Health - Maple Street",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90198255,
+  "longitude": -87.6292631
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e996"
+  },
+  "name": "CHICAGO PRODUCE",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96848537,
+  "longitude": -87.71587133
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e997"
+  },
+  "name": "CICERO DELI INC.",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93904667,
+  "longitude": -87.74702197
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e998"
+  },
+  "name": "CITY GROCERY",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88946533,
+  "longitude": -87.62650927
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e999"
+  },
+  "name": "CLARENDON FOOD MART INC",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9580048,
+  "longitude": -87.64965374
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e99a"
+  },
+  "name": "CLYBOURN MARKET",
+  "streetAddress": "NORTH CENTER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93257918,
+  "longitude": -87.67832746
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e99b"
+  },
+  "name": "COMMERCIAL GROCERY",
+  "streetAddress": "SOUTH DEERING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.71349784,
+  "longitude": -87.55073311
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e99c"
+  },
+  "name": "CORCORANS PANTRY INC",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98354479,
+  "longitude": -87.65826767
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e99d"
+  },
+  "name": "COTTAGE GROVE FOOD MART",
+  "streetAddress": "WOODLAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78015196,
+  "longitude": -87.60577752
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e99e"
+  },
+  "name": "COUNTY FAIR FOODS",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69723821,
+  "longitude": -87.6814748
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e99f"
+  },
+  "name": "CRESPO'S FOOD MART",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.880505,
+  "longitude": -87.73512285
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a0"
+  },
+  "name": "CUENCA'S BAKERY & GROCERIES",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96076752,
+  "longitude": -87.73394693
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a1"
+  },
+  "name": "CUPBOARD FOOD & LIQUOR",
+  "streetAddress": "GAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79358918,
+  "longitude": -87.70594578
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a2"
+  },
+  "name": "D & A FOOD & LIQUOR",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79355436,
+  "longitude": -87.66463755
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a3"
+  },
+  "name": "DANNY'S FRESH MARKET",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92109627,
+  "longitude": -87.68767101
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a4"
+  },
+  "name": "DEVON MARKET",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99822825,
+  "longitude": -87.66710447
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a5"
+  },
+  "name": "DIA FOOD & LIQUOR",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.6849558,
+  "longitude": -87.65972583
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a6"
+  },
+  "name": "DILILAH GROCERY",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85396788,
+  "longitude": -87.67087019
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a7"
+  },
+  "name": "DISCOUNT MEAT COMPANY",
+  "streetAddress": "CHATHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75068744,
+  "longitude": -87.63338093
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a8"
+  },
+  "name": "DISCOUNT PANTRY CORPORATION",
+  "streetAddress": "WEST LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77849291,
+  "longitude": -87.72732752
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9a9"
+  },
+  "name": "DOLLAR DEALS & UP",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91889126,
+  "longitude": -87.72646532
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9aa"
+  },
+  "name": "DOLLAR & LINEN",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73558907,
+  "longitude": -87.66995173
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ab"
+  },
+  "name": "DOMINICK'S",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00222338,
+  "longitude": -87.68012883
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ac"
+  },
+  "name": "DOMINICK'S # 1100",
+  "streetAddress": "MCKINLEY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83646835,
+  "longitude": -87.6655669
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ad"
+  },
+  "name": "DOMINICK'S # 113/1113",
+  "streetAddress": "NORWOOD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99598529,
+  "longitude": -87.78763712
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ae"
+  },
+  "name": "DOMINICK'S # 12/0012",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99118175,
+  "longitude": -87.66015508
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9af"
+  },
+  "name": "DOMINICK'S # 130/1130",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76599,
+  "longitude": -87.57378734
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b0"
+  },
+  "name": "DOMINICK'S #147/1147",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.86452119,
+  "longitude": -87.6393041
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b1"
+  },
+  "name": "DOMINICK'S #153/2153",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90388396,
+  "longitude": -87.6394372
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b2"
+  },
+  "name": "DOMINICK'S #160/1698",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.01928855,
+  "longitude": -87.67505851
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b3"
+  },
+  "name": "Dominick's #1703",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89168984,
+  "longitude": -87.62044413
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b4"
+  },
+  "name": "DOMINICK'S #1875",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88181563,
+  "longitude": -87.64721472
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b5"
+  },
+  "name": "DOMINICKS #2889",
+  "streetAddress": "LINCOLN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9768951,
+  "longitude": -87.69227967
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b6"
+  },
+  "name": "DOMINICKS #2890",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97648167,
+  "longitude": -87.65483978
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b7"
+  },
+  "name": "DOMINICK'S # 304/2304",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92787172,
+  "longitude": -87.67325881
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b8"
+  },
+  "name": "DOMINICK'S # 86/1086",
+  "streetAddress": "NORTH CENTER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9427472,
+  "longitude": -87.68835432
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9b9"
+  },
+  "name": "DOMINICK'S Finer Foods, Inc. #1695",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92526828,
+  "longitude": -87.65348756
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ba"
+  },
+  "name": "DOMINICK'S FINER FOODS - STORE # 2775",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89578523,
+  "longitude": -87.67793089
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9bb"
+  },
+  "name": "EDDIE'S FOOD MART",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77946116,
+  "longitude": -87.67143667
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9bc"
+  },
+  "name": "EDDIE & SON FOOD &LIQ.",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91009267,
+  "longitude": -87.71757535
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9bd"
+  },
+  "name": "EDDIE'S SUNSHINE FOOD & LIQUOR,  INC.",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69781792,
+  "longitude": -87.621011
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9be"
+  },
+  "name": "EDDY'S FOOD MART",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.01916463,
+  "longitude": -87.66839729
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9bf"
+  },
+  "name": "EDGEWATER PRODUCE",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98197138,
+  "longitude": -87.66832103
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c0"
+  },
+  "name": "EL BARRIO GROCERY",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91000804,
+  "longitude": -87.72543846
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c1"
+  },
+  "name": "EL MILAGRO",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84468733,
+  "longitude": -87.70210294
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c2"
+  },
+  "name": "EL  PASEO  BORICUA",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9030542,
+  "longitude": -87.69477042
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c3"
+  },
+  "name": "EL YUNQUE FOOD & LIQUOR",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91576102,
+  "longitude": -87.69729581
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c4"
+  },
+  "name": "E.M. GROCERIES",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79612897,
+  "longitude": -87.6514349
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c5"
+  },
+  "name": "EMILIO'S PRODUCE",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92259747,
+  "longitude": -87.69709763
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c6"
+  },
+  "name": "EUROPA GALLERIA INC",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89566277,
+  "longitude": -87.63722072
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c7"
+  },
+  "name": "EXTRA VALUE FOOD & LIQUOR",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77961467,
+  "longitude": -87.66407749
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c8"
+  },
+  "name": "FAIRPLAY FINER FOOD",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85198384,
+  "longitude": -87.6857857
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9c9"
+  },
+  "name": "FAIRPLAY FINER FOODS INC",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80962977,
+  "longitude": -87.64570757
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ca"
+  },
+  "name": "FAIRPLAY FOODS INC",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.6916792,
+  "longitude": -87.67977917
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9cb"
+  },
+  "name": "FAIRWAY FOOD",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75200539,
+  "longitude": -87.55401542
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9cc"
+  },
+  "name": "FAMILY PRIDE",
+  "streetAddress": "MOUNT GREENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70035527,
+  "longitude": -87.7205409
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9cd"
+  },
+  "name": "FARM SUPER MARKET",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99766696,
+  "longitude": -87.68721346
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ce"
+  },
+  "name": "FIESTA SUPERMARCADO",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77881858,
+  "longitude": -87.70590358
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9cf"
+  },
+  "name": "FIRST CHOICE MARKET",
+  "streetAddress": "SOUTH CHICAGO",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72997787,
+  "longitude": -87.55038259
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d0"
+  },
+  "name": "FIVE STAR CERTIFIED INC",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73590841,
+  "longitude": -87.64742288
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d1"
+  },
+  "name": "FOOD 4 LESS",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90950515,
+  "longitude": -87.74695994
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d2"
+  },
+  "name": "FOOD 4 LESS",
+  "streetAddress": "CHATHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73638005,
+  "longitude": -87.62750922
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d3"
+  },
+  "name": "Food 4 Less Midwest",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76579077,
+  "longitude": -87.66396689
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d4"
+  },
+  "name": "FOOD 4 LESS MIDWEST #789",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80966853,
+  "longitude": -87.6751157
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d5"
+  },
+  "name": "FOOD BASKET",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7631812,
+  "longitude": -87.64421502
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d6"
+  },
+  "name": "FOODSMART",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91735855,
+  "longitude": -87.69934107
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d7"
+  },
+  "name": "FOODSMART",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93185278,
+  "longitude": -87.71290125
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d8"
+  },
+  "name": "FRESH BUY FOODS INC",
+  "streetAddress": "WOODLAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77966465,
+  "longitude": -87.61425094
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9d9"
+  },
+  "name": "FRESH FARMS INTERNATIONAL",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99773591,
+  "longitude": -87.69592888
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9da"
+  },
+  "name": "FRESH MARKET PLACE",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92764768,
+  "longitude": -87.76626652
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9db"
+  },
+  "name": "FRUTERIA EL MERCADO",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84093316,
+  "longitude": -87.70722418
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9dc"
+  },
+  "name": "FURTERIA EL SERRANITO",
+  "streetAddress": "MCKINLEY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.82486062,
+  "longitude": -87.67002302
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9dd"
+  },
+  "name": "GAYTAN GROCERY STORE",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84030863,
+  "longitude": -87.73310706
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9de"
+  },
+  "name": "GEMELOS FOOD/ CHECK CASHING SERVICES",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.815432,
+  "longitude": -87.69579779
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9df"
+  },
+  "name": "GENES SAUSAGE SHOP AT DELI MEYER",
+  "streetAddress": "LINCOLN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96775366,
+  "longitude": -87.68817172
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e0"
+  },
+  "name": "GENE'S SAUSAGE SHOP & DELI INC",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93876197,
+  "longitude": -87.76040707
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e1"
+  },
+  "name": "GILMART'S  FOOD & LIQUOR",
+  "streetAddress": "ARCHER HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80140003,
+  "longitude": -87.72604374
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e2"
+  },
+  "name": "GOLDMORE FOOD",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80112781,
+  "longitude": -87.67408034
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e3"
+  },
+  "name": "GRAND FOOD MARKET",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91706775,
+  "longitude": -87.75604133
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e4"
+  },
+  "name": "GRAND PALACE SUPERMARKET, INC",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76457363,
+  "longitude": -87.62473997
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e5"
+  },
+  "name": "H & A FOOD MARKET, INC.",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77956458,
+  "longitude": -87.64997484
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e6"
+  },
+  "name": "HALAL MEAT & GROCERY",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99823739,
+  "longitude": -87.6661711
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e7"
+  },
+  "name": "HAPPY FOODS",
+  "streetAddress": "EDISON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00439926,
+  "longitude": -87.81848576
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e8"
+  },
+  "name": "HAPPY FOODS",
+  "streetAddress": "FOREST GLEN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99786001,
+  "longitude": -87.7634458
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9e9"
+  },
+  "name": "HARBOR MARKET",
+  "streetAddress": "LOOP",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88475054,
+  "longitude": -87.61560396
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ea"
+  },
+  "name": "HAREER FOOD & LIQUOR",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7945591,
+  "longitude": -87.64531343
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9eb"
+  },
+  "name": "HARPER FOODS",
+  "streetAddress": "HYDE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79141057,
+  "longitude": -87.58953263
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ec"
+  },
+  "name": "HARVESTIME FOODS",
+  "streetAddress": "LINCOLN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96867023,
+  "longitude": -87.69516275
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ed"
+  },
+  "name": "Hegewisch Fruit Market Inc.",
+  "streetAddress": "HEGEWISCH",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.65518859,
+  "longitude": -87.54699942
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ee"
+  },
+  "name": "HILLTOP LIQUORS MART",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70724797,
+  "longitude": -87.62005636
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ef"
+  },
+  "name": "HOA NOM CO",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9731613,
+  "longitude": -87.65783318
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f0"
+  },
+  "name": "HOLLYWOOD TOWER MKT",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98563842,
+  "longitude": -87.65509432
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f1"
+  },
+  "name": "HONG KONG MARKET",
+  "streetAddress": "ARMOUR SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84823717,
+  "longitude": -87.64095553
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f2"
+  },
+  "name": "HYDE PARK PRODUCE, LTD",
+  "streetAddress": "HYDE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7995768,
+  "longitude": -87.59551292
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f3"
+  },
+  "name": "H & Z GROCERY STORE",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92834525,
+  "longitude": -87.7186709
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f4"
+  },
+  "name": "IMPERIAL TOWER MARKET",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96001995,
+  "longitude": -87.64690603
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f5"
+  },
+  "name": "INTERNATIONAL FOODS NW INC",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92447264,
+  "longitude": -87.73678951
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f6"
+  },
+  "name": "INTERNATIONAL SUPERMARKET INC",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81056568,
+  "longitude": -87.66517052
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f7"
+  },
+  "name": "JAMAICA FOOD & LIQUOR INC",
+  "streetAddress": "GRAND BOULEVARD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81702977,
+  "longitude": -87.60685792
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f8"
+  },
+  "name": "J AND P FINER FOODS",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96098859,
+  "longitude": -87.71564632
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9f9"
+  },
+  "name": "J & A ORIENTAL FOOD MART",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92379935,
+  "longitude": -87.77063324
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9fa"
+  },
+  "name": "JARDAN FOOD & LIQUOR",
+  "streetAddress": "WASHINGTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79432493,
+  "longitude": -87.61852061
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9fb"
+  },
+  "name": "JERUSALEM LIQUORS",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9683547,
+  "longitude": -87.70739432
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9fc"
+  },
+  "name": "JEWEL FOOD STORE",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.68033221,
+  "longitude": -87.66258468
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9fd"
+  },
+  "name": "JEWEL FOOD STORE #3030",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75780566,
+  "longitude": -87.58626826
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9fe"
+  },
+  "name": "JEWEL FOOD STORE #3043",
+  "streetAddress": "DOUGLAS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83304474,
+  "longitude": -87.61461136
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96e9ff"
+  },
+  "name": "JEWEL FOOD STORE #3057",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78306114,
+  "longitude": -87.68359887
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea00"
+  },
+  "name": "JEWEL FOOD STORE #3092",
+  "streetAddress": "SOUTH DEERING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7222632,
+  "longitude": -87.58291763
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea01"
+  },
+  "name": "JEWEL FOOD STORE #3114",
+  "streetAddress": "MOUNT GREENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70631284,
+  "longitude": -87.69976712
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea02"
+  },
+  "name": "JEWEL FOOD STORE #3139",
+  "streetAddress": "EAST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7028061,
+  "longitude": -87.52770401
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea03"
+  },
+  "name": "JEWEL FOOD STORE #3170",
+  "streetAddress": "WEST ELSDON",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79619759,
+  "longitude": -87.72339188
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea04"
+  },
+  "name": "JEWEL FOOD STORE #3176",
+  "streetAddress": "WASHINGTON HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72294122,
+  "longitude": -87.66286287
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea05"
+  },
+  "name": "JEWEL FOOD STORE #3181",
+  "streetAddress": "CHATHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73614513,
+  "longitude": -87.62691784
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea06"
+  },
+  "name": "JEWEL FOOD STORE #3210",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90426523,
+  "longitude": -87.63160329
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea07"
+  },
+  "name": "JEWEL FOOD STORE #3224",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95301023,
+  "longitude": -87.78770716
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea08"
+  },
+  "name": "JEWEL FOOD STORE #3241",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9062437,
+  "longitude": -87.66986228
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea09"
+  },
+  "name": "JEWEL FOOD STORE #3282",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96679711,
+  "longitude": -87.76729948
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea0a"
+  },
+  "name": "JEWEL FOOD STORE #3296",
+  "streetAddress": "NORWOOD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97454295,
+  "longitude": -87.81134688
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea0b"
+  },
+  "name": "JEWEL FOOD STORE #3302",
+  "streetAddress": "MCKINLEY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8275839,
+  "longitude": -87.68245444
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea0c"
+  },
+  "name": "JEWEL FOOD STORE #3344",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.86625418,
+  "longitude": -87.66652414
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea0d"
+  },
+  "name": "JEWEL FOOD  STORE # 3345",
+  "streetAddress": "NEAR SOUTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.86672435,
+  "longitude": -87.62596115
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea0e"
+  },
+  "name": "JEWEL FOOD STORE #3349",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92629696,
+  "longitude": -87.78569482
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea0f"
+  },
+  "name": "JEWEL FOOD STORE #3368",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89242137,
+  "longitude": -87.62823487
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea10"
+  },
+  "name": "JEWEL FOOD STORE #3407",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98218988,
+  "longitude": -87.66865163
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea11"
+  },
+  "name": "JEWEL FOOD STORE #3441",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93547203,
+  "longitude": -87.66865454
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea12"
+  },
+  "name": "JEWEL FOOD STORE #3442",
+  "streetAddress": "NORTH PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97562411,
+  "longitude": -87.72984456
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea13"
+  },
+  "name": "JEWEL FOOD STORE #3443",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97942825,
+  "longitude": -87.65980585
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea14"
+  },
+  "name": "JEWEL FOOD STORE #3454",
+  "streetAddress": "NORTH CENTER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95910043,
+  "longitude": -87.68239224
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea15"
+  },
+  "name": "JEWEL FOOD STORE #3455",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96139778,
+  "longitude": -87.65459297
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea16"
+  },
+  "name": "JEWEL FOOD STORE #3470",
+  "streetAddress": "AVONDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9460576,
+  "longitude": -87.70823011
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea17"
+  },
+  "name": "JEWEL FOOD STORE #3477",
+  "streetAddress": "OHARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9660114,
+  "longitude": -87.83683117
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea18"
+  },
+  "name": "JEWEL FOOD STORE #3501",
+  "streetAddress": "NORTH CENTER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94318737,
+  "longitude": -87.68830202
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea19"
+  },
+  "name": "JEWEL FOOD STORE #3514",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94638465,
+  "longitude": -87.64652486
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea1a"
+  },
+  "name": "JEWEL FOOD STORE #3721",
+  "streetAddress": "GARFIELD RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79435485,
+  "longitude": -87.77052715
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea1b"
+  },
+  "name": "JEWEL FOOD STORES #3262",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95355444,
+  "longitude": -87.74505531
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea1c"
+  },
+  "name": "JEWEL-OSCO #3632",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94800455,
+  "longitude": -87.66418623
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea1d"
+  },
+  "name": "J & J EUROPEAN DELI",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9677648,
+  "longitude": -87.7770202
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea1e"
+  },
+  "name": "J K & S FOOD & LIQUOR",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78703907,
+  "longitude": -87.63781273
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea1f"
+  },
+  "name": "JOE'S FOOD AND LIQUOR DEPOT",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92399183,
+  "longitude": -87.77228911
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea20"
+  },
+  "name": "JOE'S FOOD & LIQUOR",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96844525,
+  "longitude": -87.71941658
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea21"
+  },
+  "name": "JOLANTA'S INTERNATIONAL DELI",
+  "streetAddress": "JEFFERSON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9727915,
+  "longitude": -87.77637186
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea22"
+  },
+  "name": "JOSEPH FOOD MART",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95201856,
+  "longitude": -87.83316684
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea23"
+  },
+  "name": "J R GROCERY STORE",
+  "streetAddress": "RIVERDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.65176106,
+  "longitude": -87.60936661
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea24"
+  },
+  "name": "KAMDAR PLAZA INC",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9977219,
+  "longitude": -87.6966411
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea25"
+  },
+  "name": "Kan-Zaman Mart, Inc.",
+  "streetAddress": "NEAR SOUTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85531767,
+  "longitude": -87.62372652
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea26"
+  },
+  "name": "KAPS FOODS",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.82838364,
+  "longitude": -87.69462017
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea27"
+  },
+  "name": "K BUENA",
+  "streetAddress": "WEST LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77138332,
+  "longitude": -87.73095337
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea28"
+  },
+  "name": "KEY FOOD LIQUOR",
+  "streetAddress": "RIVERDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.65197282,
+  "longitude": -87.61708374
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea29"
+  },
+  "name": "KHALIL FOOD & LIQUOR",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70721814,
+  "longitude": -87.62775156
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea2a"
+  },
+  "name": "KING FOOD & LIQUOR",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7689263,
+  "longitude": -87.644656
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea2b"
+  },
+  "name": "K & K FOOD & LIQUOR",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80157684,
+  "longitude": -87.65378847
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea2c"
+  },
+  "name": "KOL TUV KOSHER FOODS INC",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99760128,
+  "longitude": -87.70361267
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea2d"
+  },
+  "name": "KORDIAN'S MARKET",
+  "streetAddress": "JEFFERSON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97598405,
+  "longitude": -87.78656131
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea2e"
+  },
+  "name": "KRAKUS DELI,  INC",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9458951,
+  "longitude": -87.75664585
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea2f"
+  },
+  "name": "LA CASA DEL PUEBLO INC",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85745275,
+  "longitude": -87.66168833
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea30"
+  },
+  "name": "LA CIENEGA SUPER FOOD INC",
+  "streetAddress": "EAST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69981485,
+  "longitude": -87.53542689
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea31"
+  },
+  "name": "LA FERIA GROCERY",
+  "streetAddress": "SOUTH DEERING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.71891216,
+  "longitude": -87.5511743
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea32"
+  },
+  "name": "LA GUERRERENSE",
+  "streetAddress": "HERMOSA",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.917,
+  "longitude": -87.73098926
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea33"
+  },
+  "name": "LA INTERNATIONAL",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81530069,
+  "longitude": -87.7020416
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea34"
+  },
+  "name": "LA JALISCIENCE",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84438799,
+  "longitude": -87.7064971
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea35"
+  },
+  "name": "LAKE VIEW FOODS INC",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9570403,
+  "longitude": -87.65476289
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea36"
+  },
+  "name": "LA LOMA \"CARNICERIA Y TAQUERIA\"",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92703609,
+  "longitude": -87.75610618
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea37"
+  },
+  "name": "LA MERCED INC",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8440328,
+  "longitude": -87.73243286
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea38"
+  },
+  "name": "LA NUEVA IMAGEN GROCERY, INC.",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8462971,
+  "longitude": -87.71591643
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea39"
+  },
+  "name": "LA PERLA TAPATIA BAKERY",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90991975,
+  "longitude": -87.73197126
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea3a"
+  },
+  "name": "LA PLAMA",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81757931,
+  "longitude": -87.69832059
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea3b"
+  },
+  "name": "L'APPETITO",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89894854,
+  "longitude": -87.62397499
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea3c"
+  },
+  "name": "LA PROVIDENCIA FOOD MART",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85421937,
+  "longitude": -87.66845816
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea3d"
+  },
+  "name": "LARAMIE BAKERY & DELI",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93898597,
+  "longitude": -87.80692906
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea3e"
+  },
+  "name": "LATIN GROCERY & LIQUOR, INC",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91004942,
+  "longitude": -87.72145808
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea3f"
+  },
+  "name": "LA UNICA FOOD MART, INC.",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99799346,
+  "longitude": -87.66842789
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea40"
+  },
+  "name": "LAWNDALE FOOD MARKET",
+  "streetAddress": "NORTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85883397,
+  "longitude": -87.71786719
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea41"
+  },
+  "name": "Laxi Liquor",
+  "streetAddress": "MONTCLARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9236807,
+  "longitude": -87.79867613
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea42"
+  },
+  "name": "LEMEN SUN CORP.",
+  "streetAddress": "ARMOUR SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84160448,
+  "longitude": -87.6319155
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea43"
+  },
+  "name": "LINDO MICHOACAN",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96857277,
+  "longitude": -87.7077877
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea44"
+  },
+  "name": "LOGAN CERTIFIED FOODS CORP",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93197047,
+  "longitude": -87.69993162
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea45"
+  },
+  "name": "LORETO GROCERY",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81000148,
+  "longitude": -87.69318135
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea46"
+  },
+  "name": "LOS CUATRO HERMANOS GROCERY",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85620222,
+  "longitude": -87.65774497
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea47"
+  },
+  "name": "LOS POTRILLOS",
+  "streetAddress": "AVONDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93930952,
+  "longitude": -87.71853994
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea48"
+  },
+  "name": "LOS SAUCES GROCERY",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9312882,
+  "longitude": -87.77324145
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea49"
+  },
+  "name": "LOUIS' GROCERIES",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75655031,
+  "longitude": -87.60548285
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea4a"
+  },
+  "name": "LUCIANO'S GROCERY-18TH ST",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85785657,
+  "longitude": -87.6694196
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea4b"
+  },
+  "name": "LUX 2 FOOD & LIQUOR",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7561627,
+  "longitude": -87.6528196
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea4c"
+  },
+  "name": "MACIAS PRODUCE INC.",
+  "streetAddress": "SOUTH CHICAGO",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73273359,
+  "longitude": -87.55117278
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea4d"
+  },
+  "name": "MAKOLA AFRICAN SUPERMARKET #2",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96365028,
+  "longitude": -87.65462219
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea4e"
+  },
+  "name": "MANDY'S LIQUOR",
+  "streetAddress": "LINCOLN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96865614,
+  "longitude": -87.67843848
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea4f"
+  },
+  "name": "MARIANO'S FRESH MARKET #8507",
+  "streetAddress": "JEFFERSON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97871026,
+  "longitude": -87.75715377
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea50"
+  },
+  "name": "MARIO 'S BUTCHER SHOP FD CNTR",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88004498,
+  "longitude": -87.77049338
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea51"
+  },
+  "name": "MARKET IN THE PARK",
+  "streetAddress": "KENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80287978,
+  "longitude": -87.58184369
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea52"
+  },
+  "name": "MA'S & PA'S GROCERY SNACK SHOP",
+  "streetAddress": "EAST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87087764,
+  "longitude": -87.69616688
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea53"
+  },
+  "name": "MAYFAIR MARKET PLACE",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96726667,
+  "longitude": -87.72814705
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea54"
+  },
+  "name": "MAYFLOWER FOOD",
+  "streetAddress": "ARMOUR SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8542653,
+  "longitude": -87.63218951
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea55"
+  },
+  "name": "M & D VARIETY STORE",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69231963,
+  "longitude": -87.65466321
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea56"
+  },
+  "name": "MEHRAB ZABIHA MEAT & TOBACCO",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99759202,
+  "longitude": -87.69166812
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea57"
+  },
+  "name": "MELISSA'S FOOD & LIQUORS INC",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90505945,
+  "longitude": -87.72395138
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea58"
+  },
+  "name": "MIARA'S CONT'L PASTRY DELI INC",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94523382,
+  "longitude": -87.80292664
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea59"
+  },
+  "name": "MICELI'S DELI & FOOD MART",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84702046,
+  "longitude": -87.68319955
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea5a"
+  },
+  "name": "MICHAELS FRESH MARKET",
+  "streetAddress": "KENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80977273,
+  "longitude": -87.59496089
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea5b"
+  },
+  "name": "MID TOWN FOODS",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90258387,
+  "longitude": -87.72361925
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea5c"
+  },
+  "name": "MI MEXICO GROCERY",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78637634,
+  "longitude": -87.68877651
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea5d"
+  },
+  "name": "MINI MERCADO LA BETANIA",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84039654,
+  "longitude": -87.73067501
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea5e"
+  },
+  "name": "M & J LIQUOR & GROCERY",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96843458,
+  "longitude": -87.72048101
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea5f"
+  },
+  "name": "MLB FOOD",
+  "streetAddress": "WOODLAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7729559,
+  "longitude": -87.61005781
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea60"
+  },
+  "name": "MOO & OINK INC",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88058389,
+  "longitude": -87.74705294
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea61"
+  },
+  "name": "MORELIA SUPERMARKET #2, INC.",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93140629,
+  "longitude": -87.74793697
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea62"
+  },
+  "name": "MORELIA SUPERMARKET, INC.",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.01418398,
+  "longitude": -87.69037835
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea63"
+  },
+  "name": "MORGAN FOOD CORP LLC",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77412895,
+  "longitude": -87.649646
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea64"
+  },
+  "name": "MOROLEON FOODS #2 INC.",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81577112,
+  "longitude": -87.6893859
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea65"
+  },
+  "name": "MORSE FOOD AND MEAT MARKET",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00799492,
+  "longitude": -87.66717415
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea66"
+  },
+  "name": "MOUNSEF INTERNATIONAL",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96779309,
+  "longitude": -87.7086027
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea67"
+  },
+  "name": "MR G'S FOOD & LIQUOR",
+  "streetAddress": "WASHINGTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78942986,
+  "longitude": -87.61784034
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea68"
+  },
+  "name": "MUNCHIES ON LARRABEE",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90084859,
+  "longitude": -87.64325554
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea69"
+  },
+  "name": "Municipal Foods",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90285923,
+  "longitude": -87.69188858
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea6a"
+  },
+  "name": "MY RANCH, INC.",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96697757,
+  "longitude": -87.65494464
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea6b"
+  },
+  "name": "NANCE FOOD MART",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69515316,
+  "longitude": -87.62782024
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea6c"
+  },
+  "name": "NANCY FOODS INC",
+  "streetAddress": "WEST PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.6702524,
+  "longitude": -87.62227196
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea6d"
+  },
+  "name": "NATIONAL FRUIT STOP",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96825564,
+  "longitude": -87.71687738
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea6e"
+  },
+  "name": "Natural Country Deli",
+  "streetAddress": "NORWOOD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99849297,
+  "longitude": -87.78909537
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea6f"
+  },
+  "name": "NAYAB MART",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99758912,
+  "longitude": -87.69183691
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea70"
+  },
+  "name": "NEIL'S FOOD",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75283042,
+  "longitude": -87.64395052
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea71"
+  },
+  "name": "NEW LA ESTRELLA FOODS INC.",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77893156,
+  "longitude": -87.69841709
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea72"
+  },
+  "name": "NEW POP-IN",
+  "streetAddress": "EAST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87542375,
+  "longitude": -87.70582036
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea73"
+  },
+  "name": "NICKEL LIQUOR & MINI MART INC",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90263376,
+  "longitude": -87.71793124
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea74"
+  },
+  "name": "NOOR MEAT",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99757381,
+  "longitude": -87.6925486
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea75"
+  },
+  "name": "NORTHWEST FOOD & LIQUOR",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9096149,
+  "longitude": -87.75547797
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea76"
+  },
+  "name": "OGIES FOOD, INC",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76836584,
+  "longitude": -87.68830091
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea77"
+  },
+  "name": "OHIO FOOD MART",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89104929,
+  "longitude": -87.75973284
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea78"
+  },
+  "name": "OLD WORLD MARKET",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9754754,
+  "longitude": -87.65969701
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea79"
+  },
+  "name": "OLIVE MOUNT MART",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77894012,
+  "longitude": -87.71186857
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea7a"
+  },
+  "name": "ONE STOP",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88049945,
+  "longitude": -87.73559596
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea7b"
+  },
+  "name": "ONE STOP FOOD & LIQUOR STORE",
+  "streetAddress": "KENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81686515,
+  "longitude": -87.59868884
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea7c"
+  },
+  "name": "ORIENTAL ASIA MARKET INC.",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97255593,
+  "longitude": -87.65505767
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea7d"
+  },
+  "name": "ORLEANS MARKET",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89086429,
+  "longitude": -87.63632919
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea7e"
+  },
+  "name": "OSAMA FOOD MART",
+  "streetAddress": "WOODLAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77295752,
+  "longitude": -87.6099734
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea7f"
+  },
+  "name": "OUTLET KINGDOM",
+  "streetAddress": "BRIDGEPORT",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83107494,
+  "longitude": -87.64597111
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea80"
+  },
+  "name": "PAR BIRDIE FOODS",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99790097,
+  "longitude": -87.68637822
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea81"
+  },
+  "name": "PARK FOODS OF 71ST STREET,INC.",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76471714,
+  "longitude": -87.68875098
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea82"
+  },
+  "name": "PARK PACKING OF CHICAGO, INC.",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81915944,
+  "longitude": -87.66423536
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea83"
+  },
+  "name": "PARKSHORE MARKET LTD",
+  "streetAddress": "LOOP",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88617728,
+  "longitude": -87.6155996
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea84"
+  },
+  "name": "PATEL BROS",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9977473,
+  "longitude": -87.69525116
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea85"
+  },
+  "name": "PAULINA MARKET",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94525416,
+  "longitude": -87.67238979
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea86"
+  },
+  "name": "PAULINA SUPER MARKET INC",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.02008732,
+  "longitude": -87.67323456
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea87"
+  },
+  "name": "PEORIA PACKING LTD",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88558042,
+  "longitude": -87.65895691
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea88"
+  },
+  "name": "PERSONAL LIQUORS INC",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8805392,
+  "longitude": -87.73221604
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea89"
+  },
+  "name": "PETERSON FOOD MART",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99058521,
+  "longitude": -87.69353452
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea8a"
+  },
+  "name": "PETE'S FRESH MARKET",
+  "streetAddress": "HEGEWISCH",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.68105956,
+  "longitude": -87.53936754
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea8b"
+  },
+  "name": "PETE'S FRESH SUPERMARKET",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85210065,
+  "longitude": -87.68905111
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea8c"
+  },
+  "name": "PETE'S FRESH SUPERMARKET",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85210065,
+  "longitude": -87.68905111
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea8d"
+  },
+  "name": "PETE'S MARKET",
+  "streetAddress": "GAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78911255,
+  "longitude": -87.70357973
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea8e"
+  },
+  "name": "PETE'S MEAT & GROCERY #2",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76469612,
+  "longitude": -87.67359278
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea8f"
+  },
+  "name": "PETE'S PRODUCE",
+  "streetAddress": "CALUMET HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73679546,
+  "longitude": -87.58627251
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea90"
+  },
+  "name": "PETE'S PRODUCE",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73574485,
+  "longitude": -87.65871771
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea91"
+  },
+  "name": "P & I FOOD & LIQUOR INC.",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90270681,
+  "longitude": -87.73101807
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea92"
+  },
+  "name": "POLONIA FOOD MART",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91787072,
+  "longitude": -87.67748062
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea93"
+  },
+  "name": "POTASH BROS INC",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8988782,
+  "longitude": -87.62811115
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea94"
+  },
+  "name": "POTASH BROS. SUPERMARKET",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91011794,
+  "longitude": -87.63149089
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea95"
+  },
+  "name": "PRESTIGE LIQUORS",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7644956,
+  "longitude": -87.68338427
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea96"
+  },
+  "name": "PUERTO RICO FOOD & LIQUORS",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89922158,
+  "longitude": -87.69173812
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea97"
+  },
+  "name": "QUALITY FOOD ON 71 ST INC",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76451168,
+  "longitude": -87.68798666
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea98"
+  },
+  "name": "QUICK STOP FOOD MART",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00475007,
+  "longitude": -87.69942278
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea99"
+  },
+  "name": "QUINTESSENCE",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90910776,
+  "longitude": -87.72663415
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea9a"
+  },
+  "name": "RAINBOW FINER FOOD & LIQUOR",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77892241,
+  "longitude": -87.66435268
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea9b"
+  },
+  "name": "RAINBOW GROCERY",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76832833,
+  "longitude": -87.67381938
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea9c"
+  },
+  "name": "RICH'S DELI & LIQUOR, INC",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89746098,
+  "longitude": -87.68673856
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea9d"
+  },
+  "name": "RICHWELL MARKET",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85665718,
+  "longitude": -87.63875335
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea9e"
+  },
+  "name": "RIGO'S GROCERY",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83893675,
+  "longitude": -87.71723055
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ea9f"
+  },
+  "name": "RIO GRANDE FRUIT MARKET, INC.",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90991071,
+  "longitude": -87.71438551
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa0"
+  },
+  "name": "RITE PRICE FOOD",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90225069,
+  "longitude": -87.76595092
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa1"
+  },
+  "name": "RIVERSIDE DELI",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91618612,
+  "longitude": -87.67013494
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa2"
+  },
+  "name": "RIVIERA FOODS",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93859128,
+  "longitude": -87.8069148
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa3"
+  },
+  "name": "RJ Liquors",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92406442,
+  "longitude": -87.76766049
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa4"
+  },
+  "name": "RODRIGUEZ FRUITS & VEGETABLE",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84632986,
+  "longitude": -87.7125514
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa5"
+  },
+  "name": "ROMAN BROS 1 INC",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00885647,
+  "longitude": -87.67408037
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa6"
+  },
+  "name": "ROSE-RIDGE FOODS",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70341522,
+  "longitude": -87.62080968
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa7"
+  },
+  "name": "ROYLA BLUE FOODS",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81393768,
+  "longitude": -87.68692201
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa8"
+  },
+  "name": "R & S DISCOUNT FOOD, WINE, & LIQUOR",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93204685,
+  "longitude": -87.68897869
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaa9"
+  },
+  "name": "SAFAH FOOD & LIQUOR INC",
+  "streetAddress": "ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7648964,
+  "longitude": -87.65396483
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaaa"
+  },
+  "name": "SAHAR INTERNATIONAL SUPERMARKET",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96995754,
+  "longitude": -87.70837288
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaab"
+  },
+  "name": "SAM FOOD AND LIQUOR",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00594482,
+  "longitude": -87.66117475
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaac"
+  },
+  "name": "SANABEL GROCERY & BAKERY",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9579834,
+  "longitude": -87.70799592
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaad"
+  },
+  "name": "SAVE-A-LOT  #851",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69954741,
+  "longitude": -87.64275192
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaae"
+  },
+  "name": "SAVE-A-LOT  #852",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.76302237,
+  "longitude": -87.58639016
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaaf"
+  },
+  "name": "SAVE-A-LOT # 854",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75032239,
+  "longitude": -87.64418241
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab0"
+  },
+  "name": "SAVE-A-LOT   #856",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90927457,
+  "longitude": -87.76518779
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab1"
+  },
+  "name": "SAVE-A-LOT  # 858",
+  "streetAddress": "SOUTH CHICAGO",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.74473084,
+  "longitude": -87.55403914
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab2"
+  },
+  "name": "SAVE-A-LOT  #859",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87453731,
+  "longitude": -87.7255969
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab3"
+  },
+  "name": "SAVE-A-LOT #860",
+  "streetAddress": "WEST LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77841597,
+  "longitude": -87.73405757
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab4"
+  },
+  "name": "SAVE-A-LOT  #862",
+  "streetAddress": "KENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80948925,
+  "longitude": -87.60641743
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab5"
+  },
+  "name": "SAVE-A-LOT # 866",
+  "streetAddress": "NORTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85128849,
+  "longitude": -87.72385084
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab6"
+  },
+  "name": "Save-A-Lot #882",
+  "streetAddress": "WASHINGTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78032161,
+  "longitude": -87.61713538
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab7"
+  },
+  "name": "Save-A-Lot #886",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75098379,
+  "longitude": -87.62896145
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab8"
+  },
+  "name": "SAVEWAY FOOD",
+  "streetAddress": "GRAND BOULEVARD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.81648632,
+  "longitude": -87.61919683
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eab9"
+  },
+  "name": "SERRELLI'S FOODS",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9092299,
+  "longitude": -87.78712882
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaba"
+  },
+  "name": "SEVEN ELEVEN",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96152382,
+  "longitude": -87.66603986
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eabb"
+  },
+  "name": "SEVEN NINE ELEVEN FOOD MART, INC.",
+  "streetAddress": "ARCHER HEIGHTS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80462115,
+  "longitude": -87.71990707
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eabc"
+  },
+  "name": "SHOP & SAVE MARKET",
+  "streetAddress": "GARFIELD RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79601962,
+  "longitude": -87.75968337
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eabd"
+  },
+  "name": "SHOP WISE FOOD",
+  "streetAddress": "ROSELAND",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.70717395,
+  "longitude": -87.63140242
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eabe"
+  },
+  "name": "S & K FOOD & LIQUOR, INC.",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75899276,
+  "longitude": -87.56037781
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eabf"
+  },
+  "name": "S L PANTRY & GRILL",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96904667,
+  "longitude": -87.65467406
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac0"
+  },
+  "name": "SOLID GOLD",
+  "streetAddress": "NORTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.86611949,
+  "longitude": -87.72092757
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac1"
+  },
+  "name": "SOUTH SHORE FOOD MARKET INC.",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75878729,
+  "longitude": -87.57599348
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac2"
+  },
+  "name": "S. S. FOOD & LIQUOR",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9263717,
+  "longitude": -87.64080008
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac3"
+  },
+  "name": "STANLEY'S",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91057467,
+  "longitude": -87.66223523
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac4"
+  },
+  "name": "STEVE FOOD & LIQUOR",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78333418,
+  "longitude": -87.65474328
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac5"
+  },
+  "name": "STOP & GO FOOD MART",
+  "streetAddress": "MORGAN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.68957477,
+  "longitude": -87.66272315
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac6"
+  },
+  "name": "S & T PROVISION CO INC",
+  "streetAddress": "MOUNT GREENWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69144591,
+  "longitude": -87.7156731
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac7"
+  },
+  "name": "STRACK & VAN TIL",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92948927,
+  "longitude": -87.68368782
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac8"
+  },
+  "name": "SUN LIQUORS",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99446571,
+  "longitude": -87.65839281
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eac9"
+  },
+  "name": "SUNRISE FOOD AND LIQUORS",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89531476,
+  "longitude": -87.72019984
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaca"
+  },
+  "name": "SUPER DOLLAR AND UP 4, INC.",
+  "streetAddress": "WEST ENGLEWOOD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78685263,
+  "longitude": -87.66461558
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eacb"
+  },
+  "name": "SUPER DOLLAR DISCOUNT",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80669392,
+  "longitude": -87.66477165
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eacc"
+  },
+  "name": "SUPER FOOD & LIQUORS, INC.",
+  "streetAddress": "EDGEWATER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98356392,
+  "longitude": -87.65714629
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eacd"
+  },
+  "name": "SUPER FURNITURE & FOOD MART",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79782259,
+  "longitude": -87.66453688
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eace"
+  },
+  "name": "SUPERIOR NUT & CANDY  CO.I INC.",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.82095749,
+  "longitude": -87.65377832
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eacf"
+  },
+  "name": "SUPER JIM'S",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90214722,
+  "longitude": -87.75523939
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead0"
+  },
+  "name": "SUPERMARKET & TAQUERIA CARO",
+  "streetAddress": "GARFIELD RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80746088,
+  "longitude": -87.74706057
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead1"
+  },
+  "name": "SUPER MAS MARKET",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80876546,
+  "longitude": -87.66117011
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead2"
+  },
+  "name": "SUPERMERCADO ALEX",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83694724,
+  "longitude": -87.72814236
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead3"
+  },
+  "name": "SUPERMERCADO CHAPALA",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.0119758,
+  "longitude": -87.67438406
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead4"
+  },
+  "name": "SUPERMERCADO EL CUBANO INC",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80378232,
+  "longitude": -87.66469533
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead5"
+  },
+  "name": "SUPERMERCADO EL GUERO #10 INC",
+  "streetAddress": "BRIGHTON PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.82058304,
+  "longitude": -87.69342617
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead6"
+  },
+  "name": "SUPERMERCADO EL GUERO NO. 8",
+  "streetAddress": "LOWER WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85202569,
+  "longitude": -87.67841224
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead7"
+  },
+  "name": "SUPER MERCADO EL GUERRO",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80847124,
+  "longitude": -87.66745451
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead8"
+  },
+  "name": "SUPERMERCADO EL MEXICANO",
+  "streetAddress": "ROGERS PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.00358497,
+  "longitude": -87.67235193
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96ead9"
+  },
+  "name": "SUPERMERCADO GELA'S",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84242453,
+  "longitude": -87.71703032
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eada"
+  },
+  "name": "SUPERMERCADO GUADALAJARA #2",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84985753,
+  "longitude": -87.70534348
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eadb"
+  },
+  "name": "SUPERMERCADO GUERRERO",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85190837,
+  "longitude": -87.70287599
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eadc"
+  },
+  "name": "SUPER MERCADO LA CHIQUITA",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84427912,
+  "longitude": -87.71455377
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eadd"
+  },
+  "name": "SUPERMERCADO LA CHIQUTIA # 4",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84353489,
+  "longitude": -87.72438218
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eade"
+  },
+  "name": "SUPERMERCADO LA VILLA",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92427271,
+  "longitude": -87.75211504
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eadf"
+  },
+  "name": "Supermercado Santos",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.83674996,
+  "longitude": -87.72613266
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae0"
+  },
+  "name": "SUPERMERCADO TEPECOA GUERRERO",
+  "streetAddress": "WEST LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77868472,
+  "longitude": -87.71425166
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae1"
+  },
+  "name": "SWEQI FOOD MART, INC.",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90996088,
+  "longitude": -87.72887496
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae2"
+  },
+  "name": "SZYMANSKI BROS, INC",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95314974,
+  "longitude": -87.77751749
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae3"
+  },
+  "name": "TAI NAM CORPORATION",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97221356,
+  "longitude": -87.6596091
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae4"
+  },
+  "name": "TAI WAH GROCERY",
+  "streetAddress": "ARMOUR SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8521272,
+  "longitude": -87.632144
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae5"
+  },
+  "name": "THE CELLAR",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93661313,
+  "longitude": -87.80684752
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae6"
+  },
+  "name": "THE FISH KEG INC",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 42.01939474,
+  "longitude": -87.6860205
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae7"
+  },
+  "name": "THE MARKET PLACE FOODSTORE",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93274396,
+  "longitude": -87.64221885
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae8"
+  },
+  "name": "THE NEIGHBORHOOD STORE",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.74278773,
+  "longitude": -87.65338425
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eae9"
+  },
+  "name": "THE PRODUCE CENTER",
+  "streetAddress": "NORWOOD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.98726964,
+  "longitude": -87.7785157
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaea"
+  },
+  "name": "The Unit",
+  "streetAddress": "SOUTH SHORE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75892232,
+  "longitude": -87.56287604
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaeb"
+  },
+  "name": "THE WAREHOUSE",
+  "streetAddress": "WEST PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.677986,
+  "longitude": -87.63620086
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaec"
+  },
+  "name": "THREE BROTHER",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89810682,
+  "longitude": -87.69937838
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaed"
+  },
+  "name": "THREE R FOOD",
+  "streetAddress": "ALBANY PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.96137095,
+  "longitude": -87.69666935
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaee"
+  },
+  "name": "THREE ROOSTERS, INC.",
+  "streetAddress": "WEST PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.67097177,
+  "longitude": -87.64153305
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaef"
+  },
+  "name": "Three Stars Liquors",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88582299,
+  "longitude": -87.73578781
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf0"
+  },
+  "name": "THRIFTY FOOD",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9655577,
+  "longitude": -87.65355928
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf1"
+  },
+  "name": "TIERRA CALIENTE MARKET",
+  "streetAddress": "WEST TOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90710182,
+  "longitude": -87.66773966
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf2"
+  },
+  "name": "TONY'S FINER FOODS ENTERPRISES, INC.",
+  "streetAddress": "IRVING PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9561262,
+  "longitude": -87.72248283
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf3"
+  },
+  "name": "TONY'S FINER FOODS ENTERPRISES, INC.",
+  "streetAddress": "PORTAGE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93899382,
+  "longitude": -87.74269899
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf4"
+  },
+  "name": "TONY'S FINER FOODS ENTERPRISES, INC.",
+  "streetAddress": "LOGAN SQUARE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92449009,
+  "longitude": -87.71728813
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf5"
+  },
+  "name": "TONY'S FINER FOODS ENTERPRISES, INC.",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92589288,
+  "longitude": -87.76620483
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf6"
+  },
+  "name": "TRADER JOE'S",
+  "streetAddress": "NORTH CENTER",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94996117,
+  "longitude": -87.67567113
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf7"
+  },
+  "name": "TRADER JOE'S EAST",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89340802,
+  "longitude": -87.62643774
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf8"
+  },
+  "name": "TRADER JOE'S EAST",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91442371,
+  "longitude": -87.65462784
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaf9"
+  },
+  "name": "TRATTORIA ISABELLA",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88629367,
+  "longitude": -87.64264392
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eafa"
+  },
+  "name": "TREASURE ISLAND FOODS",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94482827,
+  "longitude": -87.64589349
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eafb"
+  },
+  "name": "TREASURE ISLAND FOODS",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89479837,
+  "longitude": -87.61586665
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eafc"
+  },
+  "name": "TREASURE ISLAND FOODS",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91989968,
+  "longitude": -87.66180554
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eafd"
+  },
+  "name": "TREASURE ISLAND FOODS",
+  "streetAddress": "LINCOLN PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9123118,
+  "longitude": -87.63459886
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eafe"
+  },
+  "name": "TREASURE ISLAND FOODS INC",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90302614,
+  "longitude": -87.63134877
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eaff"
+  },
+  "name": "TWO BLUE FOODS INC",
+  "streetAddress": "PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.71240379,
+  "longitude": -87.60512759
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb00"
+  },
+  "name": "T & Z MEAT",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.93581593,
+  "longitude": -87.7466187
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb01"
+  },
+  "name": "ULTRA FOODS",
+  "streetAddress": "ASHBURN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73527409,
+  "longitude": -87.70351128
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb02"
+  },
+  "name": "VIET HOA PLAZA",
+  "streetAddress": "UPTOWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.97317401,
+  "longitude": -87.65699233
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb03"
+  },
+  "name": "WALGREENS #05034",
+  "streetAddress": "CHICAGO LAWN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77842134,
+  "longitude": -87.70297606
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb04"
+  },
+  "name": "WALGREENS # 05192",
+  "streetAddress": "SOUTH CHICAGO",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72833654,
+  "longitude": -87.55286024
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb05"
+  },
+  "name": "WALGREENS # 06297",
+  "streetAddress": "CLEARING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77795816,
+  "longitude": -87.7722942
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb06"
+  },
+  "name": "WALGREENS #11410",
+  "streetAddress": "HUMBOLDT PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.91071448,
+  "longitude": -87.72621042
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb07"
+  },
+  "name": "WALGREENS #162",
+  "streetAddress": "HYDE PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79529732,
+  "longitude": -87.58782256
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb08"
+  },
+  "name": "WALGREENS #2073",
+  "streetAddress": "FULLER PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.79623488,
+  "longitude": -87.63040492
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb09"
+  },
+  "name": "WALGREENS #226",
+  "streetAddress": "SOUTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.84414469,
+  "longitude": -87.72477825
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb0a"
+  },
+  "name": "WALGREENS #232",
+  "streetAddress": "DOUGLAS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.8326245,
+  "longitude": -87.6168411
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb0b"
+  },
+  "name": "WALGREENS #2923",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.77929761,
+  "longitude": -87.61574988
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb0c"
+  },
+  "name": "WALLY'S INTERNATIONAL MARKET",
+  "streetAddress": "AVONDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94017781,
+  "longitude": -87.72585843
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb0d"
+  },
+  "name": "WALLY'S MARKET INC",
+  "streetAddress": "DUNNING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.95272166,
+  "longitude": -87.79136221
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb0e"
+  },
+  "name": "WALMART",
+  "streetAddress": "PULLMAN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.69631368,
+  "longitude": -87.59663224
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb0f"
+  },
+  "name": "WALMART",
+  "streetAddress": "NEW CITY",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80876829,
+  "longitude": -87.66098821
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb10"
+  },
+  "name": "WASHINGTON GROCERY",
+  "streetAddress": "WEST GARFIELD PARK",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87186361,
+  "longitude": -87.72905737
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb11"
+  },
+  "name": "WAY LOW DISCOUNT FOOD, INC.",
+  "streetAddress": "NORTH LAWNDALE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.85984596,
+  "longitude": -87.70533855
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb12"
+  },
+  "name": "WEST HAVEN MARKET & GRILL",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.88319447,
+  "longitude": -87.68046649
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb13"
+  },
+  "name": "WEST LAWN FOODS",
+  "streetAddress": "WEST ELSDON",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.78660841,
+  "longitude": -87.72313003
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb14"
+  },
+  "name": "WHOLE FOODS MARKET",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.94156586,
+  "longitude": -87.6688604
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb15"
+  },
+  "name": "WHOLE FOODS MARKET",
+  "streetAddress": "NEAR WEST SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.86888971,
+  "longitude": -87.63909893
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb16"
+  },
+  "name": "WHOLE FOODS MARKET",
+  "streetAddress": "FOREST GLEN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99049477,
+  "longitude": -87.74847741
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb17"
+  },
+  "name": "WHOLE FOODS MARKET",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.90939879,
+  "longitude": -87.6530507
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb18"
+  },
+  "name": "WHOLE FOODS MARKET",
+  "streetAddress": "NEAR NORTH SIDE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.89496867,
+  "longitude": -87.62939918
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb19"
+  },
+  "name": "WHOLE FOODS MARKET",
+  "streetAddress": "LAKE VIEW",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.9485198,
+  "longitude": -87.64967012
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb1a"
+  },
+  "name": "WILLIAM'S PRODUCE",
+  "streetAddress": "BELMONT CRAGIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.92189423,
+  "longitude": -87.78339752
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb1b"
+  },
+  "name": "WINDY CITY INC",
+  "streetAddress": "AUSTIN",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.87594436,
+  "longitude": -87.74525023
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb1c"
+  },
+  "name": "W K R B FOOD & LIQUOR",
+  "streetAddress": "CHATHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.72386029,
+  "longitude": -87.60436472
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb1d"
+  },
+  "name": "WORLD FRESH MARKET",
+  "streetAddress": "WEST RIDGE",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.99781793,
+  "longitude": -87.69125189
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb1e"
+  },
+  "name": "W & R FOOD & LIQUOR INC",
+  "streetAddress": "SOUTH CHICAGO",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.7514187,
+  "longitude": -87.58220582
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb1f"
+  },
+  "name": "ZEE DOLLAR AND FOOD",
+  "streetAddress": "GREATER GRAND CROSSING",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.75829332,
+  "longitude": -87.61535411
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb20"
+  },
+  "name": "ZIAD CERTIFIED FOODS",
+  "streetAddress": "GRAND BOULEVARD",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.80932287,
+  "longitude": -87.61333552
+},{
+  "_id": {
+    "$oid": "61e3e826e04901ef7a96eb21"
+  },
+  "name": "Z & S FOOD & LIQUOR",
+  "streetAddress": "AUBURN GRESHAM",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "contact": 1234567890,
+  "city": "Chicago",
+  "latitude": 41.73575698,
+  "longitude": -87.65782823
+},{
+  "_id": {
+    "$oid": "61e693d06f831de7808a4d5b"
+  },
+  "name": "200 LIQUORS",
+  "email": "store@gmail.com",
+  "password": "pass",
+  "streetAddress": "GRAND BOULEVARD",
+  "city": "Chicago",
+  "contact": 1234567890,
+  "latitude": 41.8095486,
+  "longitude": -87.62075229999999
+}]
