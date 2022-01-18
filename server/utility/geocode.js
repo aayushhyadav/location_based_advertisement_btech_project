@@ -1,4 +1,5 @@
 const axios = require("axios")
+const nodeGeocoder = require("node-geocoder")
 const dotenv = require("dotenv")
 const {stringify} = require("nodemon/lib/utils")
 
@@ -19,16 +20,15 @@ const geocodeToCoords = async (address) => {
 }
 
 const geocodeToCity = async (latitude, longitude) => {
-  const url =
-    GEO_URL +
-    latitude.toString() +
-    "," +
-    longitude.toString() +
-    "&key=" +
-    API_KEY
-
-  const res = await axios.get(url)
-  return res.data.results[0].address_components[5].long_name
+  const options = {
+    provider: "google",
+    httpAdapter: "https",
+    apiKey: API_KEY,
+    formatter: "json",
+  }
+  const geocoder = nodeGeocoder(options)
+  const res = await geocoder.reverse({lat: latitude, lon: longitude})
+  return res[0].city
 }
 
 module.exports = {geocodeToCoords, geocodeToCity}
