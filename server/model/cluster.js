@@ -7,6 +7,8 @@ const clusterSchema = new mongoose.Schema({
   },
   poi: [],
   clusters: [],
+  clusterSize: [],
+  epsilon: [],
 })
 
 const Cluster = mongoose.model("Cluster", clusterSchema)
