@@ -1,1533 +1,1633 @@
 [{
   "_id": {
-    "$oid": "61e693d06f831de7808a4d61"
+    "$oid": "61e8edf52866ed2071b3ca96"
   },
   "city": "Chicago",
   "poi": [
     {
-      "$oid": "61e3e826e04901ef7a96e929"
+      "$oid": "61e8ecf88b87a179b79e7182"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e92a"
+      "$oid": "61e8ecf88b87a179b79e7183"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e92b"
+      "$oid": "61e8ecf88b87a179b79e7184"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e92c"
+      "$oid": "61e8ecf88b87a179b79e7185"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e92d"
+      "$oid": "61e8ecf88b87a179b79e7186"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e92e"
+      "$oid": "61e8ecf88b87a179b79e7187"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e92f"
+      "$oid": "61e8ecf88b87a179b79e7188"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e930"
+      "$oid": "61e8ecf88b87a179b79e7189"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e931"
+      "$oid": "61e8ecf88b87a179b79e718a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e932"
+      "$oid": "61e8ecf88b87a179b79e718b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e933"
+      "$oid": "61e8ecf88b87a179b79e718c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e934"
+      "$oid": "61e8ecf88b87a179b79e718d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e935"
+      "$oid": "61e8ecf88b87a179b79e718e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e936"
+      "$oid": "61e8ecf88b87a179b79e718f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e937"
+      "$oid": "61e8ecf88b87a179b79e7190"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e938"
+      "$oid": "61e8ecf88b87a179b79e7191"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e939"
+      "$oid": "61e8ecf88b87a179b79e7192"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e93a"
+      "$oid": "61e8ecf88b87a179b79e7193"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e93b"
+      "$oid": "61e8ecf88b87a179b79e7194"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e93c"
+      "$oid": "61e8ecf88b87a179b79e7195"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e93d"
+      "$oid": "61e8ecf88b87a179b79e7196"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e93e"
+      "$oid": "61e8ecf88b87a179b79e7197"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e93f"
+      "$oid": "61e8ecf88b87a179b79e7198"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e940"
+      "$oid": "61e8ecf88b87a179b79e7199"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e941"
+      "$oid": "61e8ecf88b87a179b79e719a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e942"
+      "$oid": "61e8ecf88b87a179b79e719b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e943"
+      "$oid": "61e8ecf88b87a179b79e719c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e944"
+      "$oid": "61e8ecf88b87a179b79e719d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e945"
+      "$oid": "61e8ecf88b87a179b79e719e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e946"
+      "$oid": "61e8ecf88b87a179b79e719f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e947"
+      "$oid": "61e8ecf88b87a179b79e71a0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e948"
+      "$oid": "61e8ecf88b87a179b79e71a1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e949"
+      "$oid": "61e8ecf88b87a179b79e71a2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e94a"
+      "$oid": "61e8ecf88b87a179b79e71a3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e94b"
+      "$oid": "61e8ecf88b87a179b79e71a4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e94c"
+      "$oid": "61e8ecf88b87a179b79e71a5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e94d"
+      "$oid": "61e8ecf88b87a179b79e71a6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e94e"
+      "$oid": "61e8ecf88b87a179b79e71a7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e94f"
+      "$oid": "61e8ecf88b87a179b79e71a8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e950"
+      "$oid": "61e8ecf88b87a179b79e71a9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e951"
+      "$oid": "61e8ecf88b87a179b79e71aa"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e952"
+      "$oid": "61e8ecf88b87a179b79e71ab"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e953"
+      "$oid": "61e8ecf88b87a179b79e71ac"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e954"
+      "$oid": "61e8ecf88b87a179b79e71ad"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e955"
+      "$oid": "61e8ecf88b87a179b79e71ae"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e956"
+      "$oid": "61e8ecf88b87a179b79e71af"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e957"
+      "$oid": "61e8ecf88b87a179b79e71b0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e958"
+      "$oid": "61e8ecf88b87a179b79e71b1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e959"
+      "$oid": "61e8ecf88b87a179b79e71b2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e95a"
+      "$oid": "61e8ecf88b87a179b79e71b3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e95b"
+      "$oid": "61e8ecf88b87a179b79e71b4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e95c"
+      "$oid": "61e8ecf88b87a179b79e71b5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e95d"
+      "$oid": "61e8ecf88b87a179b79e71b6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e95e"
+      "$oid": "61e8ecf88b87a179b79e71b7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e95f"
+      "$oid": "61e8ecf88b87a179b79e71b8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e960"
+      "$oid": "61e8ecf88b87a179b79e71b9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e961"
+      "$oid": "61e8ecf88b87a179b79e71ba"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e962"
+      "$oid": "61e8ecf88b87a179b79e71bb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e963"
+      "$oid": "61e8ecf88b87a179b79e71bc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e964"
+      "$oid": "61e8ecf88b87a179b79e71bd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e965"
+      "$oid": "61e8ecf88b87a179b79e71be"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e966"
+      "$oid": "61e8ecf88b87a179b79e71bf"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e967"
+      "$oid": "61e8ecf88b87a179b79e71c0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e968"
+      "$oid": "61e8ecf88b87a179b79e71c1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e969"
+      "$oid": "61e8ecf88b87a179b79e71c2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e96a"
+      "$oid": "61e8ecf88b87a179b79e71c3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e96b"
+      "$oid": "61e8ecf88b87a179b79e71c4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e96c"
+      "$oid": "61e8ecf88b87a179b79e71c5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e96d"
+      "$oid": "61e8ecf88b87a179b79e71c6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e96e"
+      "$oid": "61e8ecf88b87a179b79e71c7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e96f"
+      "$oid": "61e8ecf88b87a179b79e71c8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e970"
+      "$oid": "61e8ecf88b87a179b79e71c9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e971"
+      "$oid": "61e8ecf88b87a179b79e71ca"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e972"
+      "$oid": "61e8ecf88b87a179b79e71cb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e973"
+      "$oid": "61e8ecf88b87a179b79e71cc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e974"
+      "$oid": "61e8ecf88b87a179b79e71cd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e975"
+      "$oid": "61e8ecf88b87a179b79e71ce"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e976"
+      "$oid": "61e8ecf88b87a179b79e71cf"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e977"
+      "$oid": "61e8ecf88b87a179b79e71d0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e978"
+      "$oid": "61e8ecf88b87a179b79e71d1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e979"
+      "$oid": "61e8ecf88b87a179b79e71d2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e97a"
+      "$oid": "61e8ecf88b87a179b79e71d3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e97b"
+      "$oid": "61e8ecf88b87a179b79e71d4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e97c"
+      "$oid": "61e8ecf88b87a179b79e71d5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e97d"
+      "$oid": "61e8ecf88b87a179b79e71d6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e97e"
+      "$oid": "61e8ecf88b87a179b79e71d7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e97f"
+      "$oid": "61e8ecf88b87a179b79e71d8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e980"
+      "$oid": "61e8ecf88b87a179b79e71d9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e981"
+      "$oid": "61e8ecf88b87a179b79e71da"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e982"
+      "$oid": "61e8ecf88b87a179b79e71db"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e983"
+      "$oid": "61e8ecf88b87a179b79e71dc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e984"
+      "$oid": "61e8ecf88b87a179b79e71dd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e985"
+      "$oid": "61e8ecf88b87a179b79e71de"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e986"
+      "$oid": "61e8ecf88b87a179b79e71df"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e987"
+      "$oid": "61e8ecf88b87a179b79e71e0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e988"
+      "$oid": "61e8ecf88b87a179b79e71e1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e989"
+      "$oid": "61e8ecf88b87a179b79e71e2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e98a"
+      "$oid": "61e8ecf88b87a179b79e71e3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e98b"
+      "$oid": "61e8ecf88b87a179b79e71e4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e98c"
+      "$oid": "61e8ecf88b87a179b79e71e5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e98d"
+      "$oid": "61e8ecf88b87a179b79e71e6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e98e"
+      "$oid": "61e8ecf88b87a179b79e71e7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e98f"
+      "$oid": "61e8ecf88b87a179b79e71e8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e990"
+      "$oid": "61e8ecf88b87a179b79e71e9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e991"
+      "$oid": "61e8ecf88b87a179b79e71ea"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e992"
+      "$oid": "61e8ecf88b87a179b79e71eb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e993"
+      "$oid": "61e8ecf88b87a179b79e71ec"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e994"
+      "$oid": "61e8ecf88b87a179b79e71ed"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e995"
+      "$oid": "61e8ecf88b87a179b79e71ee"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e996"
+      "$oid": "61e8ecf88b87a179b79e71ef"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e997"
+      "$oid": "61e8ecf88b87a179b79e71f0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e998"
+      "$oid": "61e8ecf88b87a179b79e71f1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e999"
+      "$oid": "61e8ecf88b87a179b79e71f2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e99a"
+      "$oid": "61e8ecf88b87a179b79e71f3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e99b"
+      "$oid": "61e8ecf88b87a179b79e71f4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e99c"
+      "$oid": "61e8ecf88b87a179b79e71f5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e99d"
+      "$oid": "61e8ecf88b87a179b79e71f6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e99e"
+      "$oid": "61e8ecf88b87a179b79e71f7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e99f"
+      "$oid": "61e8ecf88b87a179b79e71f8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a0"
+      "$oid": "61e8ecf88b87a179b79e71f9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a1"
+      "$oid": "61e8ecf88b87a179b79e71fa"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a2"
+      "$oid": "61e8ecf88b87a179b79e71fb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a3"
+      "$oid": "61e8ecf88b87a179b79e71fc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a4"
+      "$oid": "61e8ecf88b87a179b79e71fd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a5"
+      "$oid": "61e8ecf88b87a179b79e71fe"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a6"
+      "$oid": "61e8ecf88b87a179b79e71ff"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a7"
+      "$oid": "61e8ecf88b87a179b79e7200"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a8"
+      "$oid": "61e8ecf88b87a179b79e7201"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9a9"
+      "$oid": "61e8ecf88b87a179b79e7202"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9aa"
+      "$oid": "61e8ecf88b87a179b79e7203"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ab"
+      "$oid": "61e8ecf88b87a179b79e7204"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ac"
+      "$oid": "61e8ecf88b87a179b79e7205"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ad"
+      "$oid": "61e8ecf88b87a179b79e7206"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ae"
+      "$oid": "61e8ecf88b87a179b79e7207"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9af"
+      "$oid": "61e8ecf88b87a179b79e7208"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b0"
+      "$oid": "61e8ecf88b87a179b79e7209"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b1"
+      "$oid": "61e8ecf88b87a179b79e720a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b2"
+      "$oid": "61e8ecf88b87a179b79e720b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b3"
+      "$oid": "61e8ecf88b87a179b79e720c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b4"
+      "$oid": "61e8ecf88b87a179b79e720d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b5"
+      "$oid": "61e8ecf88b87a179b79e720e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b6"
+      "$oid": "61e8ecf88b87a179b79e720f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b7"
+      "$oid": "61e8ecf88b87a179b79e7210"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b8"
+      "$oid": "61e8ecf88b87a179b79e7211"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9b9"
+      "$oid": "61e8ecf88b87a179b79e7212"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ba"
+      "$oid": "61e8ecf88b87a179b79e7213"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9bb"
+      "$oid": "61e8ecf88b87a179b79e7214"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9bc"
+      "$oid": "61e8ecf88b87a179b79e7215"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9bd"
+      "$oid": "61e8ecf88b87a179b79e7216"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9be"
+      "$oid": "61e8ecf88b87a179b79e7217"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9bf"
+      "$oid": "61e8ecf88b87a179b79e7218"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c0"
+      "$oid": "61e8ecf88b87a179b79e7219"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c1"
+      "$oid": "61e8ecf88b87a179b79e721a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c2"
+      "$oid": "61e8ecf88b87a179b79e721b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c3"
+      "$oid": "61e8ecf88b87a179b79e721c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c4"
+      "$oid": "61e8ecf88b87a179b79e721d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c5"
+      "$oid": "61e8ecf88b87a179b79e721e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c6"
+      "$oid": "61e8ecf88b87a179b79e721f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c7"
+      "$oid": "61e8ecf88b87a179b79e7220"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c8"
+      "$oid": "61e8ecf88b87a179b79e7221"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9c9"
+      "$oid": "61e8ecf88b87a179b79e7222"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ca"
+      "$oid": "61e8ecf88b87a179b79e7223"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9cb"
+      "$oid": "61e8ecf88b87a179b79e7224"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9cc"
+      "$oid": "61e8ecf88b87a179b79e7225"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9cd"
+      "$oid": "61e8ecf88b87a179b79e7226"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ce"
+      "$oid": "61e8ecf88b87a179b79e7227"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9cf"
+      "$oid": "61e8ecf88b87a179b79e7228"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d0"
+      "$oid": "61e8ecf88b87a179b79e7229"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d1"
+      "$oid": "61e8ecf88b87a179b79e722a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d2"
+      "$oid": "61e8ecf88b87a179b79e722b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d3"
+      "$oid": "61e8ecf88b87a179b79e722c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d4"
+      "$oid": "61e8ecf88b87a179b79e722d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d5"
+      "$oid": "61e8ecf88b87a179b79e722e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d6"
+      "$oid": "61e8ecf88b87a179b79e722f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d7"
+      "$oid": "61e8ecf88b87a179b79e7230"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d8"
+      "$oid": "61e8ecf88b87a179b79e7231"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9d9"
+      "$oid": "61e8ecf88b87a179b79e7232"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9da"
+      "$oid": "61e8ecf88b87a179b79e7233"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9db"
+      "$oid": "61e8ecf88b87a179b79e7234"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9dc"
+      "$oid": "61e8ecf88b87a179b79e7235"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9dd"
+      "$oid": "61e8ecf88b87a179b79e7236"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9de"
+      "$oid": "61e8ecf88b87a179b79e7237"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9df"
+      "$oid": "61e8ecf88b87a179b79e7238"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e0"
+      "$oid": "61e8ecf88b87a179b79e7239"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e1"
+      "$oid": "61e8ecf88b87a179b79e723a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e2"
+      "$oid": "61e8ecf88b87a179b79e723b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e3"
+      "$oid": "61e8ecf88b87a179b79e723c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e4"
+      "$oid": "61e8ecf88b87a179b79e723d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e5"
+      "$oid": "61e8ecf88b87a179b79e723e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e6"
+      "$oid": "61e8ecf88b87a179b79e723f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e7"
+      "$oid": "61e8ecf88b87a179b79e7240"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e8"
+      "$oid": "61e8ecf88b87a179b79e7241"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9e9"
+      "$oid": "61e8ecf88b87a179b79e7242"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ea"
+      "$oid": "61e8ecf88b87a179b79e7243"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9eb"
+      "$oid": "61e8ecf88b87a179b79e7244"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ec"
+      "$oid": "61e8ecf88b87a179b79e7245"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ed"
+      "$oid": "61e8ecf88b87a179b79e7246"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ee"
+      "$oid": "61e8ecf88b87a179b79e7247"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ef"
+      "$oid": "61e8ecf88b87a179b79e7248"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f0"
+      "$oid": "61e8ecf88b87a179b79e7249"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f1"
+      "$oid": "61e8ecf88b87a179b79e724a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f2"
+      "$oid": "61e8ecf88b87a179b79e724b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f3"
+      "$oid": "61e8ecf88b87a179b79e724c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f4"
+      "$oid": "61e8ecf88b87a179b79e724d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f5"
+      "$oid": "61e8ecf88b87a179b79e724e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f6"
+      "$oid": "61e8ecf88b87a179b79e724f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f7"
+      "$oid": "61e8ecf88b87a179b79e7250"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f8"
+      "$oid": "61e8ecf88b87a179b79e7251"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9f9"
+      "$oid": "61e8ecf88b87a179b79e7252"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9fa"
+      "$oid": "61e8ecf88b87a179b79e7253"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9fb"
+      "$oid": "61e8ecf88b87a179b79e7254"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9fc"
+      "$oid": "61e8ecf88b87a179b79e7255"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9fd"
+      "$oid": "61e8ecf88b87a179b79e7256"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9fe"
+      "$oid": "61e8ecf88b87a179b79e7257"
     },
     {
-      "$oid": "61e3e826e04901ef7a96e9ff"
+      "$oid": "61e8ecf88b87a179b79e7258"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea00"
+      "$oid": "61e8ecf88b87a179b79e7259"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea01"
+      "$oid": "61e8ecf88b87a179b79e725a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea02"
+      "$oid": "61e8ecf88b87a179b79e725b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea03"
+      "$oid": "61e8ecf88b87a179b79e725c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea04"
+      "$oid": "61e8ecf88b87a179b79e725d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea05"
+      "$oid": "61e8ecf88b87a179b79e725e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea06"
+      "$oid": "61e8ecf88b87a179b79e725f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea07"
+      "$oid": "61e8ecf88b87a179b79e7260"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea08"
+      "$oid": "61e8ecf88b87a179b79e7261"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea09"
+      "$oid": "61e8ecf88b87a179b79e7262"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea0a"
+      "$oid": "61e8ecf88b87a179b79e7263"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea0b"
+      "$oid": "61e8ecf88b87a179b79e7264"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea0c"
+      "$oid": "61e8ecf88b87a179b79e7265"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea0d"
+      "$oid": "61e8ecf88b87a179b79e7266"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea0e"
+      "$oid": "61e8ecf88b87a179b79e7267"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea0f"
+      "$oid": "61e8ecf88b87a179b79e7268"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea10"
+      "$oid": "61e8ecf88b87a179b79e7269"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea11"
+      "$oid": "61e8ecf88b87a179b79e726a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea12"
+      "$oid": "61e8ecf88b87a179b79e726b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea13"
+      "$oid": "61e8ecf88b87a179b79e726c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea14"
+      "$oid": "61e8ecf88b87a179b79e726d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea15"
+      "$oid": "61e8ecf88b87a179b79e726e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea16"
+      "$oid": "61e8ecf88b87a179b79e726f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea17"
+      "$oid": "61e8ecf88b87a179b79e7270"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea18"
+      "$oid": "61e8ecf88b87a179b79e7271"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea19"
+      "$oid": "61e8ecf88b87a179b79e7272"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea1a"
+      "$oid": "61e8ecf88b87a179b79e7273"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea1b"
+      "$oid": "61e8ecf88b87a179b79e7274"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea1c"
+      "$oid": "61e8ecf88b87a179b79e7275"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea1d"
+      "$oid": "61e8ecf88b87a179b79e7276"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea1e"
+      "$oid": "61e8ecf88b87a179b79e7277"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea1f"
+      "$oid": "61e8ecf88b87a179b79e7278"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea20"
+      "$oid": "61e8ecf88b87a179b79e7279"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea21"
+      "$oid": "61e8ecf88b87a179b79e727a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea22"
+      "$oid": "61e8ecf88b87a179b79e727b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea23"
+      "$oid": "61e8ecf88b87a179b79e727c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea24"
+      "$oid": "61e8ecf88b87a179b79e727d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea25"
+      "$oid": "61e8ecf88b87a179b79e727e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea26"
+      "$oid": "61e8ecf88b87a179b79e727f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea27"
+      "$oid": "61e8ecf88b87a179b79e7280"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea28"
+      "$oid": "61e8ecf88b87a179b79e7281"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea29"
+      "$oid": "61e8ecf88b87a179b79e7282"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea2a"
+      "$oid": "61e8ecf88b87a179b79e7283"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea2b"
+      "$oid": "61e8ecf88b87a179b79e7284"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea2c"
+      "$oid": "61e8ecf88b87a179b79e7285"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea2d"
+      "$oid": "61e8ecf88b87a179b79e7286"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea2e"
+      "$oid": "61e8ecf88b87a179b79e7287"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea2f"
+      "$oid": "61e8ecf88b87a179b79e7288"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea30"
+      "$oid": "61e8ecf88b87a179b79e7289"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea31"
+      "$oid": "61e8ecf88b87a179b79e728a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea32"
+      "$oid": "61e8ecf88b87a179b79e728b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea33"
+      "$oid": "61e8ecf88b87a179b79e728c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea34"
+      "$oid": "61e8ecf88b87a179b79e728d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea35"
+      "$oid": "61e8ecf88b87a179b79e728e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea36"
+      "$oid": "61e8ecf88b87a179b79e728f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea37"
+      "$oid": "61e8ecf88b87a179b79e7290"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea38"
+      "$oid": "61e8ecf88b87a179b79e7291"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea39"
+      "$oid": "61e8ecf88b87a179b79e7292"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea3a"
+      "$oid": "61e8ecf88b87a179b79e7293"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea3b"
+      "$oid": "61e8ecf88b87a179b79e7294"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea3c"
+      "$oid": "61e8ecf88b87a179b79e7295"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea3d"
+      "$oid": "61e8ecf88b87a179b79e7296"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea3e"
+      "$oid": "61e8ecf88b87a179b79e7297"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea3f"
+      "$oid": "61e8ecf88b87a179b79e7298"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea40"
+      "$oid": "61e8ecf88b87a179b79e7299"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea41"
+      "$oid": "61e8ecf88b87a179b79e729a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea42"
+      "$oid": "61e8ecf88b87a179b79e729b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea43"
+      "$oid": "61e8ecf88b87a179b79e729c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea44"
+      "$oid": "61e8ecf88b87a179b79e729d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea45"
+      "$oid": "61e8ecf88b87a179b79e729e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea46"
+      "$oid": "61e8ecf88b87a179b79e729f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea47"
+      "$oid": "61e8ecf88b87a179b79e72a0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea48"
+      "$oid": "61e8ecf88b87a179b79e72a1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea49"
+      "$oid": "61e8ecf88b87a179b79e72a2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea4a"
+      "$oid": "61e8ecf88b87a179b79e72a3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea4b"
+      "$oid": "61e8ecf88b87a179b79e72a4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea4c"
+      "$oid": "61e8ecf88b87a179b79e72a5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea4d"
+      "$oid": "61e8ecf88b87a179b79e72a6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea4e"
+      "$oid": "61e8ecf88b87a179b79e72a7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea4f"
+      "$oid": "61e8ecf88b87a179b79e72a8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea50"
+      "$oid": "61e8ecf88b87a179b79e72a9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea51"
+      "$oid": "61e8ecf88b87a179b79e72aa"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea52"
+      "$oid": "61e8ecf88b87a179b79e72ab"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea53"
+      "$oid": "61e8ecf88b87a179b79e72ac"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea54"
+      "$oid": "61e8ecf88b87a179b79e72ad"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea55"
+      "$oid": "61e8ecf88b87a179b79e72ae"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea56"
+      "$oid": "61e8ecf88b87a179b79e72af"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea57"
+      "$oid": "61e8ecf88b87a179b79e72b0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea58"
+      "$oid": "61e8ecf88b87a179b79e72b1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea59"
+      "$oid": "61e8ecf88b87a179b79e72b2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea5a"
+      "$oid": "61e8ecf88b87a179b79e72b3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea5b"
+      "$oid": "61e8ecf88b87a179b79e72b4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea5c"
+      "$oid": "61e8ecf88b87a179b79e72b5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea5d"
+      "$oid": "61e8ecf88b87a179b79e72b6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea5e"
+      "$oid": "61e8ecf88b87a179b79e72b7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea5f"
+      "$oid": "61e8ecf88b87a179b79e72b8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea60"
+      "$oid": "61e8ecf88b87a179b79e72b9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea61"
+      "$oid": "61e8ecf88b87a179b79e72ba"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea62"
+      "$oid": "61e8ecf88b87a179b79e72bb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea63"
+      "$oid": "61e8ecf88b87a179b79e72bc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea64"
+      "$oid": "61e8ecf88b87a179b79e72bd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea65"
+      "$oid": "61e8ecf88b87a179b79e72be"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea66"
+      "$oid": "61e8ecf88b87a179b79e72bf"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea67"
+      "$oid": "61e8ecf88b87a179b79e72c0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea68"
+      "$oid": "61e8ecf88b87a179b79e72c1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea69"
+      "$oid": "61e8ecf88b87a179b79e72c2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea6a"
+      "$oid": "61e8ecf88b87a179b79e72c3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea6b"
+      "$oid": "61e8ecf88b87a179b79e72c4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea6c"
+      "$oid": "61e8ecf88b87a179b79e72c5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea6d"
+      "$oid": "61e8ecf88b87a179b79e72c6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea6e"
+      "$oid": "61e8ecf88b87a179b79e72c7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea6f"
+      "$oid": "61e8ecf88b87a179b79e72c8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea70"
+      "$oid": "61e8ecf88b87a179b79e72c9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea71"
+      "$oid": "61e8ecf88b87a179b79e72ca"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea72"
+      "$oid": "61e8ecf88b87a179b79e72cb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea73"
+      "$oid": "61e8ecf88b87a179b79e72cc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea74"
+      "$oid": "61e8ecf88b87a179b79e72cd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea75"
+      "$oid": "61e8ecf88b87a179b79e72ce"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea76"
+      "$oid": "61e8ecf88b87a179b79e72cf"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea77"
+      "$oid": "61e8ecf88b87a179b79e72d0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea78"
+      "$oid": "61e8ecf88b87a179b79e72d1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea79"
+      "$oid": "61e8ecf88b87a179b79e72d2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea7a"
+      "$oid": "61e8ecf88b87a179b79e72d3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea7b"
+      "$oid": "61e8ecf88b87a179b79e72d4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea7c"
+      "$oid": "61e8ecf88b87a179b79e72d5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea7d"
+      "$oid": "61e8ecf88b87a179b79e72d6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea7e"
+      "$oid": "61e8ecf88b87a179b79e72d7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea7f"
+      "$oid": "61e8ecf88b87a179b79e72d8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea80"
+      "$oid": "61e8ecf88b87a179b79e72d9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea81"
+      "$oid": "61e8ecf88b87a179b79e72da"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea82"
+      "$oid": "61e8ecf88b87a179b79e72db"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea83"
+      "$oid": "61e8ecf88b87a179b79e72dc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea84"
+      "$oid": "61e8ecf88b87a179b79e72dd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea85"
+      "$oid": "61e8ecf88b87a179b79e72de"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea86"
+      "$oid": "61e8ecf88b87a179b79e72df"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea87"
+      "$oid": "61e8ecf88b87a179b79e72e0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea88"
+      "$oid": "61e8ecf88b87a179b79e72e1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea89"
+      "$oid": "61e8ecf88b87a179b79e72e2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea8a"
+      "$oid": "61e8ecf88b87a179b79e72e3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea8b"
+      "$oid": "61e8ecf88b87a179b79e72e4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea8c"
+      "$oid": "61e8ecf88b87a179b79e72e5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea8d"
+      "$oid": "61e8ecf88b87a179b79e72e6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea8e"
+      "$oid": "61e8ecf88b87a179b79e72e7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea8f"
+      "$oid": "61e8ecf88b87a179b79e72e8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea90"
+      "$oid": "61e8ecf88b87a179b79e72e9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea91"
+      "$oid": "61e8ecf88b87a179b79e72ea"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea92"
+      "$oid": "61e8ecf88b87a179b79e72eb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea93"
+      "$oid": "61e8ecf88b87a179b79e72ec"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea94"
+      "$oid": "61e8ecf88b87a179b79e72ed"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea95"
+      "$oid": "61e8ecf88b87a179b79e72ee"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea96"
+      "$oid": "61e8ecf88b87a179b79e72ef"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea97"
+      "$oid": "61e8ecf88b87a179b79e72f0"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea98"
+      "$oid": "61e8ecf88b87a179b79e72f1"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea99"
+      "$oid": "61e8ecf88b87a179b79e72f2"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea9a"
+      "$oid": "61e8ecf88b87a179b79e72f3"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea9b"
+      "$oid": "61e8ecf88b87a179b79e72f4"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea9c"
+      "$oid": "61e8ecf88b87a179b79e72f5"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea9d"
+      "$oid": "61e8ecf88b87a179b79e72f6"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea9e"
+      "$oid": "61e8ecf88b87a179b79e72f7"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ea9f"
+      "$oid": "61e8ecf88b87a179b79e72f8"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa0"
+      "$oid": "61e8ecf88b87a179b79e72f9"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa1"
+      "$oid": "61e8ecf88b87a179b79e72fa"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa2"
+      "$oid": "61e8ecf88b87a179b79e72fb"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa3"
+      "$oid": "61e8ecf88b87a179b79e72fc"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa4"
+      "$oid": "61e8ecf88b87a179b79e72fd"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa5"
+      "$oid": "61e8ecf88b87a179b79e72fe"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa6"
+      "$oid": "61e8ecf88b87a179b79e72ff"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa7"
+      "$oid": "61e8ecf88b87a179b79e7300"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa8"
+      "$oid": "61e8ecf88b87a179b79e7301"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaa9"
+      "$oid": "61e8ecf88b87a179b79e7302"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaaa"
+      "$oid": "61e8ecf88b87a179b79e7303"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaab"
+      "$oid": "61e8ecf88b87a179b79e7304"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaac"
+      "$oid": "61e8ecf88b87a179b79e7305"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaad"
+      "$oid": "61e8ecf88b87a179b79e7306"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaae"
+      "$oid": "61e8ecf88b87a179b79e7307"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaaf"
+      "$oid": "61e8ecf88b87a179b79e7308"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab0"
+      "$oid": "61e8ecf88b87a179b79e7309"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab1"
+      "$oid": "61e8ecf88b87a179b79e730a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab2"
+      "$oid": "61e8ecf88b87a179b79e730b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab3"
+      "$oid": "61e8ecf88b87a179b79e730c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab4"
+      "$oid": "61e8ecf88b87a179b79e730d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab5"
+      "$oid": "61e8ecf88b87a179b79e730e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab6"
+      "$oid": "61e8ecf88b87a179b79e730f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab7"
+      "$oid": "61e8ecf88b87a179b79e7310"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab8"
+      "$oid": "61e8ecf88b87a179b79e7311"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eab9"
+      "$oid": "61e8ecf88b87a179b79e7312"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaba"
+      "$oid": "61e8ecf88b87a179b79e7313"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eabb"
+      "$oid": "61e8ecf88b87a179b79e7314"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eabc"
+      "$oid": "61e8ecf88b87a179b79e7315"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eabd"
+      "$oid": "61e8ecf88b87a179b79e7316"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eabe"
+      "$oid": "61e8ecf88b87a179b79e7317"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eabf"
+      "$oid": "61e8ecf88b87a179b79e7318"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac0"
+      "$oid": "61e8ecf88b87a179b79e7319"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac1"
+      "$oid": "61e8ecf88b87a179b79e731a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac2"
+      "$oid": "61e8ecf88b87a179b79e731b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac3"
+      "$oid": "61e8ecf88b87a179b79e731c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac4"
+      "$oid": "61e8ecf88b87a179b79e731d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac5"
+      "$oid": "61e8ecf88b87a179b79e731e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac6"
+      "$oid": "61e8ecf88b87a179b79e731f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac7"
+      "$oid": "61e8ecf88b87a179b79e7320"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac8"
+      "$oid": "61e8ecf88b87a179b79e7321"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eac9"
+      "$oid": "61e8ecf88b87a179b79e7322"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaca"
+      "$oid": "61e8ecf88b87a179b79e7323"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eacb"
+      "$oid": "61e8ecf88b87a179b79e7324"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eacc"
+      "$oid": "61e8ecf88b87a179b79e7325"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eacd"
+      "$oid": "61e8ecf88b87a179b79e7326"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eace"
+      "$oid": "61e8ecf88b87a179b79e7327"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eacf"
+      "$oid": "61e8ecf88b87a179b79e7328"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead0"
+      "$oid": "61e8ecf88b87a179b79e7329"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead1"
+      "$oid": "61e8ecf88b87a179b79e732a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead2"
+      "$oid": "61e8ecf88b87a179b79e732b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead3"
+      "$oid": "61e8ecf88b87a179b79e732c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead4"
+      "$oid": "61e8ecf88b87a179b79e732d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead5"
+      "$oid": "61e8ecf88b87a179b79e732e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead6"
+      "$oid": "61e8ecf88b87a179b79e732f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead7"
+      "$oid": "61e8ecf88b87a179b79e7330"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead8"
+      "$oid": "61e8ecf88b87a179b79e7331"
     },
     {
-      "$oid": "61e3e826e04901ef7a96ead9"
+      "$oid": "61e8ecf88b87a179b79e7332"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eada"
+      "$oid": "61e8ecf88b87a179b79e7333"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eadb"
+      "$oid": "61e8ecf88b87a179b79e7334"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eadc"
+      "$oid": "61e8ecf88b87a179b79e7335"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eadd"
+      "$oid": "61e8ecf88b87a179b79e7336"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eade"
+      "$oid": "61e8ecf88b87a179b79e7337"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eadf"
+      "$oid": "61e8ecf88b87a179b79e7338"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae0"
+      "$oid": "61e8ecf88b87a179b79e7339"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae1"
+      "$oid": "61e8ecf88b87a179b79e733a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae2"
+      "$oid": "61e8ecf88b87a179b79e733b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae3"
+      "$oid": "61e8ecf88b87a179b79e733c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae4"
+      "$oid": "61e8ecf88b87a179b79e733d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae5"
+      "$oid": "61e8ecf88b87a179b79e733e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae6"
+      "$oid": "61e8ecf88b87a179b79e733f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae7"
+      "$oid": "61e8ecf88b87a179b79e7340"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae8"
+      "$oid": "61e8ecf88b87a179b79e7341"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eae9"
+      "$oid": "61e8ecf88b87a179b79e7342"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaea"
+      "$oid": "61e8ecf88b87a179b79e7343"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaeb"
+      "$oid": "61e8ecf88b87a179b79e7344"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaec"
+      "$oid": "61e8ecf88b87a179b79e7345"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaed"
+      "$oid": "61e8ecf88b87a179b79e7346"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaee"
+      "$oid": "61e8ecf88b87a179b79e7347"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaef"
+      "$oid": "61e8ecf88b87a179b79e7348"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf0"
+      "$oid": "61e8ecf88b87a179b79e7349"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf1"
+      "$oid": "61e8ecf88b87a179b79e734a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf2"
+      "$oid": "61e8ecf88b87a179b79e734b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf3"
+      "$oid": "61e8ecf88b87a179b79e734c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf4"
+      "$oid": "61e8ecf88b87a179b79e734d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf5"
+      "$oid": "61e8ecf88b87a179b79e734e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf6"
+      "$oid": "61e8ecf88b87a179b79e734f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf7"
+      "$oid": "61e8ecf88b87a179b79e7350"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf8"
+      "$oid": "61e8ecf88b87a179b79e7351"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaf9"
+      "$oid": "61e8ecf88b87a179b79e7352"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eafa"
+      "$oid": "61e8ecf88b87a179b79e7353"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eafb"
+      "$oid": "61e8ecf88b87a179b79e7354"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eafc"
+      "$oid": "61e8ecf88b87a179b79e7355"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eafd"
+      "$oid": "61e8ecf88b87a179b79e7356"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eafe"
+      "$oid": "61e8ecf88b87a179b79e7357"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eaff"
+      "$oid": "61e8ecf88b87a179b79e7358"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb00"
+      "$oid": "61e8ecf88b87a179b79e7359"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb01"
+      "$oid": "61e8ecf88b87a179b79e735a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb02"
+      "$oid": "61e8ecf88b87a179b79e735b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb03"
+      "$oid": "61e8ecf88b87a179b79e735c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb04"
+      "$oid": "61e8ecf88b87a179b79e735d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb05"
+      "$oid": "61e8ecf88b87a179b79e735e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb06"
+      "$oid": "61e8ecf88b87a179b79e735f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb07"
+      "$oid": "61e8ecf88b87a179b79e7360"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb08"
+      "$oid": "61e8ecf88b87a179b79e7361"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb09"
+      "$oid": "61e8ecf88b87a179b79e7362"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb0a"
+      "$oid": "61e8ecf88b87a179b79e7363"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb0b"
+      "$oid": "61e8ecf88b87a179b79e7364"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb0c"
+      "$oid": "61e8ecf88b87a179b79e7365"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb0d"
+      "$oid": "61e8ecf88b87a179b79e7366"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb0e"
+      "$oid": "61e8ecf88b87a179b79e7367"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb0f"
+      "$oid": "61e8ecf88b87a179b79e7368"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb10"
+      "$oid": "61e8ecf88b87a179b79e7369"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb11"
+      "$oid": "61e8ecf88b87a179b79e736a"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb12"
+      "$oid": "61e8ecf88b87a179b79e736b"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb13"
+      "$oid": "61e8ecf88b87a179b79e736c"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb14"
+      "$oid": "61e8ecf88b87a179b79e736d"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb15"
+      "$oid": "61e8ecf88b87a179b79e736e"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb16"
+      "$oid": "61e8ecf88b87a179b79e736f"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb17"
+      "$oid": "61e8ecf88b87a179b79e7370"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb18"
+      "$oid": "61e8ecf88b87a179b79e7371"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb19"
+      "$oid": "61e8ecf88b87a179b79e7372"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb1a"
+      "$oid": "61e8ecf88b87a179b79e7373"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb1b"
+      "$oid": "61e8ecf88b87a179b79e7374"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb1c"
+      "$oid": "61e8ecf88b87a179b79e7375"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb1d"
+      "$oid": "61e8ecf88b87a179b79e7376"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb1e"
+      "$oid": "61e8ecf88b87a179b79e7377"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb1f"
+      "$oid": "61e8ecf88b87a179b79e7378"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb20"
+      "$oid": "61e8ecf88b87a179b79e7379"
     },
     {
-      "$oid": "61e3e826e04901ef7a96eb21"
+      "$oid": "61e8ecf88b87a179b79e737a"
     },
     {
-      "$oid": "61e693d06f831de7808a4d5b"
+      "$oid": "61e8edf42866ed2071b3ca90"
     }
   ],
   "clusters": [
     {
       "centroid": [
-        41.847931616,
-        -87.64907411080002
+        41.93669356777778,
+        -87.74382745555556
+      ],
+      "cluster": [
+        [
+          41.93146094,
+          -87.74371731
+        ],
+        [
+          41.94238351,
+          -87.72901086
+        ],
+        [
+          41.9458951,
+          -87.75664585
+        ],
+        [
+          41.93881951,
+          -87.7394338
+        ],
+        [
+          41.93154075,
+          -87.73757251
+        ],
+        [
+          41.93164142,
+          -87.74671991
+        ],
+        [
+          41.93904667,
+          -87.74702197
+        ],
+        [
+          41.93876197,
+          -87.76040707
+        ],
+        [
+          41.92447264,
+          -87.73678951
+        ],
+        [
+          41.95355444,
+          -87.74505531
+        ],
+        [
+          41.9458951,
+          -87.75664585
+        ],
+        [
+          41.92703609,
+          -87.75610618
+        ],
+        [
+          41.93930952,
+          -87.71853994
+        ],
+        [
+          41.93140629,
+          -87.74793697
+        ],
+        [
+          41.92427271,
+          -87.75211504
+        ],
+        [
+          41.93899382,
+          -87.74269899
+        ],
+        [
+          41.93581593,
+          -87.7466187
+        ],
+        [
+          41.94017781,
+          -87.72585843
+        ]
+      ],
+      "clusterInd": [
+        21,
+        23,
+        78,
+        81,
+        93,
+        98,
+        110,
+        183,
+        204,
+        242,
+        261,
+        269,
+        286,
+        312,
+        437,
+        458,
+        471,
+        483
+      ]
+    },
+    {
+      "centroid": [
+        41.844348081199996,
+        -87.66945367320002
       ],
       "cluster": [
         [
@@ -1539,8 +1639,16 @@
           -87.65802198
         ],
         [
+          41.85203474,
+          -87.69369691
+        ],
+        [
           41.85216786,
           -87.66897504
+        ],
+        [
+          41.8313499,
+          -87.67584785
         ],
         [
           41.85396788,
@@ -1551,8 +1659,8 @@
           -87.6655669
         ],
         [
-          41.86452119,
-          -87.6393041
+          41.85198384,
+          -87.6857857
         ],
         [
           41.82486062,
@@ -1563,20 +1671,16 @@
           -87.64095553
         ],
         [
-          41.83304474,
-          -87.61461136
+          41.8275839,
+          -87.68245444
         ],
         [
           41.86625418,
           -87.66652414
         ],
         [
-          41.86672435,
-          -87.62596115
-        ],
-        [
-          41.85531767,
-          -87.62372652
+          41.82838364,
+          -87.69462017
         ],
         [
           41.85745275,
@@ -1599,8 +1703,8 @@
           -87.6694196
         ],
         [
-          41.8542653,
-          -87.63218951
+          41.84702046,
+          -87.68319955
         ],
         [
           41.83107494,
@@ -1611,522 +1715,54 @@
           -87.66423536
         ],
         [
-          41.85665718,
-          -87.63875335
+          41.85210065,
+          -87.68905111
+        ],
+        [
+          41.85210065,
+          -87.68905111
         ],
         [
           41.82095749,
           -87.65377832
         ],
         [
-          41.8521272,
-          -87.632144
-        ],
-        [
-          41.8326245,
-          -87.6168411
-        ],
-        [
-          41.86888971,
-          -87.63909893
+          41.85202569,
+          -87.67841224
         ]
       ],
       "clusterInd": [
         38,
         49,
+        79,
         100,
+        102,
         125,
         131,
-        135,
+        159,
         179,
         200,
-        213,
+        226,
         227,
-        228,
-        252,
+        253,
         262,
         275,
         281,
         285,
         289,
-        299,
+        304,
         342,
         345,
-        372,
+        354,
+        355,
         421,
-        443,
-        481,
-        492
-      ],
-      "epsilon": 1
+        429
+      ]
     },
     {
       "centroid": [
-        41.75150299642856,
-        -87.58097119678571
-      ],
-      "cluster": [
-        [
-          41.77430588,
-          -87.60564803
-        ],
-        [
-          41.75274564,
-          -87.58752349
-        ],
-        [
-          41.73691535,
-          -87.59365662
-        ],
-        [
-          41.72246624,
-          -87.56667305
-        ],
-        [
-          41.72624035,
-          -87.57429226
-        ],
-        [
-          41.73714625,
-          -87.57708099
-        ],
-        [
-          41.75121793,
-          -87.60140141
-        ],
-        [
-          41.75097268,
-          -87.61695788
-        ],
-        [
-          41.76599,
-          -87.57378734
-        ],
-        [
-          41.75200539,
-          -87.55401542
-        ],
-        [
-          41.72997787,
-          -87.55038259
-        ],
-        [
-          41.79141057,
-          -87.58953263
-        ],
-        [
-          41.75780566,
-          -87.58626826
-        ],
-        [
-          41.7222632,
-          -87.58291763
-        ],
-        [
-          41.75655031,
-          -87.60548285
-        ],
-        [
-          41.73273359,
-          -87.55117278
-        ],
-        [
-          41.80287978,
-          -87.58184369
-        ],
-        [
-          41.73679546,
-          -87.58627251
-        ],
-        [
-          41.76302237,
-          -87.58639016
-        ],
-        [
-          41.74473084,
-          -87.55403914
-        ],
-        [
-          41.75899276,
-          -87.56037781
-        ],
-        [
-          41.75878729,
-          -87.57599348
-        ],
-        [
-          41.75892232,
-          -87.56287604
-        ],
-        [
-          41.72833654,
-          -87.55286024
-        ],
-        [
-          41.79529732,
-          -87.58782256
-        ],
-        [
-          41.72386029,
-          -87.60436472
-        ],
-        [
-          41.7514187,
-          -87.58220582
-        ],
-        [
-          41.75829332,
-          -87.61535411
-        ]
-      ],
-      "clusterInd": [
-        12,
-        18,
-        37,
-        40,
-        48,
-        51,
-        52,
-        105,
-        134,
-        162,
-        166,
-        194,
-        212,
-        215,
-        288,
-        291,
-        296,
-        358,
-        389,
-        392,
-        405,
-        408,
-        449,
-        475,
-        478,
-        499,
-        501,
-        502
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.69033198291668,
-        -87.63625550291665
-      ],
-      "cluster": [
-        [
-          41.68496064,
-          -87.64302231
-        ],
-        [
-          41.70713532,
-          -87.61824173
-        ],
-        [
-          41.70647332,
-          -87.66935499
-        ],
-        [
-          41.6840632,
-          -87.61874297
-        ],
-        [
-          41.69723821,
-          -87.6814748
-        ],
-        [
-          41.6849558,
-          -87.65972583
-        ],
-        [
-          41.69781792,
-          -87.621011
-        ],
-        [
-          41.6916792,
-          -87.67977917
-        ],
-        [
-          41.70724797,
-          -87.62005636
-        ],
-        [
-          41.68033221,
-          -87.66258468
-        ],
-        [
-          41.65176106,
-          -87.60936661
-        ],
-        [
-          41.65197282,
-          -87.61708374
-        ],
-        [
-          41.70721814,
-          -87.62775156
-        ],
-        [
-          41.69231963,
-          -87.65466321
-        ],
-        [
-          41.69515316,
-          -87.62782024
-        ],
-        [
-          41.6702524,
-          -87.62227196
-        ],
-        [
-          41.70341522,
-          -87.62080968
-        ],
-        [
-          41.69954741,
-          -87.64275192
-        ],
-        [
-          41.70717395,
-          -87.63140242
-        ],
-        [
-          41.68957477,
-          -87.66272315
-        ],
-        [
-          41.677986,
-          -87.63620086
-        ],
-        [
-          41.67097177,
-          -87.64153305
-        ],
-        [
-          41.71240379,
-          -87.60512759
-        ],
-        [
-          41.69631368,
-          -87.59663224
-        ]
-      ],
-      "clusterInd": [
-        35,
-        75,
-        77,
-        80,
-        117,
-        124,
-        148,
-        161,
-        197,
-        211,
-        250,
-        255,
-        256,
-        300,
-        322,
-        323,
-        381,
-        388,
-        404,
-        412,
-        450,
-        453,
-        470,
-        485
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.746518019999996,
-        -87.66437713970589
-      ],
-      "cluster": [
-        [
-          41.75967458,
-          -87.64442024
-        ],
-        [
-          41.75032112,
-          -87.65818905
-        ],
-        [
-          41.76489418,
-          -87.6573078
-        ],
-        [
-          41.75499092,
-          -87.66340416
-        ],
-        [
-          41.73029727,
-          -87.64330909
-        ],
-        [
-          41.75603509,
-          -87.68285832
-        ],
-        [
-          41.72132699,
-          -87.66253366
-        ],
-        [
-          41.75068744,
-          -87.63338093
-        ],
-        [
-          41.73558907,
-          -87.66995173
-        ],
-        [
-          41.77946116,
-          -87.67143667
-        ],
-        [
-          41.70035527,
-          -87.7205409
-        ],
-        [
-          41.73590841,
-          -87.64742288
-        ],
-        [
-          41.73638005,
-          -87.62750922
-        ],
-        [
-          41.76579077,
-          -87.66396689
-        ],
-        [
-          41.7631812,
-          -87.64421502
-        ],
-        [
-          41.70631284,
-          -87.69976712
-        ],
-        [
-          41.72294122,
-          -87.66286287
-        ],
-        [
-          41.73614513,
-          -87.62691784
-        ],
-        [
-          41.7561627,
-          -87.6528196
-        ],
-        [
-          41.75283042,
-          -87.64395052
-        ],
-        [
-          41.76836584,
-          -87.68830091
-        ],
-        [
-          41.76471714,
-          -87.68875098
-        ],
-        [
-          41.76469612,
-          -87.67359278
-        ],
-        [
-          41.73574485,
-          -87.65871771
-        ],
-        [
-          41.7644956,
-          -87.68338427
-        ],
-        [
-          41.76451168,
-          -87.68798666
-        ],
-        [
-          41.76832833,
-          -87.67381938
-        ],
-        [
-          41.7648964,
-          -87.65396483
-        ],
-        [
-          41.75032239,
-          -87.64418241
-        ],
-        [
-          41.75098379,
-          -87.62896145
-        ],
-        [
-          41.69144591,
-          -87.7156731
-        ],
-        [
-          41.74278773,
-          -87.65338425
-        ],
-        [
-          41.73527409,
-          -87.70351128
-        ],
-        [
-          41.73575698,
-          -87.65782823
-        ]
-      ],
-      "clusterInd": [
-        4,
-        5,
-        8,
-        17,
-        39,
-        46,
-        59,
-        126,
-        129,
-        146,
-        163,
-        167,
-        169,
-        170,
-        172,
-        216,
-        219,
-        220,
-        290,
-        327,
-        333,
-        344,
-        357,
-        359,
-        364,
-        366,
-        370,
-        384,
-        390,
-        398,
-        413,
-        447,
-        472,
-        504
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.9648041278788,
-        -87.65893743909092
+        41.95964761771429,
+        -87.65656154428574
       ],
       "cluster": [
         [
@@ -2134,8 +1770,16 @@
           -87.64364976
         ],
         [
+          41.92920982,
+          -87.64874627
+        ],
+        [
           41.96378896,
           -87.65660649
+        ],
+        [
+          41.92496618,
+          -87.63992602
         ],
         [
           41.97117118,
@@ -2154,10 +1798,6 @@
           -87.65483978
         ],
         [
-          41.98197138,
-          -87.66832103
-        ],
-        [
           41.9731613,
           -87.65783318
         ],
@@ -2168,10 +1808,6 @@
         [
           41.96001995,
           -87.64690603
-        ],
-        [
-          41.98218988,
-          -87.66865163
         ],
         [
           41.97942825,
@@ -2230,12 +1866,20 @@
           -87.65467406
         ],
         [
+          41.9263717,
+          -87.64080008
+        ],
+        [
           41.98356392,
           -87.65714629
         ],
         [
           41.97221356,
           -87.6596091
+        ],
+        [
+          41.93274396,
+          -87.64221885
         ],
         [
           41.9655577,
@@ -2264,16 +1908,16 @@
       ],
       "clusterInd": [
         0,
+        6,
         41,
+        67,
         71,
         112,
         115,
         141,
-        150,
         198,
         199,
         203,
-        231,
         234,
         235,
         236,
@@ -2288,21 +1932,557 @@
         348,
         401,
         406,
+        409,
         419,
         442,
+        446,
         455,
         461,
         465,
         473,
         491,
         496
-      ],
-      "epsilon": 1
+      ]
     },
     {
       "centroid": [
-        41.96660354814815,
-        -87.71417523444443
+        41.77766513600001,
+        -87.74436854600002
+      ],
+      "cluster": [
+        [
+          41.79638049,
+          -87.75734757
+        ],
+        [
+          41.74091107,
+          -87.74092286
+        ],
+        [
+          41.77849291,
+          -87.72732752
+        ],
+        [
+          41.79435485,
+          -87.77052715
+        ],
+        [
+          41.77138332,
+          -87.73095337
+        ],
+        [
+          41.77841597,
+          -87.73405757
+        ],
+        [
+          41.79601962,
+          -87.75968337
+        ],
+        [
+          41.80746088,
+          -87.74706057
+        ],
+        [
+          41.73527409,
+          -87.70351128
+        ],
+        [
+          41.77795816,
+          -87.7722942
+        ]
+      ],
+      "clusterInd": [
+        28,
+        32,
+        127,
+        241,
+        254,
+        394,
+        403,
+        423,
+        472,
+        476
+      ]
+    },
+    {
+      "centroid": [
+        41.719977147600005,
+        -87.56317455200002
+      ],
+      "cluster": [
+        [
+          41.73691535,
+          -87.59365662
+        ],
+        [
+          41.72246624,
+          -87.56667305
+        ],
+        [
+          41.70366236,
+          -87.52571243
+        ],
+        [
+          41.72624035,
+          -87.57429226
+        ],
+        [
+          41.73714625,
+          -87.57708099
+        ],
+        [
+          41.65296461,
+          -87.54729865
+        ],
+        [
+          41.71349784,
+          -87.55073311
+        ],
+        [
+          41.75200539,
+          -87.55401542
+        ],
+        [
+          41.72997787,
+          -87.55038259
+        ],
+        [
+          41.65518859,
+          -87.54699942
+        ],
+        [
+          41.7222632,
+          -87.58291763
+        ],
+        [
+          41.7028061,
+          -87.52770401
+        ],
+        [
+          41.69981485,
+          -87.53542689
+        ],
+        [
+          41.71891216,
+          -87.5511743
+        ],
+        [
+          41.73273359,
+          -87.55117278
+        ],
+        [
+          41.68105956,
+          -87.53936754
+        ],
+        [
+          41.73679546,
+          -87.58627251
+        ],
+        [
+          41.74473084,
+          -87.55403914
+        ],
+        [
+          41.75899276,
+          -87.56037781
+        ],
+        [
+          41.75892232,
+          -87.56287604
+        ],
+        [
+          41.71240379,
+          -87.60512759
+        ],
+        [
+          41.72833654,
+          -87.55286024
+        ],
+        [
+          41.69631368,
+          -87.59663224
+        ],
+        [
+          41.72386029,
+          -87.60436472
+        ],
+        [
+          41.7514187,
+          -87.58220582
+        ]
+      ],
+      "clusterInd": [
+        37,
+        40,
+        44,
+        48,
+        51,
+        63,
+        114,
+        162,
+        166,
+        196,
+        215,
+        217,
+        263,
+        264,
+        291,
+        353,
+        358,
+        392,
+        405,
+        449,
+        470,
+        475,
+        485,
+        499,
+        501
+      ]
+    },
+    {
+      "centroid": [
+        41.79911500500001,
+        -87.70564670428571
+      ],
+      "cluster": [
+        [
+          41.81391431,
+          -87.72366494
+        ],
+        [
+          41.80804727,
+          -87.70411882
+        ],
+        [
+          41.80344571,
+          -87.70398627
+        ],
+        [
+          41.81145154,
+          -87.72357465
+        ],
+        [
+          41.80096928,
+          -87.6887221
+        ],
+        [
+          41.79381183,
+          -87.6931506
+        ],
+        [
+          41.7860244,
+          -87.71060478
+        ],
+        [
+          41.79925704,
+          -87.70357471
+        ],
+        [
+          41.79799187,
+          -87.72344374
+        ],
+        [
+          41.79358918,
+          -87.70594578
+        ],
+        [
+          41.77881858,
+          -87.70590358
+        ],
+        [
+          41.815432,
+          -87.69579779
+        ],
+        [
+          41.80140003,
+          -87.72604374
+        ],
+        [
+          41.79619759,
+          -87.72339188
+        ],
+        [
+          41.81530069,
+          -87.7020416
+        ],
+        [
+          41.81757931,
+          -87.69832059
+        ],
+        [
+          41.81000148,
+          -87.69318135
+        ],
+        [
+          41.78637634,
+          -87.68877651
+        ],
+        [
+          41.81577112,
+          -87.6893859
+        ],
+        [
+          41.77893156,
+          -87.69841709
+        ],
+        [
+          41.77894012,
+          -87.71186857
+        ],
+        [
+          41.78911255,
+          -87.70357973
+        ],
+        [
+          41.81393768,
+          -87.68692201
+        ],
+        [
+          41.80462115,
+          -87.71990707
+        ],
+        [
+          41.82058304,
+          -87.69342617
+        ],
+        [
+          41.77868472,
+          -87.71425166
+        ],
+        [
+          41.77842134,
+          -87.70297606
+        ],
+        [
+          41.78660841,
+          -87.72313003
+        ]
+      ],
+      "clusterInd": [
+        1,
+        2,
+        14,
+        27,
+        88,
+        89,
+        90,
+        95,
+        96,
+        120,
+        165,
+        181,
+        184,
+        218,
+        266,
+        273,
+        284,
+        307,
+        315,
+        328,
+        336,
+        356,
+        382,
+        402,
+        428,
+        439,
+        474,
+        490
+      ]
+    },
+    {
+      "centroid": [
+        41.88321913833333,
+        -87.63227043805553
+      ],
+      "cluster": [
+        [
+          41.88340212,
+          -87.65572529
+        ],
+        [
+          41.87716213,
+          -87.64736429
+        ],
+        [
+          41.89121012,
+          -87.65556024
+        ],
+        [
+          41.88633942,
+          -87.62083615
+        ],
+        [
+          41.8714442,
+          -87.62607513
+        ],
+        [
+          41.90198255,
+          -87.6292631
+        ],
+        [
+          41.88946533,
+          -87.62650927
+        ],
+        [
+          41.86452119,
+          -87.6393041
+        ],
+        [
+          41.90388396,
+          -87.6394372
+        ],
+        [
+          41.89168984,
+          -87.62044413
+        ],
+        [
+          41.88181563,
+          -87.64721472
+        ],
+        [
+          41.89566277,
+          -87.63722072
+        ],
+        [
+          41.88475054,
+          -87.61560396
+        ],
+        [
+          41.83304474,
+          -87.61461136
+        ],
+        [
+          41.90426523,
+          -87.63160329
+        ],
+        [
+          41.86672435,
+          -87.62596115
+        ],
+        [
+          41.89242137,
+          -87.62823487
+        ],
+        [
+          41.85531767,
+          -87.62372652
+        ],
+        [
+          41.89894854,
+          -87.62397499
+        ],
+        [
+          41.8542653,
+          -87.63218951
+        ],
+        [
+          41.90084859,
+          -87.64325554
+        ],
+        [
+          41.89086429,
+          -87.63632919
+        ],
+        [
+          41.88617728,
+          -87.6155996
+        ],
+        [
+          41.88558042,
+          -87.65895691
+        ],
+        [
+          41.8988782,
+          -87.62811115
+        ],
+        [
+          41.91011794,
+          -87.63149089
+        ],
+        [
+          41.85665718,
+          -87.63875335
+        ],
+        [
+          41.8521272,
+          -87.632144
+        ],
+        [
+          41.89340802,
+          -87.62643774
+        ],
+        [
+          41.88629367,
+          -87.64264392
+        ],
+        [
+          41.89479837,
+          -87.61586665
+        ],
+        [
+          41.9123118,
+          -87.63459886
+        ],
+        [
+          41.90302614,
+          -87.63134877
+        ],
+        [
+          41.8326245,
+          -87.6168411
+        ],
+        [
+          41.86888971,
+          -87.63909893
+        ],
+        [
+          41.89496867,
+          -87.62939918
+        ]
+      ],
+      "clusterInd": [
+        56,
+        60,
+        64,
+        69,
+        73,
+        108,
+        111,
+        135,
+        136,
+        138,
+        139,
+        157,
+        192,
+        213,
+        221,
+        228,
+        230,
+        252,
+        274,
+        299,
+        319,
+        340,
+        346,
+        350,
+        362,
+        363,
+        372,
+        443,
+        462,
+        464,
+        466,
+        468,
+        469,
+        481,
+        492,
+        495
+      ]
+    },
+    {
+      "centroid": [
+        41.96607950185185,
+        -87.71291024481478
       ],
       "cluster": [
         [
@@ -2312,6 +2492,10 @@
         [
           41.9611941,
           -87.68996697
+        ],
+        [
+          41.93940519,
+          -87.71090059
         ],
         [
           41.96762916,
@@ -2366,10 +2550,6 @@
           -87.70823011
         ],
         [
-          41.95355444,
-          -87.74505531
-        ],
-        [
           41.96844525,
           -87.71941658
         ],
@@ -2417,6 +2597,7 @@
       "clusterInd": [
         26,
         29,
+        47,
         53,
         97,
         104,
@@ -2430,7 +2611,6 @@
         210,
         233,
         237,
-        242,
         247,
         282,
         298,
@@ -2442,979 +2622,7 @@
         452,
         457,
         493
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.84006851846153,
-        -87.70482787179485
-      ],
-      "cluster": [
-        [
-          41.83811415,
-          -87.70499446
-        ],
-        [
-          41.85203474,
-          -87.69369691
-        ],
-        [
-          41.84436673,
-          -87.70789805
-        ],
-        [
-          41.8313499,
-          -87.67584785
-        ],
-        [
-          41.84468733,
-          -87.70210294
-        ],
-        [
-          41.85198384,
-          -87.6857857
-        ],
-        [
-          41.84093316,
-          -87.70722418
-        ],
-        [
-          41.84030863,
-          -87.73310706
-        ],
-        [
-          41.815432,
-          -87.69579779
-        ],
-        [
-          41.8275839,
-          -87.68245444
-        ],
-        [
-          41.82838364,
-          -87.69462017
-        ],
-        [
-          41.81530069,
-          -87.7020416
-        ],
-        [
-          41.84438799,
-          -87.7064971
-        ],
-        [
-          41.8440328,
-          -87.73243286
-        ],
-        [
-          41.8462971,
-          -87.71591643
-        ],
-        [
-          41.81757931,
-          -87.69832059
-        ],
-        [
-          41.85883397,
-          -87.71786719
-        ],
-        [
-          41.81000148,
-          -87.69318135
-        ],
-        [
-          41.87087764,
-          -87.69616688
-        ],
-        [
-          41.84702046,
-          -87.68319955
-        ],
-        [
-          41.84039654,
-          -87.73067501
-        ],
-        [
-          41.81577112,
-          -87.6893859
-        ],
-        [
-          41.85210065,
-          -87.68905111
-        ],
-        [
-          41.85210065,
-          -87.68905111
-        ],
-        [
-          41.83893675,
-          -87.71723055
-        ],
-        [
-          41.84632986,
-          -87.7125514
-        ],
-        [
-          41.81393768,
-          -87.68692201
-        ],
-        [
-          41.85128849,
-          -87.72385084
-        ],
-        [
-          41.83694724,
-          -87.72814236
-        ],
-        [
-          41.82058304,
-          -87.69342617
-        ],
-        [
-          41.85202569,
-          -87.67841224
-        ],
-        [
-          41.84242453,
-          -87.71703032
-        ],
-        [
-          41.84985753,
-          -87.70534348
-        ],
-        [
-          41.85190837,
-          -87.70287599
-        ],
-        [
-          41.84427912,
-          -87.71455377
-        ],
-        [
-          41.84353489,
-          -87.72438218
-        ],
-        [
-          41.83674996,
-          -87.72613266
-        ],
-        [
-          41.84414469,
-          -87.72477825
-        ],
-        [
-          41.85984596,
-          -87.70533855
-        ]
-      ],
-      "clusterInd": [
-        15,
-        79,
-        101,
-        102,
-        152,
-        159,
-        178,
-        180,
-        181,
-        226,
-        253,
-        266,
-        267,
-        270,
-        271,
-        273,
-        279,
-        284,
-        297,
-        304,
-        308,
-        315,
-        354,
-        355,
-        373,
-        379,
-        382,
-        396,
-        425,
-        428,
-        429,
-        432,
-        433,
-        434,
-        435,
-        436,
-        438,
-        480,
-        488
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.79328752434782,
-        -87.63851902695649
-      ],
-      "cluster": [
-        [
-          41.76783128,
-          -87.62476594
-        ],
-        [
-          41.77992005,
-          -87.64092551
-        ],
-        [
-          41.76088087,
-          -87.62466578
-        ],
-        [
-          41.80874139,
-          -87.66291163
-        ],
-        [
-          41.7958708,
-          -87.64534412
-        ],
-        [
-          41.79048002,
-          -87.66434507
-        ],
-        [
-          41.78015196,
-          -87.60577752
-        ],
-        [
-          41.79355436,
-          -87.66463755
-        ],
-        [
-          41.79612897,
-          -87.6514349
-        ],
-        [
-          41.77961467,
-          -87.66407749
-        ],
-        [
-          41.80962977,
-          -87.64570757
-        ],
-        [
-          41.80966853,
-          -87.6751157
-        ],
-        [
-          41.77966465,
-          -87.61425094
-        ],
-        [
-          41.80112781,
-          -87.67408034
-        ],
-        [
-          41.76457363,
-          -87.62473997
-        ],
-        [
-          41.77956458,
-          -87.64997484
-        ],
-        [
-          41.7945591,
-          -87.64531343
-        ],
-        [
-          41.7995768,
-          -87.59551292
-        ],
-        [
-          41.81056568,
-          -87.66517052
-        ],
-        [
-          41.81702977,
-          -87.60685792
-        ],
-        [
-          41.79432493,
-          -87.61852061
-        ],
-        [
-          41.78703907,
-          -87.63781273
-        ],
-        [
-          41.7689263,
-          -87.644656
-        ],
-        [
-          41.80157684,
-          -87.65378847
-        ],
-        [
-          41.80977273,
-          -87.59496089
-        ],
-        [
-          41.7729559,
-          -87.61005781
-        ],
-        [
-          41.77412895,
-          -87.649646
-        ],
-        [
-          41.78942986,
-          -87.61784034
-        ],
-        [
-          41.81686515,
-          -87.59868884
-        ],
-        [
-          41.77295752,
-          -87.6099734
-        ],
-        [
-          41.77892241,
-          -87.66435268
-        ],
-        [
-          41.80948925,
-          -87.60641743
-        ],
-        [
-          41.78032161,
-          -87.61713538
-        ],
-        [
-          41.81648632,
-          -87.61919683
-        ],
-        [
-          41.78333418,
-          -87.65474328
-        ],
-        [
-          41.78685263,
-          -87.66461558
-        ],
-        [
-          41.80669392,
-          -87.66477165
-        ],
-        [
-          41.79782259,
-          -87.66453688
-        ],
-        [
-          41.80876546,
-          -87.66117011
-        ],
-        [
-          41.80378232,
-          -87.66469533
-        ],
-        [
-          41.80847124,
-          -87.66745451
-        ],
-        [
-          41.79623488,
-          -87.63040492
-        ],
-        [
-          41.77929761,
-          -87.61574988
-        ],
-        [
-          41.80876829,
-          -87.66098821
-        ],
-        [
-          41.80932287,
-          -87.61333552
-        ],
-        [
-          41.8095486,
-          -87.62075229999999
-        ]
-      ],
-      "clusterInd": [
-        10,
-        33,
-        43,
-        45,
-        50,
-        74,
-        116,
-        121,
-        155,
-        158,
-        160,
-        171,
-        175,
-        185,
-        187,
-        188,
-        193,
-        201,
-        205,
-        206,
-        209,
-        245,
-        257,
-        258,
-        305,
-        310,
-        314,
-        318,
-        338,
-        341,
-        369,
-        395,
-        397,
-        399,
-        411,
-        417,
-        418,
-        420,
-        424,
-        427,
-        430,
-        479,
-        482,
-        486,
-        503,
-        505
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.88403914142857,
-        -87.72988511095237
-      ],
-      "cluster": [
-        [
-          41.89103355,
-          -87.75530965
-        ],
-        [
-          41.88065941,
-          -87.72219367
-        ],
-        [
-          41.89561531,
-          -87.70670533
-        ],
-        [
-          41.86731565,
-          -87.76559794
-        ],
-        [
-          41.87235004,
-          -87.70327264
-        ],
-        [
-          41.88029609,
-          -87.7524942
-        ],
-        [
-          41.90247367,
-          -87.71681747
-        ],
-        [
-          41.880505,
-          -87.73512285
-        ],
-        [
-          41.90258387,
-          -87.72361925
-        ],
-        [
-          41.88058389,
-          -87.74705294
-        ],
-        [
-          41.87542375,
-          -87.70582036
-        ],
-        [
-          41.90263376,
-          -87.71793124
-        ],
-        [
-          41.88049945,
-          -87.73559596
-        ],
-        [
-          41.8805392,
-          -87.73221604
-        ],
-        [
-          41.90270681,
-          -87.73101807
-        ],
-        [
-          41.87453731,
-          -87.7255969
-        ],
-        [
-          41.86611949,
-          -87.72092757
-        ],
-        [
-          41.89531476,
-          -87.72019984
-        ],
-        [
-          41.88582299,
-          -87.73578781
-        ],
-        [
-          41.87186361,
-          -87.72905737
-        ],
-        [
-          41.87594436,
-          -87.74525023
-        ]
-      ],
-      "clusterInd": [
-        9,
-        19,
-        20,
-        36,
-        66,
-        68,
-        94,
-        118,
-        306,
-        311,
-        329,
-        330,
-        337,
-        351,
-        360,
-        393,
-        407,
-        416,
-        454,
-        487,
-        498
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.899672093999996,
-        -87.6367597402857
-      ],
-      "cluster": [
-        [
-          41.92920982,
-          -87.64874627
-        ],
-        [
-          41.91442371,
-          -87.65462784
-        ],
-        [
-          41.88340212,
-          -87.65572529
-        ],
-        [
-          41.87716213,
-          -87.64736429
-        ],
-        [
-          41.89121012,
-          -87.65556024
-        ],
-        [
-          41.92496618,
-          -87.63992602
-        ],
-        [
-          41.88633942,
-          -87.62083615
-        ],
-        [
-          41.8714442,
-          -87.62607513
-        ],
-        [
-          41.90198255,
-          -87.6292631
-        ],
-        [
-          41.88946533,
-          -87.62650927
-        ],
-        [
-          41.90388396,
-          -87.6394372
-        ],
-        [
-          41.89168984,
-          -87.62044413
-        ],
-        [
-          41.88181563,
-          -87.64721472
-        ],
-        [
-          41.92526828,
-          -87.65348756
-        ],
-        [
-          41.89566277,
-          -87.63722072
-        ],
-        [
-          41.88475054,
-          -87.61560396
-        ],
-        [
-          41.90426523,
-          -87.63160329
-        ],
-        [
-          41.89242137,
-          -87.62823487
-        ],
-        [
-          41.89894854,
-          -87.62397499
-        ],
-        [
-          41.90084859,
-          -87.64325554
-        ],
-        [
-          41.89086429,
-          -87.63632919
-        ],
-        [
-          41.88617728,
-          -87.6155996
-        ],
-        [
-          41.88558042,
-          -87.65895691
-        ],
-        [
-          41.8988782,
-          -87.62811115
-        ],
-        [
-          41.91011794,
-          -87.63149089
-        ],
-        [
-          41.9263717,
-          -87.64080008
-        ],
-        [
-          41.93274396,
-          -87.64221885
-        ],
-        [
-          41.89340802,
-          -87.62643774
-        ],
-        [
-          41.91442371,
-          -87.65462784
-        ],
-        [
-          41.88629367,
-          -87.64264392
-        ],
-        [
-          41.89479837,
-          -87.61586665
-        ],
-        [
-          41.9123118,
-          -87.63459886
-        ],
-        [
-          41.90302614,
-          -87.63134877
-        ],
-        [
-          41.90939879,
-          -87.6530507
-        ],
-        [
-          41.89496867,
-          -87.62939918
-        ]
-      ],
-      "clusterInd": [
-        6,
-        16,
-        56,
-        60,
-        64,
-        67,
-        69,
-        73,
-        108,
-        111,
-        136,
-        138,
-        139,
-        144,
-        157,
-        192,
-        221,
-        230,
-        274,
-        319,
-        340,
-        346,
-        350,
-        362,
-        363,
-        409,
-        446,
-        462,
-        463,
-        464,
-        466,
-        468,
-        469,
-        494,
-        495
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.69098825875,
-        -87.54055204375001
-      ],
-      "cluster": [
-        [
-          41.70366236,
-          -87.52571243
-        ],
-        [
-          41.65296461,
-          -87.54729865
-        ],
-        [
-          41.71349784,
-          -87.55073311
-        ],
-        [
-          41.65518859,
-          -87.54699942
-        ],
-        [
-          41.7028061,
-          -87.52770401
-        ],
-        [
-          41.69981485,
-          -87.53542689
-        ],
-        [
-          41.71891216,
-          -87.5511743
-        ],
-        [
-          41.68105956,
-          -87.53936754
-        ]
-      ],
-      "clusterInd": [
-        44,
-        63,
-        114,
-        196,
-        217,
-        263,
-        264,
-        353
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.920391975312484,
-        -87.76782997874999
-      ],
-      "cluster": [
-        [
-          41.9311354,
-          -87.76861213
-        ],
-        [
-          41.90216644,
-          -87.75318235
-        ],
-        [
-          41.93756465,
-          -87.78605437
-        ],
-        [
-          41.93215768,
-          -87.7664246
-        ],
-        [
-          41.9237604,
-          -87.78874776
-        ],
-        [
-          41.92059646,
-          -87.77519268
-        ],
-        [
-          41.92059646,
-          -87.77519268
-        ],
-        [
-          41.9458951,
-          -87.75664585
-        ],
-        [
-          41.92418915,
-          -87.75822974
-        ],
-        [
-          41.9197749,
-          -87.77072653
-        ],
-        [
-          41.90950515,
-          -87.74695994
-        ],
-        [
-          41.92764768,
-          -87.76626652
-        ],
-        [
-          41.93876197,
-          -87.76040707
-        ],
-        [
-          41.91706775,
-          -87.75604133
-        ],
-        [
-          41.92379935,
-          -87.77063324
-        ],
-        [
-          41.92629696,
-          -87.78569482
-        ],
-        [
-          41.92399183,
-          -87.77228911
-        ],
-        [
-          41.9458951,
-          -87.75664585
-        ],
-        [
-          41.92703609,
-          -87.75610618
-        ],
-        [
-          41.9236807,
-          -87.79867613
-        ],
-        [
-          41.9312882,
-          -87.77324145
-        ],
-        [
-          41.88004498,
-          -87.77049338
-        ],
-        [
-          41.9096149,
-          -87.75547797
-        ],
-        [
-          41.89104929,
-          -87.75973284
-        ],
-        [
-          41.90225069,
-          -87.76595092
-        ],
-        [
-          41.92406442,
-          -87.76766049
-        ],
-        [
-          41.90927457,
-          -87.76518779
-        ],
-        [
-          41.9092299,
-          -87.78712882
-        ],
-        [
-          41.90214722,
-          -87.75523939
-        ],
-        [
-          41.92427271,
-          -87.75211504
-        ],
-        [
-          41.92589288,
-          -87.76620483
-        ],
-        [
-          41.92189423,
-          -87.78339752
-        ]
-      ],
-      "clusterInd": [
-        3,
-        7,
-        11,
-        25,
-        42,
-        54,
-        55,
-        78,
-        82,
-        92,
-        168,
-        177,
-        183,
-        186,
-        208,
-        229,
-        246,
-        261,
-        269,
-        280,
-        287,
-        295,
-        332,
-        334,
-        375,
-        378,
-        391,
-        400,
-        422,
-        437,
-        460,
-        497
-      ],
-      "epsilon": 1
+      ]
     },
     {
       "centroid": [
@@ -3539,15 +2747,168 @@
         444,
         448,
         484
-      ],
-      "epsilon": 1
+      ]
     },
     {
       "centroid": [
-        41.91634245225807,
-        -87.6831205635484
+        41.91191541214285,
+        -87.723908455
       ],
       "cluster": [
+        [
+          41.89561531,
+          -87.70670533
+        ],
+        [
+          41.92820785,
+          -87.72815856
+        ],
+        [
+          41.91756242,
+          -87.71175511
+        ],
+        [
+          41.92462832,
+          -87.72395332
+        ],
+        [
+          41.90992525,
+          -87.73155722
+        ],
+        [
+          41.9343144,
+          -87.715772
+        ],
+        [
+          41.90247367,
+          -87.71681747
+        ],
+        [
+          41.91693444,
+          -87.73638715
+        ],
+        [
+          41.91889126,
+          -87.72646532
+        ],
+        [
+          41.91009267,
+          -87.71757535
+        ],
+        [
+          41.91000804,
+          -87.72543846
+        ],
+        [
+          41.90950515,
+          -87.74695994
+        ],
+        [
+          41.93185278,
+          -87.71290125
+        ],
+        [
+          41.92834525,
+          -87.7186709
+        ],
+        [
+          41.917,
+          -87.73098926
+        ],
+        [
+          41.90991975,
+          -87.73197126
+        ],
+        [
+          41.91004942,
+          -87.72145808
+        ],
+        [
+          41.90505945,
+          -87.72395138
+        ],
+        [
+          41.90258387,
+          -87.72361925
+        ],
+        [
+          41.90263376,
+          -87.71793124
+        ],
+        [
+          41.90270681,
+          -87.73101807
+        ],
+        [
+          41.90910776,
+          -87.72663415
+        ],
+        [
+          41.90991071,
+          -87.71438551
+        ],
+        [
+          41.89531476,
+          -87.72019984
+        ],
+        [
+          41.90996088,
+          -87.72887496
+        ],
+        [
+          41.88582299,
+          -87.73578781
+        ],
+        [
+          41.92449009,
+          -87.71728813
+        ],
+        [
+          41.91071448,
+          -87.72621042
+        ]
+      ],
+      "clusterInd": [
+        20,
+        24,
+        57,
+        85,
+        86,
+        91,
+        94,
+        99,
+        128,
+        147,
+        151,
+        168,
+        174,
+        202,
+        265,
+        272,
+        277,
+        302,
+        306,
+        330,
+        360,
+        368,
+        374,
+        416,
+        440,
+        454,
+        459,
+        477
+      ]
+    },
+    {
+      "centroid": [
+        41.916289443142865,
+        -87.67978661171429
+      ],
+      "cluster": [
+        [
+          41.91442371,
+          -87.65462784
+        ],
         [
           41.928695,
           -87.67419508
@@ -3587,6 +2948,10 @@
         [
           41.9427472,
           -87.68835432
+        ],
+        [
+          41.92526828,
+          -87.65348756
         ],
         [
           41.89578523,
@@ -3665,15 +3030,24 @@
           -87.66773966
         ],
         [
+          41.91442371,
+          -87.65462784
+        ],
+        [
           41.91989968,
           -87.66180554
         ],
         [
           41.88319447,
           -87.68046649
+        ],
+        [
+          41.90939879,
+          -87.6530507
         ]
       ],
       "clusterInd": [
+        16,
         22,
         31,
         76,
@@ -3684,6 +3058,7 @@
         122,
         142,
         143,
+        144,
         145,
         153,
         154,
@@ -3703,15 +3078,346 @@
         414,
         451,
         456,
+        463,
         467,
-        489
-      ],
-      "epsilon": 1
+        489,
+        494
+      ]
     },
     {
       "centroid": [
-        42.00296213885714,
-        -87.68020702542854
+        41.780219033428565,
+        -87.60702724028567
+      ],
+      "cluster": [
+        [
+          41.76783128,
+          -87.62476594
+        ],
+        [
+          41.77430588,
+          -87.60564803
+        ],
+        [
+          41.75274564,
+          -87.58752349
+        ],
+        [
+          41.76088087,
+          -87.62466578
+        ],
+        [
+          41.75121793,
+          -87.60140141
+        ],
+        [
+          41.75097268,
+          -87.61695788
+        ],
+        [
+          41.78015196,
+          -87.60577752
+        ],
+        [
+          41.75068744,
+          -87.63338093
+        ],
+        [
+          41.76599,
+          -87.57378734
+        ],
+        [
+          41.77966465,
+          -87.61425094
+        ],
+        [
+          41.76457363,
+          -87.62473997
+        ],
+        [
+          41.79141057,
+          -87.58953263
+        ],
+        [
+          41.7995768,
+          -87.59551292
+        ],
+        [
+          41.81702977,
+          -87.60685792
+        ],
+        [
+          41.79432493,
+          -87.61852061
+        ],
+        [
+          41.75780566,
+          -87.58626826
+        ],
+        [
+          41.75655031,
+          -87.60548285
+        ],
+        [
+          41.80287978,
+          -87.58184369
+        ],
+        [
+          41.80977273,
+          -87.59496089
+        ],
+        [
+          41.7729559,
+          -87.61005781
+        ],
+        [
+          41.78942986,
+          -87.61784034
+        ],
+        [
+          41.81686515,
+          -87.59868884
+        ],
+        [
+          41.77295752,
+          -87.6099734
+        ],
+        [
+          41.76302237,
+          -87.58639016
+        ],
+        [
+          41.80948925,
+          -87.60641743
+        ],
+        [
+          41.78032161,
+          -87.61713538
+        ],
+        [
+          41.75098379,
+          -87.62896145
+        ],
+        [
+          41.81648632,
+          -87.61919683
+        ],
+        [
+          41.75878729,
+          -87.57599348
+        ],
+        [
+          41.79529732,
+          -87.58782256
+        ],
+        [
+          41.79623488,
+          -87.63040492
+        ],
+        [
+          41.77929761,
+          -87.61574988
+        ],
+        [
+          41.75829332,
+          -87.61535411
+        ],
+        [
+          41.80932287,
+          -87.61333552
+        ],
+        [
+          41.8095486,
+          -87.62075229999999
+        ]
+      ],
+      "clusterInd": [
+        10,
+        12,
+        18,
+        43,
+        52,
+        105,
+        116,
+        126,
+        134,
+        175,
+        187,
+        194,
+        201,
+        206,
+        209,
+        212,
+        288,
+        296,
+        305,
+        310,
+        318,
+        338,
+        341,
+        389,
+        395,
+        397,
+        398,
+        399,
+        408,
+        478,
+        479,
+        482,
+        502,
+        503,
+        505
+      ]
+    },
+    {
+      "centroid": [
+        41.91674854222222,
+        -87.77025885333335
+      ],
+      "cluster": [
+        [
+          41.9311354,
+          -87.76861213
+        ],
+        [
+          41.90216644,
+          -87.75318235
+        ],
+        [
+          41.89103355,
+          -87.75530965
+        ],
+        [
+          41.93756465,
+          -87.78605437
+        ],
+        [
+          41.93215768,
+          -87.7664246
+        ],
+        [
+          41.9237604,
+          -87.78874776
+        ],
+        [
+          41.92059646,
+          -87.77519268
+        ],
+        [
+          41.92059646,
+          -87.77519268
+        ],
+        [
+          41.92418915,
+          -87.75822974
+        ],
+        [
+          41.9197749,
+          -87.77072653
+        ],
+        [
+          41.92764768,
+          -87.76626652
+        ],
+        [
+          41.91706775,
+          -87.75604133
+        ],
+        [
+          41.92379935,
+          -87.77063324
+        ],
+        [
+          41.92629696,
+          -87.78569482
+        ],
+        [
+          41.92399183,
+          -87.77228911
+        ],
+        [
+          41.9236807,
+          -87.79867613
+        ],
+        [
+          41.9312882,
+          -87.77324145
+        ],
+        [
+          41.88004498,
+          -87.77049338
+        ],
+        [
+          41.9096149,
+          -87.75547797
+        ],
+        [
+          41.89104929,
+          -87.75973284
+        ],
+        [
+          41.90225069,
+          -87.76595092
+        ],
+        [
+          41.92406442,
+          -87.76766049
+        ],
+        [
+          41.90927457,
+          -87.76518779
+        ],
+        [
+          41.9092299,
+          -87.78712882
+        ],
+        [
+          41.90214722,
+          -87.75523939
+        ],
+        [
+          41.92589288,
+          -87.76620483
+        ],
+        [
+          41.92189423,
+          -87.78339752
+        ]
+      ],
+      "clusterInd": [
+        3,
+        7,
+        9,
+        11,
+        25,
+        42,
+        54,
+        55,
+        82,
+        92,
+        177,
+        186,
+        208,
+        229,
+        246,
+        280,
+        287,
+        295,
+        332,
+        334,
+        375,
+        378,
+        391,
+        400,
+        422,
+        460,
+        497
+      ]
+    },
+    {
+      "centroid": [
+        42.00183340864864,
+        -87.67957347432431
       ],
       "cluster": [
         [
@@ -3763,6 +3469,10 @@
           -87.66839729
         ],
         [
+          41.98197138,
+          -87.66832103
+        ],
+        [
           41.99766696,
           -87.68721346
         ],
@@ -3773,6 +3483,10 @@
         [
           41.99823739,
           -87.6661711
+        ],
+        [
+          41.98218988,
+          -87.66865163
         ],
         [
           41.9977219,
@@ -3868,9 +3582,11 @@
         133,
         137,
         149,
+        150,
         164,
         176,
         189,
+        231,
         251,
         259,
         278,
@@ -3891,356 +3607,643 @@
         431,
         445,
         500
-      ],
-      "epsilon": 1
+      ]
     },
     {
       "centroid": [
-        41.7898443459375,
-        -87.71895089812499
+        41.70139570911764,
+        -87.64886489970591
       ],
       "cluster": [
         [
-          41.81391431,
-          -87.72366494
+          41.68496064,
+          -87.64302231
         ],
         [
-          41.80804727,
-          -87.70411882
+          41.73029727,
+          -87.64330909
         ],
         [
-          41.80344571,
-          -87.70398627
+          41.72132699,
+          -87.66253366
         ],
         [
-          41.81145154,
-          -87.72357465
+          41.70713532,
+          -87.61824173
         ],
         [
-          41.79638049,
-          -87.75734757
+          41.70647332,
+          -87.66935499
         ],
         [
-          41.74091107,
-          -87.74092286
+          41.6840632,
+          -87.61874297
+        ],
+        [
+          41.69723821,
+          -87.6814748
+        ],
+        [
+          41.6849558,
+          -87.65972583
+        ],
+        [
+          41.73558907,
+          -87.66995173
+        ],
+        [
+          41.69781792,
+          -87.621011
+        ],
+        [
+          41.6916792,
+          -87.67977917
+        ],
+        [
+          41.70035527,
+          -87.7205409
+        ],
+        [
+          41.73590841,
+          -87.64742288
+        ],
+        [
+          41.73638005,
+          -87.62750922
+        ],
+        [
+          41.70724797,
+          -87.62005636
+        ],
+        [
+          41.68033221,
+          -87.66258468
+        ],
+        [
+          41.70631284,
+          -87.69976712
+        ],
+        [
+          41.72294122,
+          -87.66286287
+        ],
+        [
+          41.73614513,
+          -87.62691784
+        ],
+        [
+          41.65176106,
+          -87.60936661
+        ],
+        [
+          41.65197282,
+          -87.61708374
+        ],
+        [
+          41.70721814,
+          -87.62775156
+        ],
+        [
+          41.69231963,
+          -87.65466321
+        ],
+        [
+          41.69515316,
+          -87.62782024
+        ],
+        [
+          41.6702524,
+          -87.62227196
+        ],
+        [
+          41.73574485,
+          -87.65871771
+        ],
+        [
+          41.70341522,
+          -87.62080968
+        ],
+        [
+          41.69954741,
+          -87.64275192
+        ],
+        [
+          41.70717395,
+          -87.63140242
+        ],
+        [
+          41.68957477,
+          -87.66272315
+        ],
+        [
+          41.69144591,
+          -87.7156731
+        ],
+        [
+          41.677986,
+          -87.63620086
+        ],
+        [
+          41.67097177,
+          -87.64153305
+        ],
+        [
+          41.73575698,
+          -87.65782823
+        ]
+      ],
+      "clusterInd": [
+        35,
+        39,
+        59,
+        75,
+        77,
+        80,
+        117,
+        124,
+        129,
+        148,
+        161,
+        163,
+        167,
+        169,
+        197,
+        211,
+        216,
+        219,
+        220,
+        250,
+        255,
+        256,
+        300,
+        322,
+        323,
+        359,
+        381,
+        388,
+        404,
+        412,
+        413,
+        450,
+        453,
+        504
+      ]
+    },
+    {
+      "centroid": [
+        41.85683668555555,
+        -87.72159142166666
+      ],
+      "cluster": [
+        [
+          41.83811415,
+          -87.70499446
+        ],
+        [
+          41.88065941,
+          -87.72219367
+        ],
+        [
+          41.86731565,
+          -87.76559794
+        ],
+        [
+          41.87235004,
+          -87.70327264
+        ],
+        [
+          41.88029609,
+          -87.7524942
+        ],
+        [
+          41.84436673,
+          -87.70789805
+        ],
+        [
+          41.880505,
+          -87.73512285
+        ],
+        [
+          41.84468733,
+          -87.70210294
+        ],
+        [
+          41.84093316,
+          -87.70722418
+        ],
+        [
+          41.84030863,
+          -87.73310706
+        ],
+        [
+          41.84438799,
+          -87.7064971
+        ],
+        [
+          41.8440328,
+          -87.73243286
+        ],
+        [
+          41.8462971,
+          -87.71591643
+        ],
+        [
+          41.85883397,
+          -87.71786719
+        ],
+        [
+          41.87087764,
+          -87.69616688
+        ],
+        [
+          41.84039654,
+          -87.73067501
+        ],
+        [
+          41.88058389,
+          -87.74705294
+        ],
+        [
+          41.87542375,
+          -87.70582036
+        ],
+        [
+          41.88049945,
+          -87.73559596
+        ],
+        [
+          41.8805392,
+          -87.73221604
+        ],
+        [
+          41.83893675,
+          -87.71723055
+        ],
+        [
+          41.84632986,
+          -87.7125514
+        ],
+        [
+          41.87453731,
+          -87.7255969
+        ],
+        [
+          41.85128849,
+          -87.72385084
+        ],
+        [
+          41.86611949,
+          -87.72092757
+        ],
+        [
+          41.83694724,
+          -87.72814236
+        ],
+        [
+          41.84242453,
+          -87.71703032
+        ],
+        [
+          41.84985753,
+          -87.70534348
+        ],
+        [
+          41.85190837,
+          -87.70287599
+        ],
+        [
+          41.84427912,
+          -87.71455377
+        ],
+        [
+          41.84353489,
+          -87.72438218
+        ],
+        [
+          41.83674996,
+          -87.72613266
+        ],
+        [
+          41.84414469,
+          -87.72477825
+        ],
+        [
+          41.87186361,
+          -87.72905737
+        ],
+        [
+          41.85984596,
+          -87.70533855
+        ],
+        [
+          41.87594436,
+          -87.74525023
+        ]
+      ],
+      "clusterInd": [
+        15,
+        19,
+        36,
+        66,
+        68,
+        101,
+        118,
+        152,
+        178,
+        180,
+        267,
+        270,
+        271,
+        279,
+        297,
+        308,
+        311,
+        329,
+        337,
+        351,
+        373,
+        379,
+        393,
+        396,
+        407,
+        425,
+        432,
+        433,
+        434,
+        435,
+        436,
+        438,
+        480,
+        487,
+        488,
+        498
+      ]
+    },
+    {
+      "centroid": [
+        41.7805957506383,
+        -87.6616899380851
+      ],
+      "cluster": [
+        [
+          41.75967458,
+          -87.64442024
+        ],
+        [
+          41.75032112,
+          -87.65818905
+        ],
+        [
+          41.76489418,
+          -87.6573078
+        ],
+        [
+          41.75499092,
+          -87.66340416
+        ],
+        [
+          41.77992005,
+          -87.64092551
         ],
         [
           41.78396584,
           -87.68362338
         ],
         [
-          41.80096928,
-          -87.6887221
+          41.80874139,
+          -87.66291163
         ],
         [
-          41.79381183,
-          -87.6931506
+          41.75603509,
+          -87.68285832
         ],
         [
-          41.7860244,
-          -87.71060478
+          41.7958708,
+          -87.64534412
         ],
         [
-          41.79925704,
-          -87.70357471
+          41.79048002,
+          -87.66434507
         ],
         [
-          41.79799187,
-          -87.72344374
+          41.79355436,
+          -87.66463755
         ],
         [
-          41.79358918,
-          -87.70594578
+          41.77946116,
+          -87.67143667
         ],
         [
-          41.77849291,
-          -87.72732752
+          41.79612897,
+          -87.6514349
         ],
         [
-          41.77881858,
-          -87.70590358
+          41.77961467,
+          -87.66407749
         ],
         [
-          41.80140003,
-          -87.72604374
+          41.80962977,
+          -87.64570757
+        ],
+        [
+          41.76579077,
+          -87.66396689
+        ],
+        [
+          41.80966853,
+          -87.6751157
+        ],
+        [
+          41.7631812,
+          -87.64421502
+        ],
+        [
+          41.80112781,
+          -87.67408034
+        ],
+        [
+          41.77956458,
+          -87.64997484
+        ],
+        [
+          41.7945591,
+          -87.64531343
+        ],
+        [
+          41.81056568,
+          -87.66517052
         ],
         [
           41.78306114,
           -87.68359887
         ],
         [
-          41.79619759,
-          -87.72339188
+          41.78703907,
+          -87.63781273
         ],
         [
-          41.79435485,
-          -87.77052715
+          41.7689263,
+          -87.644656
         ],
         [
-          41.77138332,
-          -87.73095337
+          41.80157684,
+          -87.65378847
         ],
         [
-          41.78637634,
-          -87.68877651
+          41.7561627,
+          -87.6528196
         ],
         [
-          41.77893156,
-          -87.69841709
+          41.77412895,
+          -87.649646
         ],
         [
-          41.77894012,
-          -87.71186857
+          41.75283042,
+          -87.64395052
         ],
         [
-          41.78911255,
-          -87.70357973
+          41.76836584,
+          -87.68830091
         ],
         [
-          41.77841597,
-          -87.73405757
+          41.76471714,
+          -87.68875098
         ],
         [
-          41.80462115,
-          -87.71990707
+          41.76469612,
+          -87.67359278
         ],
         [
-          41.79601962,
-          -87.75968337
+          41.7644956,
+          -87.68338427
         ],
         [
-          41.80746088,
-          -87.74706057
+          41.76451168,
+          -87.68798666
         ],
         [
-          41.77868472,
-          -87.71425166
+          41.77892241,
+          -87.66435268
         ],
         [
-          41.77842134,
-          -87.70297606
+          41.76832833,
+          -87.67381938
         ],
         [
-          41.77795816,
-          -87.7722942
+          41.7648964,
+          -87.65396483
         ],
         [
-          41.78660841,
-          -87.72313003
+          41.75032239,
+          -87.64418241
+        ],
+        [
+          41.78333418,
+          -87.65474328
+        ],
+        [
+          41.78685263,
+          -87.66461558
+        ],
+        [
+          41.80669392,
+          -87.66477165
+        ],
+        [
+          41.79782259,
+          -87.66453688
+        ],
+        [
+          41.80876546,
+          -87.66117011
+        ],
+        [
+          41.80378232,
+          -87.66469533
+        ],
+        [
+          41.80847124,
+          -87.66745451
+        ],
+        [
+          41.74278773,
+          -87.65338425
+        ],
+        [
+          41.80876829,
+          -87.66098821
         ]
       ],
       "clusterInd": [
-        1,
-        2,
-        14,
-        27,
-        28,
-        32,
+        4,
+        5,
+        8,
+        17,
+        33,
         34,
-        88,
-        89,
-        90,
-        95,
-        96,
-        120,
-        127,
-        165,
-        184,
+        45,
+        46,
+        50,
+        74,
+        121,
+        146,
+        155,
+        158,
+        160,
+        170,
+        171,
+        172,
+        185,
+        188,
+        193,
+        205,
         214,
-        218,
-        241,
-        254,
-        307,
-        328,
-        336,
-        356,
-        394,
-        402,
-        403,
-        423,
-        439,
-        474,
-        476,
-        490
-      ],
-      "epsilon": 1
-    },
-    {
-      "centroid": [
-        41.92428634000001,
-        -87.72858234181817
-      ],
-      "cluster": [
-        [
-          41.93146094,
-          -87.74371731
-        ],
-        [
-          41.94238351,
-          -87.72901086
-        ],
-        [
-          41.92820785,
-          -87.72815856
-        ],
-        [
-          41.93940519,
-          -87.71090059
-        ],
-        [
-          41.91756242,
-          -87.71175511
-        ],
-        [
-          41.93881951,
-          -87.7394338
-        ],
-        [
-          41.92462832,
-          -87.72395332
-        ],
-        [
-          41.90992525,
-          -87.73155722
-        ],
-        [
-          41.9343144,
-          -87.715772
-        ],
-        [
-          41.93154075,
-          -87.73757251
-        ],
-        [
-          41.93164142,
-          -87.74671991
-        ],
-        [
-          41.91693444,
-          -87.73638715
-        ],
-        [
-          41.93904667,
-          -87.74702197
-        ],
-        [
-          41.91889126,
-          -87.72646532
-        ],
-        [
-          41.91009267,
-          -87.71757535
-        ],
-        [
-          41.91000804,
-          -87.72543846
-        ],
-        [
-          41.93185278,
-          -87.71290125
-        ],
-        [
-          41.92834525,
-          -87.7186709
-        ],
-        [
-          41.92447264,
-          -87.73678951
-        ],
-        [
-          41.917,
-          -87.73098926
-        ],
-        [
-          41.90991975,
-          -87.73197126
-        ],
-        [
-          41.91004942,
-          -87.72145808
-        ],
-        [
-          41.93930952,
-          -87.71853994
-        ],
-        [
-          41.90505945,
-          -87.72395138
-        ],
-        [
-          41.93140629,
-          -87.74793697
-        ],
-        [
-          41.90910776,
-          -87.72663415
-        ],
-        [
-          41.90991071,
-          -87.71438551
-        ],
-        [
-          41.90996088,
-          -87.72887496
-        ],
-        [
-          41.93899382,
-          -87.74269899
-        ],
-        [
-          41.92449009,
-          -87.71728813
-        ],
-        [
-          41.93581593,
-          -87.7466187
-        ],
-        [
-          41.91071448,
-          -87.72621042
-        ],
-        [
-          41.94017781,
-          -87.72585843
-        ]
-      ],
-      "clusterInd": [
-        21,
-        23,
-        24,
-        47,
-        57,
-        81,
-        85,
-        86,
-        91,
-        93,
-        98,
-        99,
-        110,
-        128,
-        147,
-        151,
-        174,
-        202,
-        204,
-        265,
-        272,
-        277,
-        286,
-        302,
-        312,
-        368,
-        374,
-        440,
-        458,
-        459,
-        471,
-        477,
-        483
-      ],
-      "epsilon": 1
+        245,
+        257,
+        258,
+        290,
+        314,
+        327,
+        333,
+        344,
+        357,
+        364,
+        366,
+        369,
+        370,
+        384,
+        390,
+        411,
+        417,
+        418,
+        420,
+        424,
+        427,
+        430,
+        447,
+        486
+      ]
     }
   ],
+  "clusterSize": [
+    1.0951384831295556,
+    1.803901024688667,
+    1.7335578650361647,
+    2.6728879869005433,
+    3.116545677765168,
+    1.7170822760874864,
+    2.1219591594230813,
+    1.3508429538873241,
+    2.653052287279455,
+    1.2307627177313483,
+    1.857570382208775,
+    2.519995001600627,
+    1.612503123402543,
+    1.4290041700579228,
+    3.1487127581010643,
+    2.05899683070127,
+    2.2739426096044677
+  ],
+  "epsilon": [],
   "__v": 1
 }]
