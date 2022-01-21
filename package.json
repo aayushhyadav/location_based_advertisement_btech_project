@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --timeout 100000 tests.test.js",
     "dev": "nodemon ./index.js"
   },
   "repository": {
@@ -24,7 +24,10 @@
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.2",
     "node-geocoder": "^3.28.0",
-    "node-kmeans": "^1.1.9",
+    "node-kmeans": "^1.1.9"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.4",
     "nodemon": "^2.0.15"
   }
 }

@@ -14,11 +14,18 @@ router.get("/checkProximity", async (req, res) => {
     const city = await geocode.geocodeToCity(latitude, longitude)
     const cityClusters = await cluster.Cluster.findOne({city: city})
 
+    if (city !== "Chicago") {
+      res.status(200).send({
+        storeNames: [],
+        advertisement: [],
+      })
+      return
+    }
+
     var closestClusters = [],
       storeNames = [],
       advertisement = [],
       storeIds = [],
-      epsilon = 0.01,
       minDistance = Number.MAX_VALUE,
       closestCluster
 
@@ -49,7 +56,7 @@ router.get("/checkProximity", async (req, res) => {
           latitude,
           longitude,
           cluster.cluster[i][0],
-          cluster.cluster[i][0]
+          cluster.cluster[i][1]
         )
 
         if (curDistance <= 0.5) {
@@ -61,17 +68,16 @@ router.get("/checkProximity", async (req, res) => {
     for (const storeNum of storeIds) {
       const store = await Store.Store.findById(storeNum)
       if (store.advertisement.length !== 0) {
-        storeNames.push(store.name)
         advertisement.push(store.advertisement)
       }
+      storeNames.push(store.name)
     }
 
-    if (closestClusters.length == 1) {
-      epsilon = closestClusters[0].epsilon
-    }
+    // if (closestClusters.length == 1) {
+    //   epsilon = closestClusters[0].epsilon
+    // }
 
     res.status(200).send({
-      epsilon,
       storeNames,
       advertisement,
     })

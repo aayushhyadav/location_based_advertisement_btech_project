@@ -1,8 +1,3 @@
-const epsilon = 0.5,
-  latitude = 41.89103355,
-  longitude = -87.75530965,
-  earthRadius = 6371e3
-
 const lambert = (x) => {
   const minDiff = 1e-10
 
@@ -25,33 +20,36 @@ const lambert = (x) => {
 const degreeToRadian = (degree) => (degree * Math.PI) / 180
 const radianToDegree = (radian) => (radian * 180) / Math.PI
 
-const pi = Math.PI
-const theta = Math.random() * 2 * pi
-const z = Math.random()
+const geoInd = (epsilon, latitude, longitude) => {
+  const earthRadius = 6371e3
+  const pi = Math.PI
+  const theta = Math.random() * 2 * pi
+  const z = Math.random()
 
-const x = (z - 1) / Math.E
-const radius = (-1 * (lambert(x) + 1)) / epsilon
-const angularDistance = radius / earthRadius
+  const x = (z - 1) / Math.E
+  const radius = (-1 * (lambert(x) + 1)) / epsilon
+  const angularDistance = radius / earthRadius
 
-const latInRadians = degreeToRadian(latitude)
-const longInRadians = degreeToRadian(longitude)
+  const latInRadians = degreeToRadian(latitude)
+  const longInRadians = degreeToRadian(longitude)
 
-let noisyLat = Math.asin(
-  Math.sin(latInRadians) * Math.cos(angularDistance) +
-    Math.cos(latInRadians) * Math.sin(angularDistance) * Math.cos(theta)
-)
-let noisyLong =
-  longInRadians +
-  Math.atan2(
-    Math.sin(theta) * Math.sin(angularDistance) * Math.cos(latInRadians),
-    Math.cos(angularDistance) - Math.sin(latInRadians) * Math.sin(noisyLat)
+  let noisyLat = Math.asin(
+    Math.sin(latInRadians) * Math.cos(angularDistance) +
+      Math.cos(latInRadians) * Math.sin(angularDistance) * Math.cos(theta)
   )
+  let noisyLong =
+    longInRadians +
+    Math.atan2(
+      Math.sin(theta) * Math.sin(angularDistance) * Math.cos(latInRadians),
+      Math.cos(angularDistance) - Math.sin(latInRadians) * Math.sin(noisyLat)
+    )
 
-noisyLat = radianToDegree(noisyLat)
-noisyLong = radianToDegree(noisyLong)
+  noisyLat = radianToDegree(noisyLat)
+  noisyLong = radianToDegree(noisyLong)
 
-console.log(`theta - ${theta}`)
-console.log(`z - ${z}`)
-console.log(`radius - ${radius}`)
-console.log(`noisyLat - ${noisyLat}`)
-console.log(`noisyLong - ${noisyLong}`)
+  return {
+    noisyLat,
+    noisyLong,
+  }
+}
+module.exports = {geoInd}
