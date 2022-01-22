@@ -75,9 +75,9 @@ router.get("/checkProximity", async (req, res) => {
       for (const storeNum of storeIds) {
         const store = await Store.Store.findById(storeNum)
         if (store.advertisement.length !== 0) {
-          storeNames.push(store.name)
           advertisement.push(store.advertisement)
         }
+        storeNames.push(store.name)
       }
 
       if (closestClusters.length == 1) {

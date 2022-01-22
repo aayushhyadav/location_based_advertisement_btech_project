@@ -9,6 +9,7 @@ const indexRouter = require("./routes/index")
 const adRouter = require("./routes/ad")
 const statsRouter = require("./routes/stats")
 const reviewRouter = require("./routes/review")
+const testRouter = require("./routes/test")
 
 const app = express()
 const envVar = dotenv.config()
@@ -29,5 +30,6 @@ app.use("/auth", authRouter.authRouter)
 app.use("/ad", adRouter.adRouter)
 app.use("/stats", statsRouter.statsRouter)
 app.use("/review", reviewRouter.reviewRouter)
+app.use("/test", testRouter.testRouter)
 
 module.exports = app
