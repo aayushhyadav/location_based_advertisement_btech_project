@@ -1,5 +1,6 @@
 const axios = require("axios")
 const perturbation = require("./algorithms/geo_indistinguishability")
+const cluster = require("./server/model/cluster")
 
 const URL = "http://localhost:4000/proximityServer/checkProximity?"
 
@@ -59,5 +60,29 @@ describe("utility test", () => {
     }
     console.log(`Actual number - ${res.data.storeNames.length}`)
     console.log(numBusinessWithNoise)
+  })
+})
+
+describe("checking average cluster density, size, max density and min density", () => {
+  it("measures avg cluster size and density, finds max and min density", async () => {
+    const c = await cluster.Cluster.findOne({city: "Chicago"})
+    var meanSize = 0,
+      meanDensity = 0,
+      maxDensity = Number.MIN_VALUE,
+      minDensity = Number.MAX_VALUE
+
+    for (const size of c.clusterSize) {
+      meanSize += size
+    }
+
+    for (var i = 0; i < c.clusters.length; i++) {
+      const numBusiness = c.clusters[i].clusterInd.length
+      maxDensity = maxDensity < numBusiness ? numBusiness : maxDensity
+      minDensity = minDensity > numBusiness ? numBusiness : minDensity
+      meanDensity += numBusiness / c.clusterSize[i]
+    }
+    console.log(`Average cluster size - ${meanSize / c.clusterSize.length}`)
+    console.log(`Average cluster density - ${meanDensity / c.clusters.length}`)
+    console.log(`Max Density - ${maxDensity}, Min Density - ${minDensity}`)
   })
 })
