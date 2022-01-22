@@ -55,7 +55,9 @@ const create = async (cluster) => {
         const long2 = coords[1]
         mean += await computeDistance.computeDistance(lat1, long1, lat2, long2)
       }
-      cluster.clusterSize.push(mean / c.clusterInd.length)
+      cluster.clusterSize.push(
+        Math.pow(mean / c.clusterInd.length, 2) * Math.PI
+      )
     }
 
     await cluster.save()
