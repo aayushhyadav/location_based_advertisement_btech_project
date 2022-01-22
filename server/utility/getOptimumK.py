@@ -1,42 +1,31 @@
+from asyncio.windows_events import NULL
 import sys
 import pandas as pd
 import math
 from sklearn.cluster import KMeans
 from sklearn import preprocessing
+from kneed import KneeLocator
 
 """
-#   this script finds the value of k such that average cluster size is around 1km - 1.5km in radius
+# this script finds the value of k such that average cluster size is around 2km in radius
 """
-def slope(x1, y1, x2, y2):
-  return (y2 - y1) / (x2 - x1)
 
 '''
 # finds optimal value of k using elbow method
 '''
-def compute_wcss(data_points, scaled_data):
+def compute_wcss(scaled_data, data_points):
   wcss = []
-  for i in range(1, 11):
+  
+  if(data_points > 10):
+    upper_limit = 11
+  else:
+    upper_limit = data_points + 1
+  
+  for i in range(1, upper_limit):
     kmeans = KMeans(i, init = 'k-means++', random_state = 42)
     kmeans.fit(scaled_data)
     wcss.append(kmeans.inertia_)
   return wcss
-
-def get_slope_ratio(wcss):
-  slope_ratio = []
-  for i in range(1, len(wcss) - 1):
-    s1 = slope(i, wcss[i - 1], i + 1, wcss[i])
-    s2 = slope(i + 1, wcss[i], i + 2, wcss[i + 1])
-    slope_ratio.append(s1 / s2)
-  return slope_ratio
-
-def get_max_slope_ratio(slope_ratio):
-  max = 0
-  index = 0
-  for i in range(0, len(slope_ratio)):
-    if (max < slope_ratio[i]):
-      max = slope_ratio[i]
-      index = i
-  return index
 
 def degreeToRadian(degree):
     return (degree * math.pi) / 180
@@ -97,6 +86,10 @@ def compute_k(optimal_k, data_points, scaled_data, data_frame):
 
     if(mean <= 2):
         break
+
+  if(i == data_points + 1):
+    return data_points
+
   return i
 
 arg1 = sys.argv[1]
@@ -108,14 +101,23 @@ arg2 = sys.argv[2]
 latitude = list(map(float, arg1.split(',')))
 longitude = list(map(float, arg2.split(',')))
 
+if(len(latitude) > 10):
+  upper_limit = 11
+else:
+  upper_limit = len(latitude) + 1
+
 data_frame = pd.DataFrame({"Latitude": latitude, "Longitude": longitude})
 scaled_data = preprocessing.scale(data_frame)
 
-wcss = compute_wcss(len(latitude), scaled_data)
-slope_ratio = get_slope_ratio(wcss)
-optimal_k = get_max_slope_ratio(slope_ratio) + 2
+wcss = compute_wcss(scaled_data, len(latitude))
+optimal_k = KneeLocator(range(1, upper_limit), wcss, curve="convex", direction="decreasing")
 
-k = compute_k(optimal_k, len(latitude), scaled_data, data_frame)
+if(optimal_k.elbow == None):
+  elbow = 1
+else:
+  elbow = optimal_k.elbow
+
+k = compute_k(elbow, len(latitude), scaled_data, data_frame)
 
 print(k)
 sys.stdout.flush()
