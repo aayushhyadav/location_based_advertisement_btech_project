@@ -7,8 +7,8 @@ const URL1 = "http://localhost:3000/test/clusterStats"
 
 describe("utility test", () => {
   it("utility when user is in a high density cluster", async () => {
-    const latitude = 42
-    const longitude = -87.69
+    const latitude = 41.97225081
+    const longitude = -87.65702541666667
 
     const res = await axios.get(
       `${URL}latitude=${latitude}&longitude=${longitude}`
@@ -34,8 +34,8 @@ describe("utility test", () => {
   })
 
   it("utility when user is in a low density cluster", async () => {
-    const latitude = 41.7963
-    const longitude = -87.7573
+    const latitude = 41.68258267833333
+    const longitude = -87.53708482333333
 
     const res = await axios.get(
       `${URL}latitude=${latitude}&longitude=${longitude}`
@@ -71,6 +71,9 @@ describe("checking average cluster density, size, max density and min density", 
     console.log(`Average cluster density - ${clusterStats.data.meanDensity}`)
     console.log(
       `Max Density - ${clusterStats.data.maxDensity}, Min Density - ${clusterStats.data.minDensity}`
+    )
+    console.log(
+      `Max Density Cluster - ${clusterStats.data.maxDensityCluster}, Min Density Cluster - ${clusterStats.data.minDensityCluster}`
     )
   })
 })

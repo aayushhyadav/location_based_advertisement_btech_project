@@ -14,14 +14,6 @@ router.get("/checkProximity", async (req, res) => {
     const city = await geocode.geocodeToCity(latitude, longitude)
     const cityClusters = await cluster.Cluster.findOne({city: city})
 
-    if (city !== "Chicago") {
-      res.status(200).send({
-        storeNames: [],
-        advertisement: [],
-      })
-      return
-    }
-
     var closestClusters = [],
       storeNames = [],
       advertisement = [],
@@ -62,7 +54,7 @@ router.get("/checkProximity", async (req, res) => {
             latitude,
             longitude,
             cluster.cluster[i][0],
-            cluster.cluster[i][0]
+            cluster.cluster[i][1]
           )
 
           if (curDistance <= 0.5) {
