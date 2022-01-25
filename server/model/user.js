@@ -13,6 +13,7 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  //convert to date of birth?
   age: {
     type: Number,
     required: true,
