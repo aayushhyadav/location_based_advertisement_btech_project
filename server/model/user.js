@@ -24,6 +24,7 @@ const userSchema = mongoose.Schema({
     trim: true,
     minlength: 7,
   },
+  //convert to date of birth?
   age: {
     type: Number,
     required: true,
