@@ -2,6 +2,8 @@ const kMeans = require("node-kmeans")
 const Store = require("../model/store")
 const pythonScript = require("./execOptimumK")
 const computeDistance = require("../../proximity_server/computeDistance")
+const calDensity = require("./densityToEpsilonMap")
+
 /**
  *
  * @param {*} cluster, denotes set of all businesses in a city
@@ -59,7 +61,7 @@ const create = async (cluster) => {
         Math.pow(mean / c.clusterInd.length, 2) * Math.PI
       )
     }
-
+    cluster.epsilon = await calDensity.calDensity(cluster)
     await cluster.save()
   })
 }
