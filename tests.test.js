@@ -67,13 +67,18 @@ describe("utility test", () => {
 describe("checking average cluster density, size, max density and min density", () => {
   it("measures avg cluster size and density, finds max and min density", async () => {
     const clusterStats = await axios.get(URL1)
-    console.log(`Average cluster size - ${clusterStats.data.meanSize}`)
-    console.log(`Average cluster density - ${clusterStats.data.meanDensity}`)
     console.log(
-      `Max Density - ${clusterStats.data.maxDensity}, Min Density - ${clusterStats.data.minDensity}`
+      `Average cluster size (in sq km) - ${clusterStats.data.meanSize}\n`
     )
     console.log(
-      `Max Density Cluster - ${clusterStats.data.maxDensityCluster}, Min Density Cluster - ${clusterStats.data.minDensityCluster}`
+      `Average cluster density (in region with radius = 200m) - ${clusterStats.data.meanDensity}\n`
     )
+    console.log(
+      `Max Density - ${clusterStats.data.maxDensity}, Min Density - ${clusterStats.data.minDensity}\n`
+    )
+    console.log(
+      `Max Density Cluster - ${clusterStats.data.maxDensityCluster}, Min Density Cluster - ${clusterStats.data.minDensityCluster}\n`
+    )
+    console.log(`Density of each cluster - ${clusterStats.data.density}\n`)
   })
 })

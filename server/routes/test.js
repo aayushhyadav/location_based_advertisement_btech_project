@@ -11,7 +11,8 @@ router.get("/clusterStats", async (req, res) => {
       maxDensity = Number.MIN_VALUE,
       minDensity = Number.MAX_VALUE,
       maxDensityCluster,
-      minDensityCluster
+      minDensityCluster,
+      density = []
 
     for (const size of c.clusterSize) {
       meanSize += size
@@ -19,30 +20,33 @@ router.get("/clusterStats", async (req, res) => {
 
     for (var i = 0; i < c.clusters.length; i++) {
       const numBusiness = c.clusters[i].clusterInd.length
-      if (maxDensity < numBusiness / c.clusterSize[i]) {
-        maxDensity = numBusiness / c.clusterSize[i]
+      const curDensity =
+        (numBusiness / (c.clusterSize[i] * 10e6)) * Math.PI * 4 * 10e4
+      density.push(curDensity)
+
+      if (maxDensity < curDensity) {
+        maxDensity = curDensity
         maxDensityCluster = i
       }
-      if (minDensity > numBusiness / c.clusterSize[i]) {
-        minDensity = numBusiness / c.clusterSize[i]
+      if (minDensity > curDensity) {
+        minDensity = curDensity
         minDensityCluster = i
       }
-      meanDensity += numBusiness / c.clusterSize[i]
+      meanDensity += curDensity
     }
 
     meanSize /= c.clusterSize.length
     meanDensity /= c.clusters.length
 
-    res
-      .status(200)
-      .send({
-        meanSize,
-        meanDensity,
-        maxDensity,
-        maxDensityCluster,
-        minDensity,
-        minDensityCluster,
-      })
+    res.status(200).send({
+      meanSize,
+      meanDensity,
+      maxDensity,
+      maxDensityCluster,
+      minDensity,
+      minDensityCluster,
+      density,
+    })
   } catch (error) {
     res.status(400).send(error)
   }
