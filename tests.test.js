@@ -7,8 +7,8 @@ const URL1 = "http://localhost:3000/test/clusterStats"
 
 describe("utility test", () => {
   it("utility when user is in a high density cluster", async () => {
-    const latitude = 41.97225081
-    const longitude = -87.65702541666667
+    const latitude = 41.9471040975
+    const longitude = -87.6464345575
 
     const res = await axios.get(
       `${URL}latitude=${latitude}&longitude=${longitude}`
@@ -16,7 +16,11 @@ describe("utility test", () => {
     const numBusinessWithNoise = []
 
     for (var i = 0; i < 50; i++) {
-      const noisyCoords = await perturbation.geoInd(0.01, latitude, longitude)
+      const noisyCoords = await perturbation.geoInd(
+        0.005915238172934175,
+        latitude,
+        longitude
+      )
       var matches = 0
 
       const noisyRes = await axios.get(
