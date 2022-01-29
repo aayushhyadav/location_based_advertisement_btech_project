@@ -14,6 +14,7 @@ describe("utility test", () => {
       `${URL}latitude=${latitude}&longitude=${longitude}`
     )
     const numBusinessWithNoise = []
+    const additionalBusinessWithNoise = []
 
     for (var i = 0; i < 50; i++) {
       const noisyCoords = await perturbation.geoInd(
@@ -32,9 +33,15 @@ describe("utility test", () => {
         }
       }
       numBusinessWithNoise.push(matches)
+      additionalBusinessWithNoise.push(
+        noisyRes.data.storeNames.length - matches
+      )
     }
-    console.log(`Actual number - ${res.data.storeNames.length}`)
-    console.log(numBusinessWithNoise)
+    console.log(`\nActual number - ${res.data.storeNames.length}`)
+    console.log(`Matching results with perturbation - ${numBusinessWithNoise}`)
+    console.log(
+      `Extra results with perturbation - ${additionalBusinessWithNoise}\n`
+    )
   })
 
   it("utility when user is in a low density cluster", async () => {
@@ -45,6 +52,7 @@ describe("utility test", () => {
       `${URL}latitude=${latitude}&longitude=${longitude}`
     )
     const numBusinessWithNoise = []
+    const additionalBusinessWithNoise = []
 
     for (var i = 0; i < 50; i++) {
       const noisyCoords = await perturbation.geoInd(0.001, latitude, longitude)
@@ -62,9 +70,15 @@ describe("utility test", () => {
         }
       }
       numBusinessWithNoise.push(matches)
+      additionalBusinessWithNoise.push(
+        noisyRes.data.storeNames.length - matches
+      )
     }
-    console.log(`Actual number - ${res.data.storeNames.length}`)
-    console.log(numBusinessWithNoise)
+    console.log(`\nActual number - ${res.data.storeNames.length}`)
+    console.log(`Matching results with perturbation - ${numBusinessWithNoise}`)
+    console.log(
+      `Extra results with perturbation - ${additionalBusinessWithNoise}\n`
+    )
   })
 })
 
@@ -72,10 +86,10 @@ describe("checking average cluster density, size, max density and min density", 
   it("measures avg cluster size and density, finds max and min density", async () => {
     const clusterStats = await axios.get(URL1)
     console.log(
-      `Average cluster size (in sq km) - ${clusterStats.data.meanSize}\n`
+      `\nAverage cluster size (in sq km) - ${clusterStats.data.meanSize}\n`
     )
     console.log(
-      `Average cluster density (in region with radius = 200m) - ${clusterStats.data.meanDensity}\n`
+      `Average cluster density per sq km - ${clusterStats.data.meanDensity}\n`
     )
     console.log(
       `Max Density - ${clusterStats.data.maxDensity}, Min Density - ${clusterStats.data.minDensity}\n`

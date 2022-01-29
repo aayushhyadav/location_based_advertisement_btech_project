@@ -20,8 +20,7 @@ router.get("/clusterStats", async (req, res) => {
 
     for (var i = 0; i < c.clusters.length; i++) {
       const numBusiness = c.clusters[i].clusterInd.length
-      const curDensity =
-        (numBusiness / (c.clusterSize[i] * 10e6)) * Math.PI * 4 * 10e4
+      const curDensity = numBusiness / c.clusterSize[i]
       density.push(curDensity)
 
       if (maxDensity < curDensity) {
