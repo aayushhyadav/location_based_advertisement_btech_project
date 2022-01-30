@@ -71,4 +71,97 @@ router.post("/update", async (req, res) => {
   }
 })
 
+router.get("/dailyStats", async (req, res) => {
+  const Stat = {
+    male: 0,
+    female: 0,
+    _11To17: 0,
+    _18To30: 0,
+    _31To59: 0,
+    _60AndAbove: 0,
+    _12amTo3am: 0,
+    _3amTo6am: 0,
+    _6amTo9am: 0,
+    _9amTo12pm: 0,
+    _12pmTo3pm: 0,
+    _3pmTo6pm: 0,
+    _6pmTo9pm: 0,
+    _9pmTo12am: 0,
+  }
+
+  try {
+    const store = await Stats.Stats.findOne({storeId: req.query.storeId})
+
+    for (const record of store.data) {
+      if (record.date.includes(req.query.date)) {
+        Stat.male = record.genderCount.male
+        Stat.female = record.genderCount.female
+        Stat._11To17 = record.ageGroupCount._11To17
+        Stat._18To30 = record.ageGroupCount._18To30
+        Stat._31To59 = record.ageGroupCount._31To59
+        Stat._60AndAbove = record.ageGroupCount._60AndAbove
+        Stat._12amTo3am = record.timestamp._12amTo3am
+        Stat._3amTo6am = record.timestamp._3amTo6am
+        Stat._6amTo9am = record.timestamp._6amTo9am
+        Stat._9amTo12pm = record.timestamp._9amTo12pm
+        Stat._12pmTo3pm = record.timestamp._12pmTo3pm
+        Stat._3pmTo6pm = record.timestamp._3pmTo6pm
+        Stat._6pmTo9pm = record.timestamp._6pmTo9pm
+        Stat._9pmTo12am = record.timestamp._9pmTo12am
+        break
+      }
+    }
+    res.status(200).send(Stat)
+  } catch (error) {
+    res.status(400).send({Msg: `No statistics for ${req.query.date}`})
+  }
+})
+
+router.get("/aggregateStats", async (req, res) => {
+  const Stat = {
+    male: 0,
+    female: 0,
+    _11To17: 0,
+    _18To30: 0,
+    _31To59: 0,
+    _60AndAbove: 0,
+    _12amTo3am: 0,
+    _3amTo6am: 0,
+    _6amTo9am: 0,
+    _9amTo12pm: 0,
+    _12pmTo3pm: 0,
+    _3pmTo6pm: 0,
+    _6pmTo9pm: 0,
+    _9pmTo12am: 0,
+  }
+
+  try {
+    const store = await Stats.Stats.findOne({storeId: req.query.storeId})
+    const fromEpoch = new Date(req.query.from).getTime()
+    const toEpoch = new Date(req.query.to).getTime()
+
+    for (const record of store.data) {
+      if (record.epoch >= fromEpoch && record.epoch <= toEpoch) {
+        Stat.male += record.genderCount.male
+        Stat.female += record.genderCount.female
+        Stat._11To17 += record.ageGroupCount._11To17
+        Stat._18To30 += record.ageGroupCount._18To30
+        Stat._31To59 += record.ageGroupCount._31To59
+        Stat._60AndAbove += record.ageGroupCount._60AndAbove
+        Stat._12amTo3am += record.timestamp._12amTo3am
+        Stat._3amTo6am += record.timestamp._3amTo6am
+        Stat._6amTo9am += record.timestamp._6amTo9am
+        Stat._9amTo12pm += record.timestamp._9amTo12pm
+        Stat._12pmTo3pm += record.timestamp._12pmTo3pm
+        Stat._3pmTo6pm += record.timestamp._3pmTo6pm
+        Stat._6pmTo9pm += record.timestamp._6pmTo9pm
+        Stat._9pmTo12am += record.timestamp._9pmTo12am
+      }
+    }
+
+    res.status(200).send(Stat)
+  } catch (error) {
+    res.status(400).send({Msg: `No statistics for ${searchStr}`})
+  }
+})
 module.exports = {statsRouter: router}
