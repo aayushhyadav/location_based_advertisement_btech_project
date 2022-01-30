@@ -113,7 +113,7 @@ router.get("/dailyStats", async (req, res) => {
     }
     res.status(200).send(Stat)
   } catch (error) {
-    res.status(400).send({Msg: `No statistics for ${req.query.date}`})
+    res.status(400).send({Msg: error})
   }
 })
 
@@ -140,6 +140,10 @@ router.get("/aggregateStats", async (req, res) => {
     const fromEpoch = new Date(req.query.from).getTime()
     const toEpoch = new Date(req.query.to).getTime()
 
+    if (fromEpoch > toEpoch) {
+      throw "Please enter the range correctly"
+    }
+
     for (const record of store.data) {
       if (record.epoch >= fromEpoch && record.epoch <= toEpoch) {
         Stat.male += record.genderCount.male
@@ -161,7 +165,7 @@ router.get("/aggregateStats", async (req, res) => {
 
     res.status(200).send(Stat)
   } catch (error) {
-    res.status(400).send({Msg: `No statistics for ${searchStr}`})
+    res.status(400).send({Msg: error})
   }
 })
 module.exports = {statsRouter: router}
