@@ -137,11 +137,11 @@ router.get("/aggregateStats", async (req, res) => {
 
   try {
     const store = await Stats.Stats.findOne({storeId: req.query.storeId})
-    const searchStr =
-      req.query.isMonth == true ? req.query.month : req.query.year
+    const fromEpoch = new Date(req.query.from).getTime()
+    const toEpoch = new Date(req.query.to).getTime()
 
     for (const record of store.data) {
-      if (record.date.includes(searchStr)) {
+      if (record.epoch >= fromEpoch && record.epoch <= toEpoch) {
         Stat.male += record.genderCount.male
         Stat.female += record.genderCount.female
         Stat._11To17 += record.ageGroupCount._11To17
