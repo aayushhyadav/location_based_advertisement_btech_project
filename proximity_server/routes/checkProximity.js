@@ -12,7 +12,11 @@ router.get("/checkProximity", async (req, res) => {
     longitude = req.query.longitude
 
     const city = await geocode.geocodeToCity(latitude, longitude)
-    const cityClusters = await cluster.Cluster.findOne({city: city})
+    /*
+     * Todo
+     * handle the case when perturbed location is in another city
+     */
+    const cityClusters = await cluster.Cluster.findOne({city: "Chicago"})
 
     var closestClusters = [],
       storeNames = [],
@@ -34,7 +38,7 @@ router.get("/checkProximity", async (req, res) => {
           cluster.centroid[1]
         )
 
-        if (curDistance <= 2) {
+        if (curDistance <= 5) {
           closestClusters.push(cluster)
         }
         if (minDistance > curDistance) {
@@ -47,7 +51,7 @@ router.get("/checkProximity", async (req, res) => {
         closestClusters.push(closestCluster)
       }
 
-      /* find stores within 500m proximity of user's location */
+      /* find stores within proximity of user's location */
       for (const cluster of closestClusters) {
         for (var i = 0; i < cluster.clusterInd.length; i++) {
           const curDistance = await computeDistance.computeDistance(
@@ -57,7 +61,7 @@ router.get("/checkProximity", async (req, res) => {
             cluster.cluster[i][1]
           )
 
-          if (curDistance <= 0.5) {
+          if (curDistance <= req.query.aor) {
             storeIds.push(cityClusters.poi[cluster.clusterInd[i]])
           }
         }

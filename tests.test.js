@@ -1,5 +1,6 @@
 const axios = require("axios")
 const perturbation = require("./algorithms/geo_indistinguishability")
+const computeDistance = require("./proximity_server/computeDistance")
 const cluster = require("./server/model/cluster")
 
 const URL = "http://localhost:4000/proximityServer/checkProximity?"
@@ -9,29 +10,46 @@ describe("utility test", () => {
   it("utility when user is in a high density cluster", async () => {
     const latitude = 41.9471040975
     const longitude = -87.6464345575
+    var areaOfRetrieval = 0.5
 
     const res = await axios.get(
-      `${URL}latitude=${latitude}&longitude=${longitude}`
+      `${URL}latitude=${latitude}&longitude=${longitude}&aor=${areaOfRetrieval}`
     )
     const numBusinessWithNoise = []
     const additionalBusinessWithNoise = []
 
     for (var i = 0; i < 50; i++) {
+      areaOfRetrieval = 0.5
+
       const noisyCoords = await perturbation.geoInd(
         0.005915238172934175,
         latitude,
         longitude
       )
+
       var matches = 0
+      areaOfRetrieval += await computeDistance.computeDistance(
+        latitude,
+        longitude,
+        noisyCoords.noisyLat,
+        noisyCoords.noisyLong
+      )
 
       const noisyRes = await axios.get(
-        `${URL}latitude=${noisyCoords.noisyLat}&longitude=${noisyCoords.noisyLong}`
+        `${URL}latitude=${noisyCoords.noisyLat}&longitude=${noisyCoords.noisyLong}&aor=${areaOfRetrieval}`
       )
-      for (const store of noisyRes.data.storeNames) {
-        if (res.data.storeNames.includes(store)) {
-          matches += 1
+
+      if (noisyRes.data.storeNames.length !== 0) {
+        for (const store of noisyRes.data.storeNames) {
+          if (
+            matches < res.data.storeNames.length &&
+            res.data.storeNames.includes(store)
+          ) {
+            matches += 1
+          }
         }
       }
+
       numBusinessWithNoise.push(matches)
       additionalBusinessWithNoise.push(
         noisyRes.data.storeNames.length - matches
@@ -45,30 +63,49 @@ describe("utility test", () => {
   })
 
   it("utility when user is in a low density cluster", async () => {
-    const latitude = 41.68258267833333
-    const longitude = -87.53708482333333
+    const latitude = 41.65296461
+    const longitude = -87.54729865
+    var areaOfRetrieval = 0.5
 
     const res = await axios.get(
-      `${URL}latitude=${latitude}&longitude=${longitude}`
+      `${URL}latitude=${latitude}&longitude=${longitude}&aor=${areaOfRetrieval}`
     )
+
     const numBusinessWithNoise = []
     const additionalBusinessWithNoise = []
 
     for (var i = 0; i < 50; i++) {
-      const noisyCoords = await perturbation.geoInd(0.001, latitude, longitude)
+      areaOfRetrieval = 0.5
+
+      const noisyCoords = await perturbation.geoInd(
+        0.0005042683361288988,
+        latitude,
+        longitude
+      )
       var matches = 0
 
+      areaOfRetrieval += await computeDistance.computeDistance(
+        latitude,
+        longitude,
+        noisyCoords.noisyLat,
+        noisyCoords.noisyLong
+      )
+
       const noisyRes = await axios.get(
-        `${URL}latitude=${noisyCoords.noisyLat}&longitude=${noisyCoords.noisyLong}`
+        `${URL}latitude=${noisyCoords.noisyLat}&longitude=${noisyCoords.noisyLong}&aor=${areaOfRetrieval}`
       )
 
       if (noisyRes.data.storeNames.length !== 0) {
         for (const store of noisyRes.data.storeNames) {
-          if (res.data.storeNames.includes(store)) {
+          if (
+            matches < res.data.storeNames.length &&
+            res.data.storeNames.includes(store)
+          ) {
             matches += 1
           }
         }
       }
+
       numBusinessWithNoise.push(matches)
       additionalBusinessWithNoise.push(
         noisyRes.data.storeNames.length - matches
