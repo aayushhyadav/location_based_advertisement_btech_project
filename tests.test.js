@@ -8,8 +8,8 @@ const URL1 = "http://localhost:3000/test/clusterStats"
 
 describe("utility test", () => {
   it("utility when user is in a high density cluster", async () => {
-    const latitude = 41.9471040975
-    const longitude = -87.6464345575
+    const latitude = 41.94814
+    const longitude = -87.64492
     var areaOfRetrieval = 0.5
 
     const res = await axios.get(
@@ -63,8 +63,8 @@ describe("utility test", () => {
   })
 
   it("utility when user is in a low density cluster", async () => {
-    const latitude = 41.65296461
-    const longitude = -87.54729865
+    const latitude = 41.65297177
+    const longitude = -87.580187105
     var areaOfRetrieval = 0.5
 
     const res = await axios.get(
