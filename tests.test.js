@@ -63,8 +63,8 @@ describe("utility test", () => {
   })
 
   it("utility when user is in a low density cluster", async () => {
-    const latitude = 41.65297177
-    const longitude = -87.580187105
+    const latitude = 41.65508
+    const longitude = -87.60755
     var areaOfRetrieval = 0.5
 
     const res = await axios.get(
