@@ -18,13 +18,12 @@ describe("utility test", () => {
     )
     const numBusinessWithNoise = []
     const additionalBusinessWithNoise = []
-
+    var clusterId = await axios.get(
+      `${getClusterURL}latitude=${latitude}&longitude=${longitude}`
+    )
     for (var i = 0; i < 50; i++) {
       //get user cluster number
       do {
-        var clusterId = await axios.get(
-          `${getClusterURL}latitude=${latitude}&longitude=${longitude}`
-        )
         var noisyCoords = await perturbation.geoInd(
           0.00591523817293418,
           latitude,
@@ -33,17 +32,18 @@ describe("utility test", () => {
         var perturbedClusterId = await axios.get(
           `${getClusterURL}latitude=${noisyCoords.noisyLat}&longitude=${noisyCoords.noisyLong}`
         )
-        // console.log(clusterId.data.clusterId, perturbedClusterId.data.clusterId);
+        console.log(clusterId.data.clusterId, perturbedClusterId.data.clusterId);
       } while(clusterId.data.clusterId != perturbedClusterId.data.clusterId)
       
       var matches = 0
+      areaOfRetrieval = 0.5
+
       areaOfRetrieval += await computeDistance.computeDistance(
         latitude,
         longitude,
         noisyCoords.noisyLat,
         noisyCoords.noisyLong
       )
-      areaOfRetrieval = 0.5
       const noisyRes = await axios.get(
         `${URL}latitude=${noisyCoords.noisyLat}&longitude=${noisyCoords.noisyLong}&aor=${areaOfRetrieval}`
       )
