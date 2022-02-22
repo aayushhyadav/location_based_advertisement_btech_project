@@ -5,6 +5,8 @@ const cors = require("cors")
 const connectDB = require("../server/utility/connectDB")
 
 const router = require("./routes/checkProximity")
+const clusterRouter = require("./routes/getCluster")
+
 
 const app = express()
 const envVar = dotenv.config()
@@ -21,5 +23,7 @@ app.use(json())
 app.use(urlencoded({extended: true}))
 
 app.use("/proximityServer", router.router)
+app.use("/proximityServer", clusterRouter.router)
+
 
 module.exports = app
