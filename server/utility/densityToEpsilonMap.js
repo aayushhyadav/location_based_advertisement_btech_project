@@ -2,7 +2,6 @@ const calDensity = (cluster) => {
   const area = cluster.clusterSize
   const epsilon = []
 
-  /* calculating business density in a region with radius = 200m */
   for (var i = 0; i < area.length; i++) {
     /*
      * mapping [0, 1] to [0.1, 0.5]
