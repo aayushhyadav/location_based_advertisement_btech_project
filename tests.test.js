@@ -5,6 +5,7 @@ const cluster = require("./server/model/cluster")
 
 const URL = "http://localhost:4000/proximityServer/checkProximity?"
 const URL1 = "http://localhost:3000/test/clusterStats"
+const URL2 = "http://localhost:3000/stats/update"
 
 describe("utility test", () => {
   it("utility when user is in a high density cluster", async () => {
@@ -135,5 +136,18 @@ describe("checking average cluster density, size, max density and min density", 
       `Max Density Cluster - ${clusterStats.data.maxDensityCluster}, Min Density Cluster - ${clusterStats.data.minDensityCluster}\n`
     )
     console.log(`Density of each cluster - ${clusterStats.data.density}\n`)
+  })
+
+  describe("testing laplace mechanism", () => {
+    it("epsilon = 1", async () => {
+      const males = [
+        5, 10, 15, 20, 25, 30, 35, 40, 45, 47, 50, 55, 60, 65, 70, 75, 80, 85,
+        90, 95,
+      ]
+      const females = [
+        95, 90, 85, 80, 75, 70, 65, 60, 55, 53, 50, 45, 40, 35, 30, 25, 20, 15,
+        10, 5,
+      ]
+    })
   })
 })
