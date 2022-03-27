@@ -32,6 +32,10 @@ const storeSchema = mongoose.Schema({
   contact: {
     type: Number,
   },
+  owner: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+  },
   advertisement: [
     {
       offer: {
