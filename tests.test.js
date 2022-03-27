@@ -1,11 +1,10 @@
 const axios = require("axios")
 const perturbation = require("./algorithms/geo_indistinguishability")
 const computeDistance = require("./proximity_server/computeDistance")
-const cluster = require("./server/model/cluster")
+const laplace = require("./server/utility/laplace")
 
 const URL = "http://localhost:4000/proximityServer/checkProximity?"
 const URL1 = "http://localhost:3000/test/clusterStats"
-const URL2 = "http://localhost:3000/stats/update"
 
 describe("utility test", () => {
   it("utility when user is in a high density cluster", async () => {
@@ -137,17 +136,54 @@ describe("checking average cluster density, size, max density and min density", 
     )
     console.log(`Density of each cluster - ${clusterStats.data.density}\n`)
   })
+})
 
-  describe("testing laplace mechanism", () => {
-    it("epsilon = 1", async () => {
-      const males = [
-        5, 10, 15, 20, 25, 30, 35, 40, 45, 47, 50, 55, 60, 65, 70, 75, 80, 85,
-        90, 95,
-      ]
-      const females = [
-        95, 90, 85, 80, 75, 70, 65, 60, 55, 53, 50, 45, 40, 35, 30, 25, 20, 15,
-        10, 5,
-      ]
-    })
+describe("testing laplace mechanism", () => {
+  it("epsilon = 1", async () => {
+    const males = [
+      5, 10, 15, 20, 25, 30, 35, 40, 45, 47, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+      95,
+    ]
+    const females = [
+      95, 90, 85, 80, 75, 70, 65, 60, 55, 53, 50, 45, 40, 35, 30, 25, 20, 15,
+      10, 5,
+    ]
+    const noisyMalesData = await laplace.laplace(males, 1)
+    const noisyFemalesData = await laplace.laplace(females, 1)
+
+    console.log(noisyMalesData)
+    console.log(noisyFemalesData)
+  })
+
+  it("epsilon = 0.1", async () => {
+    const males = [
+      5, 10, 15, 20, 25, 30, 35, 40, 45, 47, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+      95,
+    ]
+    const females = [
+      95, 90, 85, 80, 75, 70, 65, 60, 55, 53, 50, 45, 40, 35, 30, 25, 20, 15,
+      10, 5,
+    ]
+    const noisyMalesData = await laplace.laplace(males, 10)
+    const noisyFemalesData = await laplace.laplace(females, 10)
+
+    console.log(noisyMalesData)
+    console.log(noisyFemalesData)
+  })
+
+  it("epsilon = 0.01", async () => {
+    const males = [
+      5, 10, 15, 20, 25, 30, 35, 40, 45, 47, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+      95,
+    ]
+    const females = [
+      95, 90, 85, 80, 75, 70, 65, 60, 55, 53, 50, 45, 40, 35, 30, 25, 20, 15,
+      10, 5,
+    ]
+    const noisyMalesData = await laplace.laplace(males, 100)
+    const noisyFemalesData = await laplace.laplace(females, 100)
+
+    console.log(noisyMalesData)
+    console.log(noisyFemalesData)
   })
 })
