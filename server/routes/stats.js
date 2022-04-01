@@ -96,14 +96,9 @@ router.get("/dailyStats", async (req, res) => {
   try {
     const store = await Stats.Stats.findOne({storeId: req.query.storeId})
 
-    if (store.privacyBudget == 0) {
-      res.status(200).send({Msg: "Access forbidden"})
-      return
-    }
-
     for (const record of store.data) {
       index += 1
-      if (record.date.includes(req.query.date)) {
+      if (record.date.includes(req.query.date) && record.privacyBudget != 0) {
         stats.push(record.genderCount.male)
         stats.push(record.genderCount.female)
         stats.push(record.ageGroupCount._11To17)
@@ -143,9 +138,9 @@ router.get("/dailyStats", async (req, res) => {
         return
       }
     }
-    res.status(200).send({Msg: `No data available for ${req.query.date}`})
+    res.status(400).send({Msg: "Access forbidden"})
   } catch (error) {
-    res.status(400).send({Msg: error})
+    res.status(400).send(error)
   }
 })
 
@@ -201,7 +196,7 @@ router.get("/aggregateStats", async (req, res) => {
         stats[11] += record.timestamp._3pmTo6pm
         stats[12] += record.timestamp._6pmTo9pm
         stats[13] += record.timestamp._9pmTo12am
-        store.data[index].privacyBudget -= 0.1
+        store.data[index].privacyBudget -= epsilon
         allow = true
       }
     }
@@ -209,7 +204,7 @@ router.get("/aggregateStats", async (req, res) => {
     if (allow) {
       await store.save()
     } else {
-      res.status(200).send({Msg: "Access forbidden"})
+      res.status(400).send({Msg: "Access forbidden"})
       return
     }
 

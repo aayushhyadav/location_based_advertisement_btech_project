@@ -14,7 +14,31 @@ router.post("/userSignup", async (req, res) => {
     await user.save()
     res.status(201).send({user})
   } catch (error) {
-    res.status(400).send(error)
+    res.status(400).send({
+      Msg: "Please ensure password contains at-least 7 characters and email is unique.",
+    })
+  }
+})
+
+router.post("/userLogin", async (req, res) => {
+  try {
+    const email = req.body.email
+    const password = req.body.password
+    const user = await User.User.findOne({email: email, password: password})
+
+    if (user == null) {
+      throw "User not found. Please check your credentials."
+    }
+
+    const userDetails = {
+      id: user._id,
+      name: user.name,
+      aor: user.radiusOfChoice,
+    }
+
+    res.status(200).send(userDetails)
+  } catch (error) {
+    res.status(400).send({error})
   }
 })
 
@@ -51,6 +75,33 @@ router.post("/businessSignup", async (req, res) => {
     await createCluster.create(cluster)
 
     res.status(201).send({store})
+  } catch (error) {
+    res.status(400).send(error)
+  }
+})
+
+router.get("/viewBusiness", async (req, res) => {
+  try {
+    const stores = await Store.Store.find({owner: req.query.id})
+    const storeDetails = []
+    var details = {
+      name: "",
+      id: "",
+      address: "",
+    }
+
+    if (stores.length == 0) {
+      throw "No businesses have been registered by you."
+    }
+
+    stores.forEach((store) => {
+      details.id = store._id
+      details.name = store.name
+      details.address = store.streetAddress + ", " + store.city
+      storeDetails.push(details)
+    })
+
+    res.status(200).send(storeDetails)
   } catch (error) {
     res.status(400).send(error)
   }
