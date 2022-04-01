@@ -39,6 +39,10 @@ router.get("/view/", async (req, res) => {
       reviews.push({date, reviewList})
     })
 
+    if (reviews.length == 0) {
+      throw "No reviews have been posted."
+    }
+
     reviews = reviews.reverse()
     res.status(200).send(reviews)
   } catch (error) {
