@@ -13,6 +13,10 @@ const LoginScreen = ({navigation}) => {
         password: password,
       })
       console.log(res.data)
+
+      if (res.data.accType == "normal") {
+        navigation.navigate("Explore")
+      }
     } catch (error) {
       console.log(error)
       alert("Please check your credentials.")
