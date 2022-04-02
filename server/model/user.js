@@ -24,15 +24,9 @@ const userSchema = mongoose.Schema({
     trim: true,
     minlength: 7,
   },
-  //convert to date of birth?
-  age: {
-    type: Number,
+  dob: {
+    type: String,
     required: true,
-    validate(value) {
-      if (value < 0) {
-        throw new Error("Age must be a positive number")
-      }
-    },
   },
   gender: {
     type: String,
@@ -41,6 +35,10 @@ const userSchema = mongoose.Schema({
   radiusOfChoice: {
     type: Number,
     default: 500,
+  },
+  accType: {
+    type: String,
+    required: true,
   },
   notInterestedBusiness: [
     {
