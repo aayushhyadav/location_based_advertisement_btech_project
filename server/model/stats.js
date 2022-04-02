@@ -85,6 +85,10 @@ const statSchema = mongoose.Schema({
           },
         },
       ],
+      privacyBudget: {
+        type: Number,
+        default: 5,
+      },
     },
   ],
 })

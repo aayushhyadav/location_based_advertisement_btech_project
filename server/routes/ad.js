@@ -33,6 +33,10 @@ router.get("/view", async (req, res) => {
   try {
     const store = await Store.Store.findById(req.query.id)
     const adList = store.advertisement
+
+    if (adList.length == 0) {
+      throw "Currently no advertisements are created."
+    }
     res.status(200).send(adList)
   } catch (error) {
     res.status(400).send(error)
