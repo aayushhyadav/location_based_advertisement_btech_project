@@ -21,9 +21,8 @@ const geocodeToCoords = async (address) => {
 
 const geocodeToCity = async (latitude, longitude) => {
   const options = {
-    provider: "google",
+    provider: "openstreetmap",
     httpAdapter: "https",
-    apiKey: API_KEY,
     formatter: "json",
   }
   const geocoder = nodeGeocoder(options)
