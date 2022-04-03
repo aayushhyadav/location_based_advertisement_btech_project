@@ -22,7 +22,7 @@ router.get("/checkProximity", async (req, res) => {
       storeIdn = [],
       epsilon = -1,
       minDistance = Number.MAX_VALUE,
-      closestCluster
+      clusterNum = 0
 
     /*
      *  finds clusters within 3km proximity
@@ -42,7 +42,7 @@ router.get("/checkProximity", async (req, res) => {
 
           if (minDistance > curDistance) {
             minDistance = curDistance
-            closestCluster = cluster
+            epsilon = cityClusters.epsilon[clusterNum]
           }
         }
       }
@@ -74,11 +74,8 @@ router.get("/checkProximity", async (req, res) => {
           advertisement.push(store.advertisement)
         }
       }
-
-      if (closestClusters.length != 0) {
-        epsilon = closestCluster.epsilon
-      }
     }
+
     res.status(200).send({
       epsilon,
       storeIdn,
