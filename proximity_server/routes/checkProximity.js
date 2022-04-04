@@ -20,6 +20,9 @@ router.get("/checkProximity", async (req, res) => {
       advertisement = [],
       storeIds = [],
       storeIdn = [],
+      latitudes = [],
+      longitudes = [],
+      markers = [],
       epsilon = -1,
       minDistance = Number.MAX_VALUE,
       clusterNum = 0
@@ -72,14 +75,26 @@ router.get("/checkProximity", async (req, res) => {
           storeIdn.push(storeNum)
           storeNames.push(store.name)
           advertisement.push(store.advertisement)
+          latitudes.push(store.latitude)
+          longitudes.push(store.longitude)
         }
       }
     }
 
+    for (var i = 0; i < storeNames.length; i++) {
+      const marker = {
+        title: storeNames[i],
+        coordinates: {
+          latitude: latitudes[i],
+          longitude: longitudes[i],
+        },
+      }
+      markers.push(marker)
+    }
     res.status(200).send({
       epsilon,
       storeIdn,
-      storeNames,
+      markers,
       advertisement,
     })
   } catch (error) {

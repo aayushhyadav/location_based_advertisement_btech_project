@@ -1,55 +1,36 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
-import React from "react"
-import MapView from "react-native-maps"
+import React, {useState, useEffect} from "react"
+import MapView, {Marker} from "react-native-maps"
 import useLocation from "../hooks/useLocation"
-import geoInd from "../geo_indistinguishability"
-import axios from "axios"
-const computeDistance = require("../computeDistance")
 
 const exploreScreen = ({navigation}) => {
-  const obfuscate = async (epsilon, lat, long) => {
-    try {
-      const noisyCoords = await geoInd(epsilon, lat, long)
-      const newAor =
-        (await computeDistance.computeDistance(
-          lat,
-          long,
-          noisyCoords.noisyLat,
-          noisyCoords.noisyLong
-        )) *
-          1000 +
-        500
-      const url =
-        "http://192.168.0.107:4000/proximityServer/checkProximity?latitude=" +
-        noisyCoords.noisyLat +
-        "&longitude=" +
-        noisyCoords.noisyLong +
-        "&aor=" +
-        newAor
+  const data = useLocation()
 
-      const nearByStores = await axios.get(url)
-      console.log(nearByStores.data)
-    } catch (error) {
-      console.log(error)
-    }
-  }
-
-  const location = useLocation()
-  if (location != undefined) {
+  if (data.location != undefined && data.adData != undefined) {
     curRegion = {
-      latitude: location.latitude,
-      longitude: location.longitude,
-      latitudeDelta: 0.001,
-      longitudeDelta: 0.001,
+      latitude: data.location.latitude,
+      longitude: data.location.longitude,
+      latitudeDelta: 0.01,
+      longitudeDelta: 0.01,
     }
-    obfuscate(0.01, location.latitude, location.longitude)
+
+    console.log(data)
     return (
       <View style={styles.container}>
         <MapView
           style={StyleSheet.absoluteFill}
           provider={MapView.PROVIDER_GOOGLE}
           region={curRegion}
-        />
+        >
+          {data.adData.data.markers.map((marker) => (
+            <Marker
+              key={marker}
+              coordinate={marker.coordinates}
+              title={marker.title + " - Exclusive Offers!"}
+              image={require("../assets/store.jpg")}
+            ></Marker>
+          ))}
+        </MapView>
       </View>
     )
   }
