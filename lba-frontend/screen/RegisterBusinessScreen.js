@@ -1,20 +1,18 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React from "react"
 import axios from "axios"
+import {REGISTER_BUSINESS_API} from "@env"
 
 const RegisterBusiness = async (email, name, streetAddress, city, contact) => {
   try {
-    const res = await axios.post(
-      "http://192.168.0.107:3000/auth/businessSignup",
-      {
-        email,
-        name,
-        streetAddress,
-        city,
-        contact,
-        owner: "62481ba3f3fef3b62b3b420a",
-      }
-    )
+    const res = await axios.post(`${REGISTER_BUSINESS_API}`, {
+      email,
+      name,
+      streetAddress,
+      city,
+      contact,
+      owner: "62481ba3f3fef3b62b3b420a",
+    })
     console.log(res.data)
     alert("Store Registered!")
   } catch (error) {

@@ -9,6 +9,7 @@ import {
 import React from "react"
 import DatePicker from "react-native-datepicker"
 import axios from "axios"
+import {REGISTER_API} from "@env"
 
 const RegisterAccount = async (
   email,
@@ -24,7 +25,7 @@ const RegisterAccount = async (
     if (accountType) {
       accType = "business"
     }
-    const res = await axios.post("http://192.168.0.107:3000/auth/userSignup", {
+    const res = await axios.post(`${REGISTER_API}`, {
       email,
       password,
       name,

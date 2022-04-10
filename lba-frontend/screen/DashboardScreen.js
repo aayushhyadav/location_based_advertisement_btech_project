@@ -6,8 +6,6 @@ import {
   Image,
   TouchableOpacity,
   FlatList,
-  Dimensions,
-  ScrollView,
 } from "react-native"
 
 const DashboardScreen = ({navigation}) => {
@@ -32,13 +30,8 @@ const DashboardScreen = ({navigation}) => {
       },
       {
         id: 4,
-        name: "Daily Statistics",
-        image: "https://img.icons8.com/clouds/100/000000/groups.png",
-      },
-      {
-        id: 5,
-        name: "Aggregate Statistics",
-        image: "https://img.icons8.com/clouds/100/000000/groups.png",
+        name: "Explore",
+        image: "https://img.icons8.com/dusk/70/000000/globe-earth.png",
       },
     ],
   }
@@ -48,6 +41,10 @@ const DashboardScreen = ({navigation}) => {
   const clickEventListener = (item) => {
     if (item.id == 3) {
       navigation.navigate("RegisterBusiness")
+    } else if (item.id == 2) {
+      navigation.navigate("ViewBusiness")
+    } else if (item.id == 4) {
+      navigation.navigate("Explore")
     }
   }
 

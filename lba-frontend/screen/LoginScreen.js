@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React from "react"
 import axios from "axios"
+import {LOGIN_API} from "@env"
 
 const LoginScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -8,10 +9,11 @@ const LoginScreen = ({navigation}) => {
 
   const authenticate = async () => {
     try {
-      const res = await axios.post("http://192.168.0.107:3000/auth/userLogin", {
+      const res = await axios.post(`${LOGIN_API}`, {
         email: emailAddress,
         password: password,
       })
+      console.log(res.data)
 
       if (res.data.accType == "normal") {
         navigation.navigate("Explore")
@@ -19,7 +21,7 @@ const LoginScreen = ({navigation}) => {
         navigation.navigate("Dashboard")
       }
     } catch (error) {
-      console.log(error)
+      console.log({error, message: error.message})
       alert("Please check your credentials.")
     }
   }

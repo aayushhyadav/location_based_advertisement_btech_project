@@ -8,6 +8,7 @@ import RegisterScreen from "./screen/RegisterScreen"
 import ExploreScreen from "./screen/ExploreScreen"
 import DashboardScreen from "./screen/DashboardScreen"
 import RegisterBusinessScreen from "./screen/RegisterBusinessScreen"
+import ViewBusinessScreen from "./screen/ViewBusinessScreen"
 
 const Stack = createNativeStackNavigator()
 
@@ -23,6 +24,7 @@ export default function App() {
           name="RegisterBusiness"
           component={RegisterBusinessScreen}
         />
+        <Stack.Screen name="ViewBusiness" component={ViewBusinessScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )
