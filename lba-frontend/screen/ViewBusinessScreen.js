@@ -16,7 +16,8 @@ const ViewBusinessScreen = ({navigation}) => {
     Alert.alert(item.id)
   }
   const createAd = (item) => {
-    alert("Add Advertisements!")
+    alert(`Add Advertisements! ${item.id}`)
+    const storeId = item.id
   }
   const viewAd = (item) => {
     alert("View Advertisements!")

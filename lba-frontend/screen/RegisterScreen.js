@@ -98,8 +98,8 @@ const RegisterScreen = ({navigation}) => {
           value={aor}
           placeholder="500"
         />
-        <Text style={styles.toggleSwitch}>
-          Register as business owner
+        <Text style={styles.toggleSwitch}>Register as business owner</Text>
+        <View>
           <Switch
             trackColor={{false: "#767577", true: "#81b0ff"}}
             thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
@@ -107,7 +107,7 @@ const RegisterScreen = ({navigation}) => {
             onValueChange={toggleSwitch}
             value={isEnabled}
           />
-        </Text>
+        </View>
         <Text style={styles.label}>Date of Birth</Text>
         <DatePicker
           style={{width: 300}}
