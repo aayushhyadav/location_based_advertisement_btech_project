@@ -6,7 +6,7 @@ import useLocation from "../hooks/useLocation"
 const exploreScreen = ({navigation}) => {
   const data = useLocation()
 
-  if (data.location != undefined && data.adData != undefined) {
+  if (data.location != undefined) {
     curRegion = {
       latitude: data.location.latitude,
       longitude: data.location.longitude,
@@ -14,7 +14,7 @@ const exploreScreen = ({navigation}) => {
       longitudeDelta: 0.01,
     }
 
-    console.log(data)
+    console.log({data})
     return (
       <View style={styles.container}>
         <MapView

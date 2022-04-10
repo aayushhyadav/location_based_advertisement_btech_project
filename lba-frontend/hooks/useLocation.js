@@ -2,6 +2,7 @@ import {useEffect, useState} from "react"
 import * as Location from "expo-location"
 import geoInd from "../geo_indistinguishability"
 import axios from "axios"
+import {CHECK_PROXIMITY_API} from "@env"
 const computeDistance = require("../computeDistance")
 
 const getAdData = async (epsilon, lat, long) => {
@@ -16,7 +17,8 @@ const getAdData = async (epsilon, lat, long) => {
     newAor = newAor * 1000 + 500
 
     const url =
-      "http://192.168.0.107:4000/proximityServer/checkProximity?latitude=" +
+      `${CHECK_PROXIMITY_API}` +
+      "latitude=" +
       noisyCoords.noisyLat +
       "&longitude=" +
       noisyCoords.noisyLong +
@@ -42,11 +44,11 @@ export default useLocation = () => {
         coords: {latitude, longitude},
       } = await Location.getCurrentPositionAsync()
 
-      setLocation({latitude, longitude})
       const data = await getAdData(0.01, latitude, longitude)
+      // console.log({data})
       setAdData(data)
     } catch (error) {
-      console.log(error)
+      console.log({error, message: error.message})
     }
   }
 
