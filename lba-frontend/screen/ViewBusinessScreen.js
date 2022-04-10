@@ -15,6 +15,15 @@ const ViewBusinessScreen = ({navigation}) => {
   cardClickEventListener = (item) => {
     Alert.alert(item.id)
   }
+  const createAd = (item) => {
+    alert("Add Advertisements!")
+  }
+  const viewAd = (item) => {
+    alert("View Advertisements!")
+  }
+  const viewStats = (item) => {
+    alert("View Stats!")
+  }
 
   if (stores != undefined) {
     return (
@@ -38,6 +47,26 @@ const ViewBusinessScreen = ({navigation}) => {
                 </View>
                 <View style={[styles.cardContent, styles.tagsContent]}>
                   <Text>{item.address}</Text>
+                </View>
+                <View style={styles.buttonContainer}>
+                  <TouchableOpacity
+                    style={styles.followButton}
+                    onPress={() => createAd(item)}
+                  >
+                    <Text style={styles.followButtonText}>New Ad</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.followButton}
+                    onPress={() => viewAd(item)}
+                  >
+                    <Text style={styles.followButtonText}>View Ads</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={styles.followButton}
+                    onPress={() => viewStats(item)}
+                  >
+                    <Text style={styles.followButtonText}>Statistics</Text>
+                  </TouchableOpacity>
                 </View>
               </TouchableOpacity>
             )
@@ -129,5 +158,25 @@ const styles = StyleSheet.create({
     marginHorizontal: 3,
     backgroundColor: "#eee",
     marginTop: 5,
+  },
+  followButton: {
+    margin: 10,
+    height: 35,
+    width: 100,
+    padding: 10,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 30,
+    backgroundColor: "white",
+    borderWidth: 1,
+    borderColor: "#dcdcdc",
+  },
+  followButtonText: {
+    color: "#000000",
+    fontSize: 12,
+  },
+  buttonContainer: {
+    flexDirection: "row",
   },
 })

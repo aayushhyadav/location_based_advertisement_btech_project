@@ -44,8 +44,8 @@ export default useLocation = () => {
         coords: {latitude, longitude},
       } = await Location.getCurrentPositionAsync()
 
+      setLocation({latitude, longitude})
       const data = await getAdData(0.01, latitude, longitude)
-      // console.log({data})
       setAdData(data)
     } catch (error) {
       console.log({error, message: error.message})

@@ -69,12 +69,6 @@ const DashboardScreen = ({navigation}) => {
               <View style={styles.cardContent}>
                 <Text style={styles.name}>{item.name}</Text>
                 <Text style={styles.count}>{item.count}</Text>
-                <TouchableOpacity
-                  style={styles.followButton}
-                  onPress={() => clickEventListener(item)}
-                >
-                  <Text style={styles.followButtonText}>Explore now</Text>
-                </TouchableOpacity>
               </View>
             </TouchableOpacity>
           )
@@ -153,7 +147,7 @@ const styles = StyleSheet.create({
     borderColor: "#dcdcdc",
   },
   followButtonText: {
-    color: "#dcdcdc",
+    color: "#000000",
     fontSize: 12,
   },
 })
