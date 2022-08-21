@@ -14,7 +14,7 @@ const getAdData = async (epsilon, lat, long) => {
       noisyCoords.noisyLat,
       noisyCoords.noisyLong
     )
-    newAor = newAor * 1000 + 500
+    newAor = newAor * 1000 + 1000
 
     const url =
       `${CHECK_PROXIMITY_API}` +
@@ -37,8 +37,8 @@ export default useLocation = () => {
 
   const getLocation = async () => {
     try {
-      const {granted} = await Location.requestBackgroundPermissionsAsync()
-      if (!granted) return
+      const {status} = await Location.requestForegroundPermissionsAsync()
+      if (status !== "granted") return
 
       const {
         coords: {latitude, longitude},

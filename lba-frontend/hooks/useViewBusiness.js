@@ -7,6 +7,7 @@ export default useViewBusiness = () => {
 
   const getBusiness = async () => {
     try {
+      console.log(`${VIEW_BUSINESS_API}`)
       const res = await axios.get(
         `${VIEW_BUSINESS_API}` + "id=" + "62481ba3f3fef3b62b3b420a"
       )

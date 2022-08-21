@@ -7,76 +7,24 @@ import {
   Alert,
   FlatList,
 } from "react-native"
-import useViewBusiness from "../hooks/useViewBusiness"
-import axios from "axios"
-import {VIEW_ADS_API} from "@env"
 
-const ViewBusinessScreen = ({navigation}) => {
-  const stores = useViewBusiness()
+const ViewAdsScreen = ({route, navigation}) => {
+  const {ads} = route.params
 
-  cardClickEventListener = (item) => {
-    Alert.alert(item.id)
-  }
-  const createAd = (item) => {
-    alert(`Add Advertisements! ${item.id}`)
-    const storeId = item.id
-  }
-  const viewAd = async (item) => {
-    try {
-      const res = await axios.get(`${VIEW_ADS_API}` + `${item.id}`)
-      console.log(res.data)
-      const ads = res.data
-      navigation.navigate("ViewAds", {ads: ads})
-    } catch (error) {
-      console.log(error)
-    }
-  }
-  const viewStats = (item) => {
-    navigation.navigate("ViewStats", {storeId: item.id})
-  }
-
-  if (stores != undefined) {
+  if (ads != null) {
     return (
       <View style={styles.container}>
         <FlatList
           style={styles.notificationList}
-          data={stores.data}
+          data={ads}
           keyExtractor={(item) => {
-            return item.id
+            return item._id
           }}
           renderItem={({item}) => {
             return (
-              <TouchableOpacity
-                style={[styles.card, {borderColor: "#FF4500"}]}
-                onPress={() => {
-                  cardClickEventListener(item)
-                }}
-              >
+              <TouchableOpacity style={[styles.card, {borderColor: "#FF4500"}]}>
                 <View style={styles.cardContent}>
-                  <Text style={styles.name}>{item.name}</Text>
-                </View>
-                <View style={[styles.cardContent, styles.tagsContent]}>
-                  <Text>{item.address}</Text>
-                </View>
-                <View style={styles.buttonContainer}>
-                  <TouchableOpacity
-                    style={styles.followButton}
-                    onPress={() => createAd(item)}
-                  >
-                    <Text style={styles.followButtonText}>New Ad</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                    style={styles.followButton}
-                    onPress={() => viewAd(item)}
-                  >
-                    <Text style={styles.followButtonText}>View Ads</Text>
-                  </TouchableOpacity>
-                  <TouchableOpacity
-                    style={styles.followButton}
-                    onPress={() => viewStats(item)}
-                  >
-                    <Text style={styles.followButtonText}>Statistics</Text>
-                  </TouchableOpacity>
+                  <Text style={styles.name}>{item.offer}</Text>
                 </View>
               </TouchableOpacity>
             )
@@ -85,10 +33,9 @@ const ViewBusinessScreen = ({navigation}) => {
       </View>
     )
   }
-  return null
 }
 
-export default ViewBusinessScreen
+export default ViewAdsScreen
 
 const styles = StyleSheet.create({
   container: {
@@ -184,14 +131,9 @@ const styles = StyleSheet.create({
   },
   followButtonText: {
     color: "#000000",
-    fontSize: 10,
+    fontSize: 12,
   },
   buttonContainer: {
     flexDirection: "row",
-  },
-  label: {
-    color: "#5b5b5b",
-    fontSize: 12,
-    marginTop: 20,
   },
 })

@@ -9,6 +9,7 @@ const LoginScreen = ({navigation}) => {
 
   const authenticate = async () => {
     try {
+      console.log(`${LOGIN_API}`)
       const res = await axios.post(`${LOGIN_API}`, {
         email: emailAddress,
         password: password,
