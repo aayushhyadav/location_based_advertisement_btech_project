@@ -1,0 +1,9 @@
+/*
+* create your own local .env file under project folder with these entries
+*/
+
+GENSEVPORT=<port number>
+PROXSEVPORT=<port number>
+MONGO_URI=<mongodb://127.0.0.1:27017/lba>
+GEOCODER_API_KEY=AIzaSyD-AAG8vaSUkZWygHlUflbtH-48_rzoEyk
+DB_PASSWORD=kad2021
