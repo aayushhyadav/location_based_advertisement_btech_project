@@ -20,9 +20,12 @@ router.get("/checkProximity", async (req, res) => {
       advertisement = [],
       storeIds = [],
       storeIdn = [],
+      latitudes = [],
+      longitudes = [],
+      markers = [],
       epsilon = -1,
       minDistance = Number.MAX_VALUE,
-      closestCluster
+      clusterNum = 0
 
     /*
      *  finds clusters within 3km proximity
@@ -42,7 +45,7 @@ router.get("/checkProximity", async (req, res) => {
 
           if (minDistance > curDistance) {
             minDistance = curDistance
-            closestCluster = cluster
+            epsilon = cityClusters.epsilon[clusterNum]
           }
         }
       }
@@ -72,17 +75,26 @@ router.get("/checkProximity", async (req, res) => {
           storeIdn.push(storeNum)
           storeNames.push(store.name)
           advertisement.push(store.advertisement)
+          latitudes.push(store.latitude)
+          longitudes.push(store.longitude)
         }
       }
+    }
 
-      if (closestClusters.length != 0) {
-        epsilon = closestCluster.epsilon
+    for (var i = 0; i < storeNames.length; i++) {
+      const marker = {
+        title: storeNames[i],
+        coordinates: {
+          latitude: latitudes[i],
+          longitude: longitudes[i],
+        },
       }
+      markers.push(marker)
     }
     res.status(200).send({
       epsilon,
       storeIdn,
-      storeNames,
+      markers,
       advertisement,
     })
   } catch (error) {

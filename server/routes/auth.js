@@ -34,6 +34,7 @@ router.post("/userLogin", async (req, res) => {
       id: user._id,
       name: user.name,
       aor: user.radiusOfChoice,
+      accType: user.accType,
     }
 
     res.status(200).send(userDetails)
@@ -84,17 +85,17 @@ router.get("/viewBusiness", async (req, res) => {
   try {
     const stores = await Store.Store.find({owner: req.query.id})
     const storeDetails = []
-    var details = {
-      name: "",
-      id: "",
-      address: "",
-    }
 
     if (stores.length == 0) {
       throw "No businesses have been registered by you."
     }
 
     stores.forEach((store) => {
+      const details = {
+        name: "",
+        id: "",
+        address: "",
+      }
       details.id = store._id
       details.name = store.name
       details.address = store.streetAddress + ", " + store.city
