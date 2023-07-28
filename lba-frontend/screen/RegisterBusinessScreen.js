@@ -1,11 +1,11 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React from "react"
 import axios from "axios"
-import {REGISTER_BUSINESS_API} from "@env"
+import {REACT_APP_REGISTER_BUSINESS_API} from "@env"
 
 const RegisterBusiness = async (email, name, streetAddress, city, contact) => {
   try {
-    const res = await axios.post(`${REGISTER_BUSINESS_API}`, {
+    const res = await axios.post(`${REACT_APP_REGISTER_BUSINESS_API}`, {
       email,
       name,
       streetAddress,

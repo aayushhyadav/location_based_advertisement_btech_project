@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React from "react"
 import axios from "axios"
-import {LOGIN_API} from "@env"
+import {REACT_APP_LOGIN_API} from "@env"
 
 const LoginScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -9,8 +9,8 @@ const LoginScreen = ({navigation}) => {
 
   const authenticate = async () => {
     try {
-      console.log(`${LOGIN_API}`)
-      const res = await axios.post(`${LOGIN_API}`, {
+      console.log(`${REACT_APP_LOGIN_API}`)
+      const res = await axios.post(`${REACT_APP_LOGIN_API}`, {
         email: emailAddress,
         password: password,
       })
