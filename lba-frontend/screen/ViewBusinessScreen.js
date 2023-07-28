@@ -9,7 +9,7 @@ import {
 } from "react-native"
 import useViewBusiness from "../hooks/useViewBusiness"
 import axios from "axios"
-import {VIEW_ADS_API} from "@env"
+import {REACT_APP_VIEW_ADS_API} from "@env"
 
 const ViewBusinessScreen = ({navigation}) => {
   const stores = useViewBusiness()
@@ -23,7 +23,7 @@ const ViewBusinessScreen = ({navigation}) => {
   }
   const viewAd = async (item) => {
     try {
-      const res = await axios.get(`${VIEW_ADS_API}` + `${item.id}`)
+      const res = await axios.get(`${REACT_APP_VIEW_ADS_API}` + `${item.id}`)
       console.log(res.data)
       const ads = res.data
       navigation.navigate("ViewAds", {ads: ads})

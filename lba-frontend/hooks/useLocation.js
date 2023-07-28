@@ -2,7 +2,7 @@ import {useEffect, useState} from "react"
 import * as Location from "expo-location"
 import geoInd from "../geo_indistinguishability"
 import axios from "axios"
-import {CHECK_PROXIMITY_API} from "@env"
+import {REACT_APP_CHECK_PROXIMITY_API} from "@env"
 const computeDistance = require("../computeDistance")
 
 const getAdData = async (epsilon, lat, long) => {
@@ -17,7 +17,7 @@ const getAdData = async (epsilon, lat, long) => {
     newAor = newAor * 1000 + 1000
 
     const url =
-      `${CHECK_PROXIMITY_API}` +
+      `${REACT_APP_CHECK_PROXIMITY_API}` +
       "latitude=" +
       noisyCoords.noisyLat +
       "&longitude=" +

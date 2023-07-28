@@ -8,7 +8,7 @@ import {
   FlatList,
 } from "react-native"
 import DatePicker from "react-native-datepicker"
-import {SHOW_DAILY_STATS, SHOW_AGGREGATE_STATS} from "@env"
+import {REACT_API_SHOW_DAILY_STATS, REACT_API_SHOW_AGGREGATE_STATS} from "@env"
 import axios from "axios"
 
 const ViewStatsScreen = ({route, navigation}) => {
@@ -62,7 +62,7 @@ const ViewStatsScreen = ({route, navigation}) => {
       toDateString = toMonthString + " " + toDay + " " + toYear
       try {
         res = await axios.get(
-          `${SHOW_AGGREGATE_STATS}${storeId}&from=${fromDateString}&to=${toDateString}`
+          `${REACT_API_SHOW_AGGREGATE_STATS}${storeId}&from=${fromDateString}&to=${toDateString}`
         )
         console.log(res.data)
       } catch (error) {
@@ -71,7 +71,7 @@ const ViewStatsScreen = ({route, navigation}) => {
     } else {
       try {
         res = await axios.get(
-          `${SHOW_DAILY_STATS}${storeId}&date=${fromDateString}`
+          `${REACT_API_SHOW_DAILY_STATS}${storeId}&date=${fromDateString}`
         )
         console.log(res.data)
       } catch (error) {

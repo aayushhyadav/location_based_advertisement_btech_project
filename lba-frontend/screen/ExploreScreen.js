@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react"
 import MapView, {Marker} from "react-native-maps"
 import useLocation from "../hooks/useLocation"
 
-const exploreScreen = ({navigation}) => {
+const ExploreScreen = ({navigation}) => {
   const data = useLocation()
 
   if (data.location != undefined && data.adData != undefined) {
@@ -37,7 +37,7 @@ const exploreScreen = ({navigation}) => {
   return null
 }
 
-export default exploreScreen
+export default ExploreScreen
 
 const styles = StyleSheet.create({
   container: {

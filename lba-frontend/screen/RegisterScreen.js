@@ -9,37 +9,7 @@ import {
 import React from "react"
 import DatePicker from "react-native-datepicker"
 import axios from "axios"
-import {REGISTER_API} from "@env"
-
-const RegisterAccount = async (
-  email,
-  password,
-  name,
-  gender,
-  aor,
-  dob,
-  accountType
-) => {
-  var accType = "normal"
-  try {
-    if (accountType) {
-      accType = "business"
-    }
-    const res = await axios.post(`${REGISTER_API}`, {
-      email,
-      password,
-      name,
-      gender,
-      radiusOfChoice: aor,
-      dob,
-      accType,
-    })
-    console.log(res.data)
-  } catch (error) {
-    console.log(error)
-    alert("Please check your credentials.")
-  }
-}
+import {REACT_APP_REGISTER_API} from "@env"
 
 const RegisterScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -51,6 +21,36 @@ const RegisterScreen = ({navigation}) => {
   const [isEnabled, setIsEnabled] = React.useState(false)
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
+
+  const RegisterAccount = async (
+    email,
+    password,
+    name,
+    gender,
+    aor,
+    dob,
+    accountType
+  ) => {
+    var accType = "normal"
+    try {
+      if (accountType) {
+        accType = "business"
+      }
+      const res = await axios.post(`${REACT_APP_REGISTER_API}`, {
+        email,
+        password,
+        name,
+        gender,
+        radiusOfChoice: aor,
+        dob,
+        accType,
+      })
+      console.log(res.data)
+    } catch (error) {
+      console.log(error)
+      alert("Please check your credentials.")
+    }
+  }
 
   return (
     <View style={styles.container}>
