@@ -7,8 +7,9 @@ import {
   Switch,
 } from "react-native"
 import React from "react"
-import DatePicker from "react-native-datepicker"
+import {DateTimePickerAndroid} from "@react-native-community/datetimepicker"
 import axios from "axios"
+import {Button} from "@rneui/themed"
 import {REACT_APP_REGISTER_API} from "@env"
 
 const RegisterScreen = ({navigation}) => {
@@ -17,7 +18,7 @@ const RegisterScreen = ({navigation}) => {
   const [username, onChangeUsername] = React.useState(null)
   const [gender, onChangeGender] = React.useState(null)
   const [aor, onChangeAor] = React.useState(null)
-  const [date, onChangeDate] = React.useState("2016-05-15")
+  const [date, setDate] = React.useState(new Date(Date.now()))
   const [isEnabled, setIsEnabled] = React.useState(false)
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
@@ -52,6 +53,22 @@ const RegisterScreen = ({navigation}) => {
     }
   }
 
+  const onChangeDate = (event, selectedDate) => {
+    setDate(selectedDate)
+  }
+
+  const showDatePicker = (mode) => {
+    DateTimePickerAndroid.open({
+      value: date,
+      onChange: onChangeDate,
+      mode,
+    })
+  }
+
+  const showMode = () => {
+    showDatePicker("date")
+  }
+
   return (
     <View style={styles.container}>
       <Text>Register</Text>
@@ -65,6 +82,7 @@ const RegisterScreen = ({navigation}) => {
           placeholder="sam nolan"
           autoComplete="name"
         />
+
         <Text style={styles.label}>Email</Text>
         <TextInput
           style={styles.input}
@@ -74,6 +92,7 @@ const RegisterScreen = ({navigation}) => {
           placeholder="Your@email.com"
           autoComplete="email"
         />
+
         <Text style={styles.label}>Password</Text>
         <TextInput
           style={styles.input}
@@ -83,6 +102,7 @@ const RegisterScreen = ({navigation}) => {
           autoComplete="password"
           secureTextEntry={true}
         />
+
         <Text style={styles.label}>Gender</Text>
         <TextInput
           style={styles.input}
@@ -91,6 +111,7 @@ const RegisterScreen = ({navigation}) => {
           placeholder="Male/Female/Other"
           autoComplete="gender"
         />
+
         <Text style={styles.label}>View ads within (metres)</Text>
         <TextInput
           style={styles.input}
@@ -98,8 +119,9 @@ const RegisterScreen = ({navigation}) => {
           value={aor}
           placeholder="500"
         />
-        <Text style={styles.toggleSwitch}>Register as business owner</Text>
-        <View>
+
+        <Text style={styles.label}>Register as business owner</Text>
+        <View style={styles.toggleContainer}>
           <Switch
             trackColor={{false: "#767577", true: "#81b0ff"}}
             thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
@@ -108,32 +130,19 @@ const RegisterScreen = ({navigation}) => {
             value={isEnabled}
           />
         </View>
-        <Text style={styles.label}>Date of Birth</Text>
-        <DatePicker
-          style={{width: 300}}
-          date={date}
-          mode="date"
-          placeholder="select date"
-          format="YYYY-MM-DD"
-          confirmBtnText="Confirm"
-          cancelBtnText="Cancel"
-          customStyles={{
-            dateIcon: {
-              position: "absolute",
-              left: 0,
-              top: 4,
-              marginLeft: 0,
-            },
-            dateInput: {
-              marginLeft: 36,
-            },
-          }}
-          onDateChange={(date) => onChangeDate(date)}
-        />
 
-        <View style={styles.container2}>
-          <TouchableOpacity
-            style={styles.tombolLogin}
+        <Text style={styles.label}>
+          DoB: {date.toISOString().split("T")[0]}
+        </Text>
+        <View style={styles.dateViewContainer}>
+          <Button title="Select" onPress={showMode} type="clear" size="sm" />
+        </View>
+
+        <View style={styles.buttonContainer}>
+          <Button
+            title="Create"
+            buttonStyle={styles.createButtonStyle}
+            titleStyle={{fontWeight: "bold"}}
             onPress={() =>
               RegisterAccount(
                 emailAddress,
@@ -145,9 +154,7 @@ const RegisterScreen = ({navigation}) => {
                 isEnabled
               )
             }
-          >
-            <Text style={styles.texttombolLogin}>Register</Text>
-          </TouchableOpacity>
+          />
         </View>
       </View>
     </View>
@@ -176,41 +183,24 @@ const styles = StyleSheet.create({
   label: {
     color: "#5b5b5b",
     fontSize: 12,
-    marginTop: 20,
+    marginTop: 30,
   },
-  texttombolLogin: {
-    color: "#ffffff",
-    fontSize: 20,
+  buttonContainer: {
+    width: 200,
+    marginHorizontal: 50,
+    marginVertical: 50,
   },
-  newUser: {
-    color: "#404ccf",
-    fontSize: 12,
-    marginTop: 20,
-  },
-  container2: {
-    marginVertical: 20,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  container3: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  tombolLogin: {
-    width: 300,
-    padding: 10,
-    backgroundColor: "#404ccf",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 12,
-    borderColor: "#ffffff",
+  createButtonStyle: {
+    backgroundColor: "black",
     borderWidth: 1,
-    marginTop: 10,
+    borderColor: "white",
+    borderRadius: 10,
   },
-  toggleSwitch: {
-    color: "#5b5b5b",
-    fontSize: 12,
-    marginTop: 10,
+  toggleContainer: {
+    marginHorizontal: 10,
+    marginVertical: -30,
+  },
+  dateViewContainer: {
+    alignItems: "flex-start",
   },
 })

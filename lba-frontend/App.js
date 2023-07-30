@@ -20,7 +20,11 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen
+          name="Register"
+          component={RegisterScreen}
+          options={{title: "Portal to exclusive offers!"}}
+        />
         <Stack.Screen name="Explore" component={ExploreScreen} />
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
         <Stack.Screen
