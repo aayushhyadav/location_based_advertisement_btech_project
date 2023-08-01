@@ -15,7 +15,6 @@ const LoginScreen = ({navigation}) => {
         email: emailAddress,
         password: password,
       })
-      console.log(res.data)
 
       if (res.data.accType == "normal") {
         navigation.navigate("Explore")

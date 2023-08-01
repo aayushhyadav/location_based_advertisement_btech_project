@@ -43,10 +43,15 @@ const RegisterScreen = ({navigation}) => {
         name,
         gender,
         radiusOfChoice: aor,
-        dob,
+        dob: dob.toISOString().split("T")[0],
         accType,
       })
-      console.log(res.data)
+
+      if (res.data.user.accType == "normal") {
+        navigation.navigate("Explore")
+      } else {
+        navigation.navigate("Dashboard")
+      }
     } catch (error) {
       console.log(error)
       alert("Please check your credentials.")
