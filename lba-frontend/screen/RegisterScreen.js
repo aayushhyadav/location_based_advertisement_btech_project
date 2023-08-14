@@ -3,13 +3,14 @@ import {
   Text,
   View,
   TextInput,
-  TouchableOpacity,
   Switch,
+  ScrollView,
 } from "react-native"
 import React from "react"
 import {DateTimePickerAndroid} from "@react-native-community/datetimepicker"
 import axios from "axios"
 import {Button} from "@rneui/themed"
+import {Dropdown} from "react-native-element-dropdown"
 import {REACT_APP_REGISTER_API} from "@env"
 
 const RegisterScreen = ({navigation}) => {
@@ -22,6 +23,20 @@ const RegisterScreen = ({navigation}) => {
   const [isEnabled, setIsEnabled] = React.useState(false)
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
+
+  const genderOptions = [
+    {label: "Male", value: "Male"},
+    {label: "Female", value: "Female"},
+  ]
+
+  const aorOptions = [
+    {label: "Within 0.5 km", value: "500"},
+    {label: "Within 1 km", value: "1000"},
+    {label: "Within 1.5 km", value: "1500"},
+    {label: "Within 2 km", value: "2000"},
+    {label: "Within 3 km", value: "3000"},
+    {label: "Within 5 km", value: "5000"},
+  ]
 
   const RegisterAccount = async (
     email,
@@ -76,91 +91,104 @@ const RegisterScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <Text>Register</Text>
       <View>
-        <Text style={styles.label}>Name</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => onChangeUsername(text)}
-          value={username}
-          keyboardType="default"
-          placeholder="sam nolan"
-          autoComplete="name"
-        />
+        <ScrollView style={styles.scrollViewContainer}>
+          <Text style={styles.header}>Get Started!</Text>
 
-        <Text style={styles.label}>Email</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => onChangeEmailAddress(text)}
-          value={emailAddress}
-          keyboardType="email-address"
-          placeholder="Your@email.com"
-          autoComplete="email"
-        />
-
-        <Text style={styles.label}>Password</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => onChangePassword(text)}
-          value={password}
-          placeholder="Password"
-          autoComplete="password"
-          secureTextEntry={true}
-        />
-
-        <Text style={styles.label}>Gender</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => onChangeGender(text)}
-          value={gender}
-          placeholder="Male/Female/Other"
-          autoComplete="gender"
-        />
-
-        <Text style={styles.label}>View ads within (metres)</Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => onChangeAor(text)}
-          value={aor}
-          placeholder="500"
-        />
-
-        <Text style={styles.label}>Register as business owner</Text>
-        <View style={styles.toggleContainer}>
-          <Switch
-            trackColor={{false: "#767577", true: "#81b0ff"}}
-            thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
-            ios_backgroundColor="#3e3e3e"
-            onValueChange={toggleSwitch}
-            value={isEnabled}
+          <Text style={styles.label}>Name</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={(text) => onChangeUsername(text)}
+            value={username}
+            keyboardType="default"
+            placeholder="sam nolan"
+            autoComplete="name"
           />
-        </View>
 
-        <Text style={styles.label}>
-          DoB: {date.toISOString().split("T")[0]}
-        </Text>
-        <View style={styles.dateViewContainer}>
-          <Button title="Select" onPress={showMode} type="clear" size="sm" />
-        </View>
-
-        <View style={styles.buttonContainer}>
-          <Button
-            title="Create"
-            buttonStyle={styles.createButtonStyle}
-            titleStyle={{fontWeight: "bold"}}
-            onPress={() =>
-              RegisterAccount(
-                emailAddress,
-                password,
-                username,
-                gender,
-                aor,
-                date,
-                isEnabled
-              )
-            }
+          <Text style={styles.label}>Email</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={(text) => onChangeEmailAddress(text)}
+            value={emailAddress}
+            keyboardType="email-address"
+            placeholder="Your@email.com"
+            autoComplete="email"
           />
-        </View>
+
+          <Text style={styles.label}>Password</Text>
+          <TextInput
+            style={styles.input}
+            onChangeText={(text) => onChangePassword(text)}
+            value={password}
+            placeholder="Password"
+            autoComplete="password"
+            secureTextEntry={true}
+          />
+
+          <Text style={styles.label}>Gender</Text>
+          <Dropdown
+            data={genderOptions}
+            labelField="label"
+            valueField="value"
+            placeholder="Select"
+            placeholderStyle={styles.placeholderStyle}
+            onChange={(item) => onChangeGender(item.value)}
+            value={gender}
+            selectedTextStyle={styles.selectedDropdownText}
+            itemTextStyle={styles.listItemTextStyle}
+          ></Dropdown>
+
+          <Text style={styles.label}>View ads</Text>
+          <Dropdown
+            data={aorOptions}
+            labelField="label"
+            valueField="value"
+            placeholder="Select area for viewing ads"
+            placeholderStyle={styles.placeholderStyle}
+            onChange={(item) => onChangeAor(item.value)}
+            value={aor}
+            selectedTextStyle={styles.selectedDropdownText}
+            itemTextStyle={styles.listItemTextStyle}
+            maxHeight={100}
+          ></Dropdown>
+
+          <Text style={styles.label}>Register as business owner</Text>
+          <View style={styles.toggleContainer}>
+            <Switch
+              trackColor={{false: "#767577", true: "#81b0ff"}}
+              thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+              ios_backgroundColor="#3e3e3e"
+              onValueChange={toggleSwitch}
+              value={isEnabled}
+            />
+          </View>
+
+          <Text style={styles.label}>
+            DoB: {date.toISOString().split("T")[0]}
+          </Text>
+          <View style={styles.dateViewContainer}>
+            <Button title="Select" onPress={showMode} type="clear" size="sm" />
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <Button
+              title="Create"
+              buttonStyle={styles.createButtonStyle}
+              titleStyle={{fontWeight: "bold"}}
+              onPress={() =>
+                RegisterAccount(
+                  emailAddress,
+                  password,
+                  username,
+                  gender,
+                  aor,
+                  date,
+                  isEnabled
+                )
+              }
+            />
+          </View>
+        </ScrollView>
       </View>
     </View>
   )
@@ -174,6 +202,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+  },
+  scrollViewContainer: {
+    marginTop: 40,
+  },
+  header: {
+    textAlign: "center",
   },
   input: {
     borderColor: "#ffffff",
@@ -207,5 +241,15 @@ const styles = StyleSheet.create({
   },
   dateViewContainer: {
     alignItems: "flex-start",
+  },
+  placeholderStyle: {
+    fontSize: 12,
+    color: "#5b5b5b",
+  },
+  selectedDropdownText: {
+    fontSize: 15,
+  },
+  listItemTextStyle: {
+    fontSize: 12,
   },
 })
