@@ -3,6 +3,8 @@ import React, {useState, useEffect} from "react"
 import MapView, {Marker} from "react-native-maps"
 import useLocation from "../hooks/useLocation"
 
+const mapMarker = require("../assets/discount_marker.png")
+
 const ExploreScreen = ({navigation}) => {
   const data = useLocation()
 
@@ -22,12 +24,12 @@ const ExploreScreen = ({navigation}) => {
           provider={MapView.PROVIDER_GOOGLE}
           region={curRegion}
         >
-          {data.adData.data.markers.map((marker) => (
+          {data.adData.data.markers.map((marker, index) => (
             <Marker
-              key={marker}
+              key={index}
               coordinate={marker.coordinates}
               title={marker.title + " - Exclusive Offers!"}
-              image={require("../assets/store.jpg")}
+              image={mapMarker}
             ></Marker>
           ))}
         </MapView>

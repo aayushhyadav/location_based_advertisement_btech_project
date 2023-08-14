@@ -102,4 +102,15 @@ router.get("/checkProximity", async (req, res) => {
   }
 })
 
+router.get("/cityClusters", async (req, res) => {
+  try {
+    const city = req.query.city
+    const cityClusters = await cluster.Cluster.findOne({city})
+    res.status(200).send(cityClusters)
+  } catch (error) {
+    console.log(error)
+    res.status(500).send(error)
+  }
+})
+
 module.exports = {router}

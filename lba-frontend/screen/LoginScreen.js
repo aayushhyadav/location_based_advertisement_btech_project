@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React from "react"
 import axios from "axios"
+import {Button} from "@rneui/themed"
 import {REACT_APP_LOGIN_API} from "@env"
 
 const LoginScreen = ({navigation}) => {
@@ -14,7 +15,6 @@ const LoginScreen = ({navigation}) => {
         email: emailAddress,
         password: password,
       })
-      console.log(res.data)
 
       if (res.data.accType == "normal") {
         navigation.navigate("Explore")
@@ -39,6 +39,7 @@ const LoginScreen = ({navigation}) => {
           placeholder="Yourid@email.com"
           autoComplete="email"
         />
+
         <Text style={styles.label}>Password</Text>
         <TextInput
           style={styles.input}
@@ -48,16 +49,21 @@ const LoginScreen = ({navigation}) => {
           autoComplete="password"
           secureTextEntry={true}
         />
+
         <View style={styles.container2}>
-          <TouchableOpacity
-            style={styles.tombolLogin}
-            onPress={() => authenticate()}
-          >
-            <Text style={styles.texttombolLogin}>Login</Text>
-          </TouchableOpacity>
+          <View style={styles.buttonContainer}>
+            <Button
+              title="Login"
+              buttonStyle={styles.loginButtonStyle}
+              titleStyle={{fontWeight: "bold"}}
+              onPress={() => authenticate()}
+            />
+          </View>
+
           <TouchableOpacity onPress={() => navigation.navigate("Login")}>
             <Text style={styles.label}>Forgot Password?</Text>
           </TouchableOpacity>
+
           <View style={styles.container3}>
             <Text style={styles.label}>New User ? </Text>
             <TouchableOpacity onPress={() => navigation.navigate("Register")}>
@@ -94,10 +100,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 20,
   },
-  texttombolLogin: {
-    color: "#ffffff",
-    fontSize: 20,
-  },
   newUser: {
     color: "#404ccf",
     fontSize: 12,
@@ -113,15 +115,15 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  tombolLogin: {
-    width: 300,
-    padding: 10,
-    backgroundColor: "#404ccf",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 12,
-    borderColor: "#ffffff",
+  buttonContainer: {
+    width: 200,
+    marginHorizontal: 50,
+    marginVertical: 50,
+  },
+  loginButtonStyle: {
+    backgroundColor: "black",
     borderWidth: 1,
-    marginTop: 10,
+    borderColor: "white",
+    borderRadius: 10,
   },
 })
