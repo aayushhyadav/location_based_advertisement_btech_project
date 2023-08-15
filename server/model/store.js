@@ -41,6 +41,10 @@ const storeSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
   },
+  type: {
+    type: String,
+    required: true,
+  },
   advertisement: [
     {
       offer: {
