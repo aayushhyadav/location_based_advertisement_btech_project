@@ -12,7 +12,6 @@ export default useViewBusiness = () => {
         `${REACT_APP_VIEW_BUSINESS_API}` + "id=" + "62481ba3f3fef3b62b3b420a"
       )
       setData(res)
-      console.log(data)
     } catch (error) {
       console.log(error)
     }

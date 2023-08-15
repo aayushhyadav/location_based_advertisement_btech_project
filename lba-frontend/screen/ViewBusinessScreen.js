@@ -3,7 +3,25 @@ import {StyleSheet, View, Alert, ScrollView} from "react-native"
 import useViewBusiness from "../hooks/useViewBusiness"
 import axios from "axios"
 import {REACT_APP_VIEW_ADS_API} from "@env"
-import {Card, Button} from "@rneui/base"
+import {Card, Button, Image} from "@rneui/base"
+
+const RESTAURANT = require("../assets/RESTAURANT.jpg")
+const APPAREL = require("../assets/APPAREL.jpg")
+const DESSERTS = require("../assets/DESSERTS.jpg")
+const ELECTRONICS = require("../assets/ELECTRONICS.jpg")
+const FOOTWEAR = require("../assets/FOOTWEAR.jpg")
+const GENERAL_STORE = require("../assets/GENERAL_STORE.jpg")
+const PHARMACY = require("../assets/PHARMACY.jpg")
+
+const bgImages = {
+  RESTAURANT,
+  APPAREL,
+  DESSERTS,
+  ELECTRONICS,
+  FOOTWEAR,
+  GENERAL_STORE,
+  PHARMACY,
+}
 
 const ViewBusinessScreen = ({navigation}) => {
   const stores = useViewBusiness()
@@ -41,6 +59,7 @@ const ViewBusinessScreen = ({navigation}) => {
                 {store.name} - {store.address}
               </Card.Title>
               <Card.Divider />
+              <Image style={styles.image} source={bgImages[store.type]} />
               <View style={styles.buttonContainer}>
                 <Button
                   title="New Ad"
@@ -85,11 +104,17 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: "row",
     justifyContent: "space-around",
+    marginTop: 10,
   },
   buttonStyle: {
     backgroundColor: "black",
     borderWidth: 1,
     borderColor: "white",
     borderRadius: 10,
+  },
+  image: {
+    width: 350,
+    height: 200,
+    resizeMode: "stretch",
   },
 })
