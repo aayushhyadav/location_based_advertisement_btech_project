@@ -91,14 +91,12 @@ router.get("/viewBusiness", async (req, res) => {
     }
 
     stores.forEach((store) => {
-      const details = {
-        name: "",
-        id: "",
-        address: "",
-      }
+      const details = {}
       details.id = store._id
       details.name = store.name
       details.address = store.streetAddress + ", " + store.city
+      details.type = store.type
+
       storeDetails.push(details)
     })
 
