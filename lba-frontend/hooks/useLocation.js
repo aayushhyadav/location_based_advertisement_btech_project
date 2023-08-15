@@ -50,6 +50,9 @@ const findEpsilon = async (cityClusters, latitude, longitude) => {
       epsilon = cityClusters.epsilon[i]
     }
   }
+
+  if (!epsilon) return 0.01
+
   return epsilon
 }
 
@@ -81,6 +84,7 @@ export default useLocation = () => {
       const epsilon = cityClusters
         ? await findEpsilon(cityClusters.data, latitude, longitude)
         : 0.01
+
       const data = await getAdData(epsilon, latitude, longitude)
       setAdData(data)
     } catch (error) {
