@@ -2,24 +2,8 @@ import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React from "react"
 import axios from "axios"
 import {REACT_APP_REGISTER_BUSINESS_API} from "@env"
-
-const RegisterBusiness = async (email, name, streetAddress, city, contact) => {
-  try {
-    const res = await axios.post(`${REACT_APP_REGISTER_BUSINESS_API}`, {
-      email,
-      name,
-      streetAddress,
-      city,
-      contact,
-      owner: "62481ba3f3fef3b62b3b420a",
-    })
-    console.log(res.data)
-    alert("Store Registered!")
-  } catch (error) {
-    console.log(error)
-    alert("Please check your details.")
-  }
-}
+import {Button} from "@rneui/themed"
+import {Dropdown} from "react-native-element-dropdown"
 
 const RegisterBusinessScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -27,10 +11,45 @@ const RegisterBusinessScreen = ({navigation}) => {
   const [storeName, onChangeStoreName] = React.useState(null)
   const [city, onChangeCity] = React.useState(null)
   const [contact, onChangeContact] = React.useState(null)
+  const [type, onChangeType] = React.useState(null)
+
+  const businessOptions = [
+    {label: "Restaurant", value: "RESTAURANT"},
+    {label: "Footwear", value: "FOOTWEAR"},
+    {label: "Electronics", value: "ELECTRONICS"},
+    {label: "Desserts", value: "DESSERTS"},
+    {label: "Apparel", value: "APPAREL"},
+    {label: "Pharmacy", value: "PHARMACY"},
+    {label: "General Store", value: "GENERAL_STORE"},
+  ]
+
+  const RegisterBusiness = async (
+    email,
+    name,
+    streetAddress,
+    city,
+    contact
+  ) => {
+    try {
+      const res = await axios.post(`${REACT_APP_REGISTER_BUSINESS_API}`, {
+        email,
+        name,
+        streetAddress,
+        city,
+        contact,
+        owner: "62481ba3f3fef3b62b3b420a",
+        type,
+      })
+      alert("Store Registered!")
+    } catch (error) {
+      console.log(error)
+      alert("Please check your details.")
+    }
+  }
 
   return (
     <View style={styles.container}>
-      <Text>Register Business</Text>
+      <Text>Lets setup your business!</Text>
       <View>
         <Text style={styles.label}>Store Name</Text>
         <TextInput
@@ -39,8 +58,8 @@ const RegisterBusinessScreen = ({navigation}) => {
           value={storeName}
           keyboardType="default"
           placeholder="Puma"
-          autoComplete="name"
         />
+
         <Text style={styles.label}>Email</Text>
         <TextInput
           style={styles.input}
@@ -48,24 +67,24 @@ const RegisterBusinessScreen = ({navigation}) => {
           value={emailAddress}
           keyboardType="email-address"
           placeholder="Your@email.com"
-          autoComplete="email"
         />
+
         <Text style={styles.label}>Address</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => onChangeAddress(text)}
           value={address}
           placeholder="Address"
-          autoComplete="address"
         />
+
         <Text style={styles.label}>City</Text>
         <TextInput
           style={styles.input}
           onChangeText={(text) => onChangeCity(text)}
           value={city}
           placeholder="Pune"
-          autoComplete="city"
         />
+
         <Text style={styles.label}>Contact</Text>
         <TextInput
           style={styles.input}
@@ -74,15 +93,29 @@ const RegisterBusinessScreen = ({navigation}) => {
           placeholder="1234567890"
         />
 
-        <View style={styles.container2}>
-          <TouchableOpacity
-            style={styles.tombolLogin}
+        <Text style={styles.label}>Type of Business</Text>
+        <Dropdown
+          data={businessOptions}
+          labelField="label"
+          valueField="value"
+          placeholder="Select the type of business"
+          placeholderStyle={styles.placeholderStyle}
+          onChange={(item) => onChangeType(item.value)}
+          value={type}
+          selectedTextStyle={styles.selectedDropdownText}
+          itemTextStyle={styles.listItemTextStyle}
+          maxHeight={200}
+        ></Dropdown>
+
+        <View style={styles.buttonContainer}>
+          <Button
+            title="Create"
+            buttonStyle={styles.createButtonStyle}
+            titleStyle={{fontWeight: "bold"}}
             onPress={() =>
               RegisterBusiness(emailAddress, storeName, address, city, contact)
             }
-          >
-            <Text style={styles.texttombolLogin}>Register</Text>
-          </TouchableOpacity>
+          />
         </View>
       </View>
     </View>
@@ -113,39 +146,25 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 20,
   },
-  texttombolLogin: {
-    color: "#ffffff",
-    fontSize: 20,
+  buttonContainer: {
+    width: 200,
+    marginHorizontal: 50,
+    marginVertical: 50,
   },
-  newUser: {
-    color: "#404ccf",
-    fontSize: 12,
-    marginTop: 20,
-  },
-  container2: {
-    marginVertical: 20,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  container3: {
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  tombolLogin: {
-    width: 300,
-    padding: 10,
-    backgroundColor: "#404ccf",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 12,
-    borderColor: "#ffffff",
+  createButtonStyle: {
+    backgroundColor: "black",
     borderWidth: 1,
-    marginTop: 10,
+    borderColor: "white",
+    borderRadius: 10,
   },
-  toggleSwitch: {
-    color: "#5b5b5b",
+  placeholderStyle: {
     fontSize: 12,
-    marginTop: 10,
+    color: "#5b5b5b",
+  },
+  selectedDropdownText: {
+    fontSize: 15,
+  },
+  listItemTextStyle: {
+    fontSize: 12,
   },
 })
