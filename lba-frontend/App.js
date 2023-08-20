@@ -12,31 +12,34 @@ import ViewBusinessScreen from "./screen/ViewBusinessScreen"
 import ViewAdsScreen from "./screen/ViewAdsScreen"
 import ViewStatsScreen from "./screen/ViewStatsScreen"
 import StatisticsScreen from "./screen/StatisticsScreen"
+import GlobalStateProvider from "./store/GlobalStateProvider"
 
 const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen
-          name="Register"
-          component={RegisterScreen}
-          options={{title: "Portal to exclusive offers!"}}
-        />
-        <Stack.Screen name="Explore" component={ExploreScreen} />
-        <Stack.Screen name="Dashboard" component={DashboardScreen} />
-        <Stack.Screen
-          name="RegisterBusiness"
-          component={RegisterBusinessScreen}
-        />
-        <Stack.Screen name="ViewBusiness" component={ViewBusinessScreen} />
-        <Stack.Screen name="ViewAds" component={ViewAdsScreen} />
-        <Stack.Screen name="ViewStats" component={ViewStatsScreen} />
-        <Stack.Screen name="Statistics" component={StatisticsScreen} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <GlobalStateProvider>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen
+            name="Register"
+            component={RegisterScreen}
+            options={{title: "Portal to exclusive offers!"}}
+          />
+          <Stack.Screen name="Explore" component={ExploreScreen} />
+          <Stack.Screen name="Dashboard" component={DashboardScreen} />
+          <Stack.Screen
+            name="RegisterBusiness"
+            component={RegisterBusinessScreen}
+          />
+          <Stack.Screen name="ViewBusiness" component={ViewBusinessScreen} />
+          <Stack.Screen name="ViewAds" component={ViewAdsScreen} />
+          <Stack.Screen name="ViewStats" component={ViewStatsScreen} />
+          <Stack.Screen name="Statistics" component={StatisticsScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </GlobalStateProvider>
   )
 }
 

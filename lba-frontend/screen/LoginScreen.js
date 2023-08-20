@@ -3,18 +3,21 @@ import React from "react"
 import axios from "axios"
 import {Button} from "@rneui/themed"
 import {REACT_APP_LOGIN_API} from "@env"
+import Context from "../store/context"
 
 const LoginScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
   const [password, onChangePassword] = React.useState(null)
+  const {globalDispatch} = React.useContext(Context)
 
   const authenticate = async () => {
     try {
-      console.log(`${REACT_APP_LOGIN_API}`)
       const res = await axios.post(`${REACT_APP_LOGIN_API}`, {
         email: emailAddress,
         password: password,
       })
+
+      globalDispatch({type: "LOGIN", payload: res.data})
 
       if (res.data.accType == "normal") {
         navigation.navigate("Explore")
