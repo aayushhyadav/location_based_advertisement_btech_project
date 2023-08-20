@@ -1,11 +1,12 @@
-import {useEffect, useState} from "react"
+import {useContext, useEffect, useState} from "react"
 import * as Location from "expo-location"
 import geoInd from "../geo_indistinguishability"
 import axios from "axios"
 import {REACT_APP_CHECK_PROXIMITY_API, REACT_APP_GET_CITY_CLUSTERS} from "@env"
+import Context from "../store/context"
 const computeDistance = require("../computeDistance")
 
-const getAdData = async (epsilon, lat, long) => {
+const getAdData = async (epsilon, lat, long, aor) => {
   try {
     const noisyCoords = await geoInd(epsilon, lat, long)
     var newAor = await computeDistance.computeDistance(
@@ -14,7 +15,7 @@ const getAdData = async (epsilon, lat, long) => {
       noisyCoords.noisyLat,
       noisyCoords.noisyLong
     )
-    newAor = newAor * 1000 + 1000
+    newAor = newAor * 1000 + aor
 
     const url =
       `${REACT_APP_CHECK_PROXIMITY_API}` +
@@ -59,6 +60,7 @@ const findEpsilon = async (cityClusters, latitude, longitude) => {
 export default useLocation = () => {
   const [location, setLocation] = useState()
   const [adData, setAdData] = useState()
+  const {globalState} = useContext(Context)
 
   useEffect(() => {
     getLocation()
@@ -84,8 +86,13 @@ export default useLocation = () => {
       const epsilon = cityClusters
         ? await findEpsilon(cityClusters.data, latitude, longitude)
         : 0.01
+      const data = await getAdData(
+        epsilon,
+        latitude,
+        longitude,
+        globalState.aor
+      )
 
-      const data = await getAdData(epsilon, latitude, longitude)
       setAdData(data)
     } catch (error) {
       console.log({error, message: error.message})
