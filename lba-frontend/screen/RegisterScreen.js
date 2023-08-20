@@ -6,12 +6,13 @@ import {
   Switch,
   ScrollView,
 } from "react-native"
-import React from "react"
+import React, {useContext} from "react"
 import {DateTimePickerAndroid} from "@react-native-community/datetimepicker"
 import axios from "axios"
 import {Button} from "@rneui/themed"
 import {Dropdown} from "react-native-element-dropdown"
 import {REACT_APP_REGISTER_API} from "@env"
+import Context from "../store/context"
 
 const RegisterScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -21,6 +22,7 @@ const RegisterScreen = ({navigation}) => {
   const [aor, onChangeAor] = React.useState(null)
   const [date, setDate] = React.useState(new Date(Date.now()))
   const [isEnabled, setIsEnabled] = React.useState(false)
+  const {globalDispatch} = useContext(Context)
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
 
@@ -61,6 +63,8 @@ const RegisterScreen = ({navigation}) => {
         dob: dob.toISOString().split("T")[0],
         accType,
       })
+
+      globalDispatch({type: "LOGIN", payload: res.data.user})
 
       if (res.data.user.accType == "normal") {
         navigation.navigate("Explore")

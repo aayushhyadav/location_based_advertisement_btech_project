@@ -31,10 +31,10 @@ router.post("/userLogin", async (req, res) => {
     }
 
     const userDetails = {
-      id: user._id,
+      _id: user._id,
       name: user.name,
-      aor: user.radiusOfChoice,
-      accType: user.accType,
+      radiusOfChoice: user.radiusOfChoice,
+      email: user.email,
     }
 
     res.status(200).send(userDetails)

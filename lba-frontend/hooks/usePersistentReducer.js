@@ -6,10 +6,10 @@ const reducer = (state, action) => {
     case "LOGIN":
       return {
         ...state,
-        _id: action.payload.id,
+        _id: action.payload._id,
         name: action.payload.name,
         email: action.payload.email,
-        aor: action.payload.aor,
+        aor: action.payload.radiusOfChoice,
       }
     case "LOGOUT":
       return {
