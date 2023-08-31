@@ -2,11 +2,24 @@ import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
 import React, {useState, useEffect} from "react"
 import MapView, {Marker} from "react-native-maps"
 import useLocation from "../hooks/useLocation"
+import axios from "axios"
+import {REACT_APP_VIEW_ADS_API} from "@env"
 
 const mapMarker = require("../assets/discount_marker.png")
 
 const ExploreScreen = ({navigation}) => {
   const data = useLocation()
+
+  const viewAds = async (index) => {
+    try {
+      const storeId = data.adData.data.storeIdn[index]
+      const res = await axios.get(`${REACT_APP_VIEW_ADS_API}` + `${storeId}`)
+      const ads = res.data
+      navigation.navigate("ViewAds", {ads: ads})
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   if (data.location != undefined && data.adData != undefined) {
     curRegion = {
@@ -16,7 +29,6 @@ const ExploreScreen = ({navigation}) => {
       longitudeDelta: 0.01,
     }
 
-    console.log(data)
     return (
       <View style={styles.container}>
         <MapView
@@ -30,6 +42,7 @@ const ExploreScreen = ({navigation}) => {
               coordinate={marker.coordinates}
               title={marker.title + " - Exclusive Offers!"}
               image={mapMarker}
+              onPress={() => viewAds(index)}
             ></Marker>
           ))}
         </MapView>
