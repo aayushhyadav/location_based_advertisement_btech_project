@@ -15,7 +15,7 @@ const ExploreScreen = ({navigation}) => {
       const storeId = data.adData.data.storeIdn[index]
       const res = await axios.get(`${REACT_APP_VIEW_ADS_API}` + `${storeId}`)
       const ads = res.data
-      navigation.navigate("ViewAds", {ads: ads})
+      navigation.navigate("ViewAds", {ads, storeId})
     } catch (error) {
       console.log(error)
     }

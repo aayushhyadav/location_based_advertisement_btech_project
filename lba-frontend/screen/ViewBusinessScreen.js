@@ -65,7 +65,7 @@ const ViewBusinessScreen = ({navigation}) => {
     try {
       const res = await axios.get(`${REACT_APP_VIEW_ADS_API}` + `${item.id}`)
       const ads = res.data
-      navigation.navigate("ViewAds", {ads: ads})
+      navigation.navigate("ViewAds", {ads, storeId: item.id})
     } catch (error) {
       console.log(error)
     }
