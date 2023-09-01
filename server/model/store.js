@@ -50,6 +50,7 @@ const storeSchema = mongoose.Schema({
       offer: {
         type: String,
       },
+      likedBy: [],
     },
   ],
 })

@@ -43,4 +43,25 @@ router.get("/view", async (req, res) => {
   }
 })
 
+router.post("/update", async (req, res) => {
+  try {
+    const store = await Store.Store.findById(req.body.storeId)
+    const adList = store.advertisement
+
+    for (const ad of adList) {
+      if (ad._id.toString() === req.body.adId) {
+        req.body.likeValue
+          ? ad.likedBy.push(req.body.userId)
+          : (ad.likedBy = ad.likedBy.filter(
+              (userId) => userId !== req.body.userId
+            ))
+      }
+    }
+    await store.save()
+    res.status(200).send({Msg: "Updated successfully!"})
+  } catch (error) {
+    res.status(500).send(error)
+  }
+})
+
 module.exports = {adRouter: router}
