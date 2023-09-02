@@ -4,7 +4,7 @@ import {Card, Image} from "@rneui/base"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import Context from "../store/context"
 import axios from "axios"
-import {REACT_APP_UPDATE_ADS_API} from "@env"
+import {REACT_APP_UPDATE_ADS_API, REACT_APP_UPDATE_STATS_API} from "@env"
 
 const rewardsBg = require("../assets/rewards.jpg")
 
@@ -39,6 +39,7 @@ const ViewAdsScreen = ({route, navigation}) => {
 
   const onChangeLike = (adId, adIndex) => {
     updateLikedByList(adId, !like[adIndex])
+    updateStats(adId, !like[adIndex])
 
     !like[adIndex]
       ? setLikeCount({...likeCount, [adIndex]: likeCount[adIndex] + 1})
@@ -51,6 +52,18 @@ const ViewAdsScreen = ({route, navigation}) => {
     try {
       const res = await axios.post(`${REACT_APP_UPDATE_ADS_API}`, {
         storeId,
+        adId,
+        likeValue,
+        userId: globalState._id,
+      })
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const updateStats = async (adId, likeValue) => {
+    try {
+      const res = await axios.post(`${REACT_APP_UPDATE_STATS_API}`, {
         adId,
         likeValue,
         userId: globalState._id,
