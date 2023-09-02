@@ -1,5 +1,6 @@
 const express = require("express")
 const Store = require("../model/store")
+const Stats = require("../model/stats")
 
 const router = express.Router()
 
@@ -7,7 +8,16 @@ router.post("/create", async (req, res) => {
   try {
     const store = await Store.Store.findById(req.body.id)
     store.advertisement.push(req.body.ad)
-    await store.save()
+
+    const savedStore = await store.save()
+    const numAds = savedStore.advertisement.length
+
+    /* creating stats entry for the ad */
+    const adStats = new Stats.Stats({
+      adId: savedStore.advertisement[numAds - 1]._id,
+    })
+    await adStats.save()
+
     res.status(201).send({Msg: "Created new Advertisement!"})
   } catch (error) {
     res.status(400).send(error)

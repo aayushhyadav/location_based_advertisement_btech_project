@@ -1,7 +1,6 @@
 const express = require("express")
 const User = require("../model/user")
 const Store = require("../model/store")
-const Stats = require("../model/stats")
 const Cluster = require("../model/cluster")
 const geocode = require("../utility/geocode")
 const createCluster = require("../utility/createCluster")
@@ -54,10 +53,6 @@ router.post("/businessSignup", async (req, res) => {
     store.longitude = coords.lng
 
     await store.save()
-
-    /* creating stats entry for the business */
-    const storeStats = new Stats.Stats({storeId: store._id})
-    await storeStats.save()
 
     var cluster = await Cluster.Cluster.findOne({city: req.body.city})
 
