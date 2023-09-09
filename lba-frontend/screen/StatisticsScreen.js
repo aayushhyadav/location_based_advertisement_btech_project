@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, {useState, useEffect} from "react"
 import {
   StyleSheet,
   Text,
@@ -7,43 +7,103 @@ import {
   Alert,
   FlatList,
 } from "react-native"
+import {REACT_APP_SHOW_AD_STATS_API} from "@env"
+import axios from "axios"
 
 const StatisticsScreen = ({route, navigation}) => {
-  const {stats} = route.params
+  const [statsData, setStatsData] = useState()
 
+  useEffect(() => {
+    fetchAdStats()
+  }, [])
+
+  const {adId} = route.params
+
+  const fetchAdStats = async () => {
+    try {
+      const res = await axios.get(`${REACT_APP_SHOW_AD_STATS_API}${adId}`)
+
+      const data = [
+        {
+          id: 1,
+          title: "Age Group 11-17",
+          color: "#FF4500",
+          val: res.data._11To17,
+        },
+        {
+          id: 2,
+          title: "Age Group 18-30",
+          color: "#87CEEB",
+          val: res.data._18To30,
+        },
+        {
+          id: 3,
+          title: "Age Group 31-59",
+          color: "#4682B4",
+          val: res.data._31To59,
+        },
+        {
+          id: 4,
+          title: "Age Group 60 and Above",
+          color: "#6A5ACD",
+          val: res.data._60AndAbove,
+        },
+        {
+          id: 5,
+          title: "Males",
+          color: "#008080",
+          val: res.data.male,
+        },
+        {
+          id: 6,
+          title: "Females",
+          color: "#008080",
+          val: res.data.female,
+        },
+      ]
+
+      setStatsData(data)
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <View style={styles.container}>
-      <FlatList
-        style={styles.list}
-        contentContainerStyle={styles.listContainer}
-        data={stats}
-        horizontal={false}
-        numColumns={2}
-        keyExtractor={(item) => {
-          return item.id
-        }}
-        renderItem={({item}) => {
-          return (
-            <View>
-              <TouchableOpacity
-                style={[styles.card, {backgroundColor: "#00BFFF"}]}
-              >
-                <Text style={[styles.cardImage, {color: "#000000"}]}>
-                  {item.val}
-                </Text>
-              </TouchableOpacity>
-
-              <View style={styles.cardHeader}>
-                <View style={{alignItems: "center", justifyContent: "center"}}>
-                  <Text style={[styles.title, {color: "#00BFFF"}]}>
-                    {item.title}
+      {statsData && (
+        <FlatList
+          style={styles.list}
+          contentContainerStyle={styles.listContainer}
+          data={statsData}
+          horizontal={false}
+          numColumns={2}
+          keyExtractor={(item) => {
+            return item.id
+          }}
+          renderItem={({item}) => {
+            return (
+              <View>
+                <TouchableOpacity
+                  style={[styles.card, {backgroundColor: "#00BFFF"}]}
+                >
+                  <Text style={[styles.cardImage, {color: "#000000"}]}>
+                    {item.val}
                   </Text>
+                </TouchableOpacity>
+
+                <View style={styles.cardHeader}>
+                  <View
+                    style={{alignItems: "center", justifyContent: "center"}}
+                  >
+                    <Text style={[styles.title, {color: "#00BFFF"}]}>
+                      {item.title}
+                    </Text>
+                  </View>
                 </View>
               </View>
-            </View>
-          )
-        }}
-      />
+            )
+          }}
+        />
+      )}
     </View>
   )
 }

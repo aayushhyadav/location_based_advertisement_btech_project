@@ -1,6 +1,7 @@
 import React, {useContext, useState, useEffect} from "react"
 import {StyleSheet, View, ScrollView, Pressable, Text} from "react-native"
 import {Card, Image} from "@rneui/base"
+import {Button} from "@rneui/themed"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import Context from "../store/context"
 import axios from "axios"
@@ -14,7 +15,7 @@ const ViewAdsScreen = ({route, navigation}) => {
   const {globalState} = useContext(Context)
 
   useEffect(() => {
-    if (ads !== null) {
+    if (ads !== null && globalState.accType === "normal") {
       initLikeValues()
     }
   }, [ads])
@@ -83,21 +84,36 @@ const ViewAdsScreen = ({route, navigation}) => {
               <Card.Divider></Card.Divider>
               <Image style={styles.image} source={rewardsBg} />
 
-              <View style={styles.likesContainer}>
-                <Pressable onPress={() => onChangeLike(ad._id, index)}>
-                  <MaterialCommunityIcons
-                    name={like[index] ? "heart" : "heart-outline"}
-                    size={24}
-                    color={like[index] ? "red" : "black"}
-                  />
-                </Pressable>
+              {globalState.accType === "normal" && (
+                <View style={styles.likesContainer}>
+                  <Pressable onPress={() => onChangeLike(ad._id, index)}>
+                    <MaterialCommunityIcons
+                      name={like[index] ? "heart" : "heart-outline"}
+                      size={24}
+                      color={like[index] ? "red" : "black"}
+                    />
+                  </Pressable>
 
-                <Text style={styles.label}>
-                  {likeCount[index]
-                    ? `${likeCount[index]} people like this`
-                    : ""}
-                </Text>
-              </View>
+                  <Text style={styles.label}>
+                    {likeCount[index]
+                      ? `${likeCount[index]} people like this`
+                      : ""}
+                  </Text>
+                </View>
+              )}
+
+              {globalState.accType === "business" && (
+                <View style={styles.buttonContainer}>
+                  <Button
+                    title="Get Insights"
+                    buttonStyle={styles.statsButtonStyle}
+                    titleStyle={{fontWeight: "bold"}}
+                    onPress={() =>
+                      navigation.navigate("Statistics", {adId: ad._id})
+                    }
+                  />
+                </View>
+              )}
             </Card>
           ))}
         </View>
@@ -133,5 +149,15 @@ const styles = StyleSheet.create({
   label: {
     color: "#5b5b5b",
     fontSize: 12,
+  },
+  buttonContainer: {
+    width: "100%",
+    marginTop: 10,
+  },
+  statsButtonStyle: {
+    backgroundColor: "black",
+    borderWidth: 1,
+    borderColor: "white",
+    borderRadius: 10,
   },
 })
