@@ -10,6 +10,7 @@ const reducer = (state, action) => {
         name: action.payload.name,
         email: action.payload.email,
         aor: action.payload.radiusOfChoice,
+        accType: action.payload.accType,
       }
     case "LOGOUT":
       return {
