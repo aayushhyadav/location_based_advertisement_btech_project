@@ -1,14 +1,8 @@
 import React, {useState, useEffect} from "react"
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Alert,
-  FlatList,
-} from "react-native"
+import {StyleSheet, Text, View, ScrollView} from "react-native"
 import {REACT_APP_SHOW_AD_STATS_API} from "@env"
 import axios from "axios"
+import {Card} from "@rneui/themed"
 
 const StatisticsScreen = ({route, navigation}) => {
   const [statsData, setStatsData] = useState()
@@ -69,41 +63,16 @@ const StatisticsScreen = ({route, navigation}) => {
   }
   return (
     <View style={styles.container}>
-      {statsData && (
-        <FlatList
-          style={styles.list}
-          contentContainerStyle={styles.listContainer}
-          data={statsData}
-          horizontal={false}
-          numColumns={2}
-          keyExtractor={(item) => {
-            return item.id
-          }}
-          renderItem={({item}) => {
-            return (
-              <View>
-                <TouchableOpacity
-                  style={[styles.card, {backgroundColor: "#00BFFF"}]}
-                >
-                  <Text style={[styles.cardImage, {color: "#000000"}]}>
-                    {item.val}
-                  </Text>
-                </TouchableOpacity>
-
-                <View style={styles.cardHeader}>
-                  <View
-                    style={{alignItems: "center", justifyContent: "center"}}
-                  >
-                    <Text style={[styles.title, {color: "#00BFFF"}]}>
-                      {item.title}
-                    </Text>
-                  </View>
-                </View>
-              </View>
-            )
-          }}
-        />
-      )}
+      <ScrollView>
+        {statsData &&
+          statsData.map((dataPoint, index) => (
+            <Card containerStyle={styles.cardContainer} key={index}>
+              <Card.Title>{dataPoint.title}</Card.Title>
+              <Card.Divider />
+              <Text style={styles.label}>{dataPoint.val}</Text>
+            </Card>
+          ))}
+      </ScrollView>
     </View>
   )
 }
@@ -113,7 +82,7 @@ export default StatisticsScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 40,
+    marginBottom: 20,
     backgroundColor: "#fff",
   },
   list: {
@@ -123,53 +92,12 @@ const styles = StyleSheet.create({
   listContainer: {
     alignItems: "center",
   },
-  card: {
-    shadowColor: "#474747",
-    shadowOffset: {
-      width: 0,
-      height: 6,
-    },
-    shadowOpacity: 0.37,
-    shadowRadius: 7.49,
-
-    elevation: 12,
-    marginVertical: 20,
-    marginHorizontal: 40,
-    backgroundColor: "#e2e2e2",
-    width: 120,
-    height: 120,
-    borderRadius: 30,
-    alignItems: "center",
-    justifyContent: "center",
+  cardContainer: {
+    backgroundColor: "#ffffff",
+    borderRadius: 10,
   },
-  cardHeader: {
-    paddingVertical: 17,
-    paddingHorizontal: 16,
-    borderTopLeftRadius: 1,
-    borderTopRightRadius: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  cardContent: {
-    paddingVertical: 12.5,
-    paddingHorizontal: 16,
-  },
-  cardFooter: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    paddingTop: 12.5,
-    paddingBottom: 25,
-    paddingHorizontal: 16,
-    borderBottomLeftRadius: 1,
-    borderBottomRightRadius: 1,
-  },
-  cardImage: {
-    alignSelf: "center",
-    fontSize: 25,
-  },
-  title: {
-    fontSize: 15,
+  label: {
+    fontSize: 30,
     flex: 1,
     alignSelf: "center",
     fontWeight: "bold",
