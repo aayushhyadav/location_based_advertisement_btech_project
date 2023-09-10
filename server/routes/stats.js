@@ -3,6 +3,7 @@ const User = require("../model/user")
 const Store = require("../model/store")
 const Stats = require("../model/stats")
 const laplace = require("../utility/laplace")
+const postProcessing = require("../utility/postProcessing")
 
 const router = express.Router()
 
@@ -47,9 +48,9 @@ router.post("/update", async (req, res) => {
   }
 })
 
-router.get("/dailyStats", async (req, res) => {
-  const epsilon = 0.5
-  var index = -1
+router.get("/getStats", async (req, res) => {
+  const epsilon = 1
+
   const Stat = {
     male: 0,
     female: 0,
@@ -57,65 +58,50 @@ router.get("/dailyStats", async (req, res) => {
     _18To30: 0,
     _31To59: 0,
     _60AndAbove: 0,
-    _12amTo3am: 0,
-    _3amTo6am: 0,
-    _6amTo9am: 0,
-    _9amTo12pm: 0,
-    _12pmTo3pm: 0,
-    _3pmTo6pm: 0,
-    _6pmTo9pm: 0,
-    _9pmTo12am: 0,
   }
   const stats = []
 
   try {
-    const store = await Stats.Stats.findOne({storeId: req.query.storeId})
+    const adStats = await Stats.Stats.findOne({adId: req.query.adId})
+    const {genderCount, ageGroupCount, privacyBudget} = adStats.data
 
-    for (const record of store.data) {
-      index += 1
-      if (record.date.includes(req.query.date) && record.privacyBudget != 0) {
-        stats.push(record.genderCount.male)
-        stats.push(record.genderCount.female)
-        stats.push(record.ageGroupCount._11To17)
-        stats.push(record.ageGroupCount._18To30)
-        stats.push(record.ageGroupCount._31To59)
-        stats.push(record.ageGroupCount._60AndAbove)
-        stats.push(record.timestamp._12amTo3am)
-        stats.push(record.timestamp._3amTo6am)
-        stats.push(record.timestamp._6amTo9am)
-        stats.push(record.timestamp._9amTo12pm)
-        stats.push(record.timestamp._12pmTo3pm)
-        stats.push(record.timestamp._3pmTo6pm)
-        stats.push(record.timestamp._6pmTo9pm)
-        stats.push(record.timestamp._9pmTo12am)
+    if (privacyBudget != 0) {
+      stats.push(genderCount.male)
+      stats.push(genderCount.female)
+      stats.push(ageGroupCount._11To17)
+      stats.push(ageGroupCount._18To30)
+      stats.push(ageGroupCount._31To59)
+      stats.push(ageGroupCount._60AndAbove)
 
-        store.data[index].privacyBudget -= epsilon
-        await store.save()
+      if (
+        genderCount.male +
+          genderCount.female +
+          ageGroupCount._11To17 +
+          ageGroupCount._18To30 +
+          ageGroupCount._31To59 +
+          ageGroupCount._60AndAbove !==
+        0
+      ) {
+        adStats.data.privacyBudget -= epsilon
+        await adStats.save()
 
         noisyStats = await laplace.laplace(stats, 2)
-
-        Stat.male = noisyStats[0]
-        Stat.female = noisyStats[1]
-        Stat._11To17 = noisyStats[2]
-        Stat._18To30 = noisyStats[3]
-        Stat._31To59 = noisyStats[4]
-        Stat._60AndAbove = noisyStats[5]
-        Stat._12amTo3am = noisyStats[6]
-        Stat._3amTo6am = noisyStats[7]
-        Stat._6amTo9am = noisyStats[8]
-        Stat._9amTo12pm = noisyStats[9]
-        Stat._12pmTo3pm = noisyStats[10]
-        Stat._3pmTo6pm = noisyStats[11]
-        Stat._6pmTo9pm = noisyStats[12]
-        Stat._9pmTo12am = noisyStats[13]
-
-        res.status(200).send(Stat)
-        return
+        noisyStats = postProcessing.computeConsistentStats(noisyStats)
       }
+
+      Stat.male = noisyStats[0]
+      Stat.female = noisyStats[1]
+      Stat._11To17 = noisyStats[2]
+      Stat._18To30 = noisyStats[3]
+      Stat._31To59 = noisyStats[4]
+      Stat._60AndAbove = noisyStats[5]
+
+      res.status(200).send(Stat)
+      return
     }
-    res.status(400).send({Msg: "Access forbidden"})
+    res.status(200).send({Msg: "Access Forbidden due to Privacy Reasons"})
   } catch (error) {
-    res.status(400).send(error)
+    res.status(500).send(error)
   }
 })
 
