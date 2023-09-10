@@ -34,6 +34,7 @@ router.post("/userLogin", async (req, res) => {
       name: user.name,
       radiusOfChoice: user.radiusOfChoice,
       email: user.email,
+      accType: user.accType,
     }
 
     res.status(200).send(userDetails)
