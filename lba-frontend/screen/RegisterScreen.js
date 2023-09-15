@@ -86,6 +86,7 @@ const RegisterScreen = ({navigation}) => {
       value: date,
       onChange: onChangeDate,
       mode,
+      display: "spinner",
     })
   }
 
@@ -212,6 +213,7 @@ const styles = StyleSheet.create({
   },
   header: {
     textAlign: "center",
+    fontSize: 20,
   },
   input: {
     borderColor: "#ffffff",

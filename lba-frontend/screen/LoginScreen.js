@@ -31,7 +31,7 @@ const LoginScreen = ({navigation}) => {
   }
   return (
     <View style={styles.container}>
-      <Text>Login</Text>
+      <Text style={styles.heading}>Welcome Back!</Text>
       <View>
         <Text style={styles.label}>Email</Text>
         <TextInput
@@ -62,10 +62,6 @@ const LoginScreen = ({navigation}) => {
               onPress={() => authenticate()}
             />
           </View>
-
-          <TouchableOpacity onPress={() => navigation.navigate("Login")}>
-            <Text style={styles.label}>Forgot Password?</Text>
-          </TouchableOpacity>
 
           <View style={styles.container3}>
             <Text style={styles.label}>New User ? </Text>
@@ -98,6 +94,10 @@ const styles = StyleSheet.create({
     fontSize: 15,
     borderBottomColor: "#000000",
   },
+  heading: {
+    fontSize: 20,
+    marginBottom: 50,
+  },
   label: {
     color: "#5b5b5b",
     fontSize: 12,
@@ -120,8 +120,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     width: 200,
-    marginHorizontal: 50,
-    marginVertical: 50,
+    marginTop: 50,
   },
   loginButtonStyle: {
     backgroundColor: "black",

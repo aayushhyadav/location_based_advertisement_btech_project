@@ -20,17 +20,17 @@ const DashboardScreen = ({navigation}) => {
     data: [
       {
         id: 1,
-        name: "View Stores",
+        name: "Take a Look At Your Stores!",
         image: viewStoresCardBg,
       },
       {
         id: 2,
-        name: "Register Business",
+        name: "Register Your Business With Ease!",
         image: businessCardBg,
       },
       {
         id: 3,
-        name: "Explore",
+        name: "Explore What's Trending!",
         image: exploreCardBg,
       },
     ],
