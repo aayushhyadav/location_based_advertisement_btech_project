@@ -1,10 +1,18 @@
 import React, {useState} from "react"
-import {StyleSheet, View, Alert, ScrollView, TextInput} from "react-native"
+import {
+  StyleSheet,
+  View,
+  Alert,
+  ScrollView,
+  TextInput,
+  Pressable,
+} from "react-native"
 import useViewBusiness from "../hooks/useViewBusiness"
 import axios from "axios"
 import {REACT_APP_VIEW_ADS_API, REACT_APP_CREATE_ADS_API} from "@env"
 import {Card, Button, Image} from "@rneui/base"
 import {Dialog} from "@rneui/themed"
+import {MaterialCommunityIcons} from "@expo/vector-icons"
 
 const RESTAURANT = require("../assets/RESTAURANT.jpg")
 const APPAREL = require("../assets/APPAREL.jpg")
@@ -14,6 +22,7 @@ const FOOTWEAR = require("../assets/FOOTWEAR.jpg")
 const GENERAL_STORE = require("../assets/GENERAL_STORE.jpg")
 const PHARMACY = require("../assets/PHARMACY.jpg")
 const TASK_COMPLETION = require("../assets/task_completion.png")
+const DEFAULT = require("../assets/DEFAULT.jpg")
 
 const bgImages = {
   RESTAURANT,
@@ -23,6 +32,7 @@ const bgImages = {
   FOOTWEAR,
   GENERAL_STORE,
   PHARMACY,
+  DEFAULT,
 }
 
 const ViewBusinessScreen = ({navigation}) => {
@@ -85,26 +95,20 @@ const ViewBusinessScreen = ({navigation}) => {
                 {store.name} - {store.address}
               </Card.Title>
               <Card.Divider />
-              <Image style={styles.bgImage} source={bgImages[store.type]} />
+
+              <Image
+                style={styles.bgImage}
+                source={bgImages[store.type] ?? bgImages["DEFAULT"]}
+              />
+
               <View style={styles.buttonContainer}>
-                <Button
-                  title="New Ad"
-                  buttonStyle={styles.buttonStyle}
-                  onPress={() => handleCreateAdDialog(store)}
-                  size="sm"
-                />
-                <Button
-                  title="View Ads"
-                  buttonStyle={styles.buttonStyle}
-                  onPress={() => viewAd(store)}
-                  size="sm"
-                />
-                <Button
-                  title="Statistics"
-                  buttonStyle={styles.buttonStyle}
-                  onPress={() => viewStats(store)}
-                  size="sm"
-                />
+                <Pressable onPress={() => handleCreateAdDialog(store)}>
+                  <MaterialCommunityIcons name="tag-plus" size={32} />
+                </Pressable>
+
+                <Pressable onPress={() => viewAd(store)}>
+                  <MaterialCommunityIcons name="tag-multiple" size={32} />
+                </Pressable>
               </View>
             </Card>
           ))}
@@ -167,7 +171,7 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "flex-start",
     marginTop: 10,
   },
   statusContainer: {

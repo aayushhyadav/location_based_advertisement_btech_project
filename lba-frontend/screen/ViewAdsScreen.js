@@ -103,15 +103,18 @@ const ViewAdsScreen = ({route, navigation}) => {
               )}
 
               {globalState.accType === "business" && (
-                <View style={styles.buttonContainer}>
-                  <Button
-                    title="Get Insights"
-                    buttonStyle={styles.statsButtonStyle}
-                    titleStyle={{fontWeight: "bold"}}
+                <View style={styles.likesContainer}>
+                  <Pressable
                     onPress={() =>
                       navigation.navigate("Statistics", {adId: ad._id})
                     }
-                  />
+                  >
+                    <MaterialCommunityIcons name="google-analytics" size={32} />
+                  </Pressable>
+
+                  <Text style={{...styles.label, marginTop: 10}}>
+                    Get Insights!
+                  </Text>
                 </View>
               )}
             </Card>
