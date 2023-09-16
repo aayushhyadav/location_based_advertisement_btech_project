@@ -5,6 +5,7 @@ import {REACT_APP_REGISTER_BUSINESS_API} from "@env"
 import {Button} from "@rneui/themed"
 import {Dropdown} from "react-native-element-dropdown"
 import Context from "../store/context"
+import Loader from "./Loader"
 
 const RegisterBusinessScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -14,6 +15,7 @@ const RegisterBusinessScreen = ({navigation}) => {
   const [contact, onChangeContact] = React.useState(null)
   const [type, onChangeType] = React.useState(null)
   const [newType, onChangeNewType] = React.useState(null)
+  const [loading, setLoading] = React.useState(false)
   const {globalState} = useContext(Context)
 
   const businessOptions = [
@@ -36,6 +38,8 @@ const RegisterBusinessScreen = ({navigation}) => {
   ) => {
     try {
       const businessType = type === "OTHER" ? newType.toUpperCase() : type
+      setLoading(true)
+
       const res = await axios.post(`${REACT_APP_REGISTER_BUSINESS_API}`, {
         email,
         name,
@@ -45,6 +49,8 @@ const RegisterBusinessScreen = ({navigation}) => {
         owner: globalState._id,
         type: businessType,
       })
+
+      setLoading(false)
       alert("Store Registered!")
     } catch (error) {
       console.log(error)
@@ -54,92 +60,99 @@ const RegisterBusinessScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <ScrollView style={styles.scrollViewContainer}>
-        <Text style={styles.heading}>Lets Onboard Your Business!</Text>
-        <View>
-          <Text style={styles.label}>Store Name</Text>
-          <TextInput
-            style={styles.input}
-            onChangeText={(text) => onChangeStoreName(text)}
-            value={storeName}
-            keyboardType="default"
-            placeholder="Puma"
-          />
-
-          <Text style={styles.label}>Email</Text>
-          <TextInput
-            style={styles.input}
-            onChangeText={(text) => onChangeEmailAddress(text)}
-            value={emailAddress}
-            keyboardType="email-address"
-            placeholder="Your@email.com"
-          />
-
-          <Text style={styles.label}>Address</Text>
-          <TextInput
-            style={styles.input}
-            onChangeText={(text) => onChangeAddress(text)}
-            value={address}
-            placeholder="Address"
-          />
-
-          <Text style={styles.label}>City</Text>
-          <TextInput
-            style={styles.input}
-            onChangeText={(text) => onChangeCity(text)}
-            value={city}
-            placeholder="Pune"
-          />
-
-          <Text style={styles.label}>Contact</Text>
-          <TextInput
-            style={styles.input}
-            onChangeText={(text) => onChangeContact(text)}
-            value={contact}
-            placeholder="1234567890"
-          />
-
-          <Text style={styles.label}>Type of Business</Text>
-          <Dropdown
-            data={businessOptions}
-            labelField="label"
-            valueField="value"
-            placeholder="Select the type of business"
-            placeholderStyle={styles.placeholderStyle}
-            onChange={(item) => onChangeType(item.value)}
-            value={type}
-            selectedTextStyle={styles.selectedDropdownText}
-            itemTextStyle={styles.listItemTextStyle}
-            maxHeight={200}
-          ></Dropdown>
-
-          <Text style={styles.label}>Please specify the type of business</Text>
-          <TextInput
-            style={styles.input}
-            onChangeText={(text) => onChangeNewType(text)}
-            value={newType}
-            placeholder="restaurant"
-            aria-disabled={type !== "OTHER"}
-          />
-
-          <View style={styles.buttonContainer}>
-            <Button
-              title="Create"
-              buttonStyle={styles.createButtonStyle}
-              titleStyle={{fontWeight: "bold"}}
-              onPress={() =>
-                RegisterBusiness(
-                  emailAddress,
-                  storeName,
-                  address,
-                  city,
-                  contact
-                )
-              }
+      {loading ? (
+        <Loader status="Hang tight while we setup your business" />
+      ) : (
+        <ScrollView style={styles.scrollViewContainer}>
+          <Text style={styles.heading}>Lets Onboard Your Business!</Text>
+          <View>
+            <Text style={styles.label}>Store Name</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => onChangeStoreName(text)}
+              value={storeName}
+              keyboardType="default"
+              placeholder="Puma"
             />
+
+            <Text style={styles.label}>Email</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => onChangeEmailAddress(text)}
+              value={emailAddress}
+              keyboardType="email-address"
+              placeholder="Your@email.com"
+            />
+
+            <Text style={styles.label}>Address</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => onChangeAddress(text)}
+              value={address}
+              placeholder="Address"
+            />
+
+            <Text style={styles.label}>City</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => onChangeCity(text)}
+              value={city}
+              placeholder="Pune"
+            />
+
+            <Text style={styles.label}>Contact</Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => onChangeContact(text)}
+              value={contact}
+              placeholder="1234567890"
+            />
+
+            <Text style={styles.label}>Type of Business</Text>
+            <Dropdown
+              data={businessOptions}
+              labelField="label"
+              valueField="value"
+              placeholder="Select the type of business"
+              placeholderStyle={styles.placeholderStyle}
+              onChange={(item) => onChangeType(item.value)}
+              value={type}
+              selectedTextStyle={styles.selectedDropdownText}
+              itemTextStyle={styles.listItemTextStyle}
+              maxHeight={200}
+            ></Dropdown>
+
+            <Text style={styles.label}>
+              Please specify the type of business
+            </Text>
+            <TextInput
+              style={styles.input}
+              onChangeText={(text) => onChangeNewType(text)}
+              value={newType}
+              placeholder="restaurant"
+              editable={type === "OTHER"}
+              selectTextOnFocus={type === "OTHER"}
+            />
+
+            <View style={styles.buttonContainer}>
+              <Button
+                title="Create"
+                buttonStyle={styles.createButtonStyle}
+                titleStyle={{fontWeight: "bold"}}
+                onPress={() =>
+                  RegisterBusiness(
+                    emailAddress,
+                    storeName,
+                    address,
+                    city,
+                    contact
+                  )
+                }
+              />
+            </View>
           </View>
-        </View>
-      </ScrollView>
+        </ScrollView>
+      )}
     </View>
   )
 }
