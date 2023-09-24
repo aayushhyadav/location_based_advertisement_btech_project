@@ -7,7 +7,7 @@ import {
   ScrollView,
 } from "react-native"
 import React, {useContext} from "react"
-import {DateTimePickerAndroid} from "@react-native-community/datetimepicker"
+import DatePicker from "../utilComponents/DatePicker"
 import axios from "axios"
 import {Button} from "@rneui/themed"
 import {Dropdown} from "react-native-element-dropdown"
@@ -32,12 +32,10 @@ const RegisterScreen = ({navigation}) => {
   ]
 
   const aorOptions = [
-    {label: "Within 0.5 km", value: "500"},
-    {label: "Within 1 km", value: "1000"},
-    {label: "Within 1.5 km", value: "1500"},
     {label: "Within 2 km", value: "2000"},
     {label: "Within 3 km", value: "3000"},
     {label: "Within 5 km", value: "5000"},
+    {label: "Within 10 km", value: "10000"},
   ]
 
   const RegisterAccount = async (
@@ -79,18 +77,6 @@ const RegisterScreen = ({navigation}) => {
 
   const onChangeDate = (event, selectedDate) => {
     setDate(selectedDate)
-  }
-
-  const showDatePicker = (mode) => {
-    DateTimePickerAndroid.open({
-      value: date,
-      onChange: onChangeDate,
-      mode,
-    })
-  }
-
-  const showMode = () => {
-    showDatePicker("date")
   }
 
   return (
@@ -153,7 +139,7 @@ const RegisterScreen = ({navigation}) => {
             value={aor}
             selectedTextStyle={styles.selectedDropdownText}
             itemTextStyle={styles.listItemTextStyle}
-            maxHeight={100}
+            maxHeight={200}
           ></Dropdown>
 
           <Text style={styles.label}>Register as business owner</Text>
@@ -170,9 +156,7 @@ const RegisterScreen = ({navigation}) => {
           <Text style={styles.label}>
             DoB: {date.toISOString().split("T")[0]}
           </Text>
-          <View style={styles.dateViewContainer}>
-            <Button title="Select" onPress={showMode} type="clear" size="sm" />
-          </View>
+          <DatePicker onChange={onChangeDate} title="Select" date={date} />
 
           <View style={styles.buttonContainer}>
             <Button
@@ -212,6 +196,7 @@ const styles = StyleSheet.create({
   },
   header: {
     textAlign: "center",
+    fontSize: 20,
   },
   input: {
     borderColor: "#ffffff",

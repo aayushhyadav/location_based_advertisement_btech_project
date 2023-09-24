@@ -1,19 +1,23 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
-import React, {useState, useEffect} from "react"
+import React, {useContext} from "react"
 import MapView, {Marker} from "react-native-maps"
 import useLocation from "../hooks/useLocation"
 import axios from "axios"
 import {REACT_APP_VIEW_ADS_API} from "@env"
+import Context from "../store/context"
 
 const mapMarker = require("../assets/discount_marker.png")
 
 const ExploreScreen = ({navigation}) => {
   const data = useLocation()
+  const {globalState} = useContext(Context)
 
   const viewAds = async (index) => {
     try {
       const storeId = data.adData.data.storeIdn[index]
-      const res = await axios.get(`${REACT_APP_VIEW_ADS_API}` + `${storeId}`)
+      const res = await axios.get(
+        `${REACT_APP_VIEW_ADS_API}id=${storeId}&accType=${globalState.accType}`
+      )
       const ads = res.data
       navigation.navigate("ViewAds", {ads, storeId})
     } catch (error) {

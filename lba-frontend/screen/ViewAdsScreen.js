@@ -74,6 +74,13 @@ const ViewAdsScreen = ({route, navigation}) => {
     }
   }
 
+  const getFormattedDate = (dateString) => {
+    const date = new Date(dateString)
+    const tokens = date.toUTCString().split(" ")
+    const formattedStr = `${tokens[0]} ${tokens[1]} ${tokens[2]}`
+    return formattedStr
+  }
+
   if (ads != null) {
     return (
       <ScrollView>
@@ -81,7 +88,25 @@ const ViewAdsScreen = ({route, navigation}) => {
           {ads.map((ad, index) => (
             <Card key={index} containerStyle={styles.cardContainer}>
               <Card.Title>{ad.offer}</Card.Title>
+
+              <View style={styles.likesContainer}>
+                <MaterialCommunityIcons
+                  name="alert-decagram"
+                  size={18}
+                  color="red"
+                />
+                <Text
+                  style={{
+                    ...styles.label,
+                    fontWeight: "bold",
+                  }}
+                >
+                  Ends on {getFormattedDate(ad.validTill)}
+                </Text>
+              </View>
+
               <Card.Divider></Card.Divider>
+
               <Image style={styles.image} source={rewardsBg} />
 
               {globalState.accType === "normal" && (
@@ -94,7 +119,7 @@ const ViewAdsScreen = ({route, navigation}) => {
                     />
                   </Pressable>
 
-                  <Text style={styles.label}>
+                  <Text style={{...styles.label, marginLeft: 5}}>
                     {likeCount[index]
                       ? `${likeCount[index]} people like this`
                       : ""}
@@ -103,15 +128,18 @@ const ViewAdsScreen = ({route, navigation}) => {
               )}
 
               {globalState.accType === "business" && (
-                <View style={styles.buttonContainer}>
-                  <Button
-                    title="Get Insights"
-                    buttonStyle={styles.statsButtonStyle}
-                    titleStyle={{fontWeight: "bold"}}
+                <View style={styles.likesContainer}>
+                  <Pressable
                     onPress={() =>
                       navigation.navigate("Statistics", {adId: ad._id})
                     }
-                  />
+                  >
+                    <MaterialCommunityIcons name="google-analytics" size={32} />
+                  </Pressable>
+
+                  <Text style={{...styles.label, marginTop: 10, marginLeft: 5}}>
+                    Get Insights!
+                  </Text>
                 </View>
               )}
             </Card>
@@ -135,14 +163,15 @@ const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: "#ffffff",
     borderRadius: 10,
-    width: "40%",
+    width: "42%",
+    elevation: 10,
   },
   likesContainer: {
     flexDirection: "row",
-    marginTop: 10,
+    marginTop: 5,
   },
   image: {
-    width: 130,
+    width: 140,
     height: 100,
     resizeMode: "stretch",
   },

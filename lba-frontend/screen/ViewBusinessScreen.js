@@ -1,10 +1,21 @@
-import React, {useState} from "react"
-import {StyleSheet, View, Alert, ScrollView, TextInput} from "react-native"
+import React, {useContext, useState} from "react"
+import {
+  StyleSheet,
+  View,
+  Alert,
+  ScrollView,
+  TextInput,
+  Pressable,
+  Text,
+} from "react-native"
 import useViewBusiness from "../hooks/useViewBusiness"
 import axios from "axios"
 import {REACT_APP_VIEW_ADS_API, REACT_APP_CREATE_ADS_API} from "@env"
 import {Card, Button, Image} from "@rneui/base"
 import {Dialog} from "@rneui/themed"
+import {MaterialCommunityIcons} from "@expo/vector-icons"
+import DatePicker from "../utilComponents/DatePicker"
+import Context from "../store/context"
 
 const RESTAURANT = require("../assets/RESTAURANT.jpg")
 const APPAREL = require("../assets/APPAREL.jpg")
@@ -14,6 +25,7 @@ const FOOTWEAR = require("../assets/FOOTWEAR.jpg")
 const GENERAL_STORE = require("../assets/GENERAL_STORE.jpg")
 const PHARMACY = require("../assets/PHARMACY.jpg")
 const TASK_COMPLETION = require("../assets/task_completion.png")
+const DEFAULT = require("../assets/DEFAULT.jpg")
 
 const bgImages = {
   RESTAURANT,
@@ -23,13 +35,16 @@ const bgImages = {
   FOOTWEAR,
   GENERAL_STORE,
   PHARMACY,
+  DEFAULT,
 }
 
 const ViewBusinessScreen = ({navigation}) => {
   const [isDialogVisible, setDialogVisible] = useState(false)
   const [selectedStoreId, setSelectedStoreId] = useState(null)
+  const [validTill, setValidTill] = useState(new Date(Date.now()))
   const [newOffer, setNewOffer] = useState(null)
   const [adCreationStatus, setAdCreationStatus] = useState(false)
+  const {globalState} = useContext(Context)
   const stores = useViewBusiness()
 
   cardClickEventListener = (item) => {
@@ -47,12 +62,12 @@ const ViewBusinessScreen = ({navigation}) => {
     try {
       const ad = {}
       ad.offer = newOffer
+      ad.validTill = validTill.toISOString().split("T")[0]
 
       const res = await axios.post(`${REACT_APP_CREATE_ADS_API}`, {
         id: selectedStoreId,
         ad,
       })
-
       setNewOffer(null)
       handleCreateAdDialog(null)
       setAdCreationStatus(true)
@@ -63,7 +78,9 @@ const ViewBusinessScreen = ({navigation}) => {
 
   const viewAd = async (item) => {
     try {
-      const res = await axios.get(`${REACT_APP_VIEW_ADS_API}` + `${item.id}`)
+      const res = await axios.get(
+        `${REACT_APP_VIEW_ADS_API}id=${item.id}&accType=${globalState.accType}`
+      )
       const ads = res.data
       navigation.navigate("ViewAds", {ads, storeId: item.id})
     } catch (error) {
@@ -73,6 +90,10 @@ const ViewBusinessScreen = ({navigation}) => {
 
   const viewStats = (item) => {
     navigation.navigate("ViewStats", {storeId: item.id})
+  }
+
+  const onChangeDate = (event, selectedDate) => {
+    setValidTill(selectedDate)
   }
 
   if (stores != undefined) {
@@ -85,26 +106,20 @@ const ViewBusinessScreen = ({navigation}) => {
                 {store.name} - {store.address}
               </Card.Title>
               <Card.Divider />
-              <Image style={styles.bgImage} source={bgImages[store.type]} />
+
+              <Image
+                style={styles.bgImage}
+                source={bgImages[store.type] ?? bgImages["DEFAULT"]}
+              />
+
               <View style={styles.buttonContainer}>
-                <Button
-                  title="New Ad"
-                  buttonStyle={styles.buttonStyle}
-                  onPress={() => handleCreateAdDialog(store)}
-                  size="sm"
-                />
-                <Button
-                  title="View Ads"
-                  buttonStyle={styles.buttonStyle}
-                  onPress={() => viewAd(store)}
-                  size="sm"
-                />
-                <Button
-                  title="Statistics"
-                  buttonStyle={styles.buttonStyle}
-                  onPress={() => viewStats(store)}
-                  size="sm"
-                />
+                <Pressable onPress={() => handleCreateAdDialog(store)}>
+                  <MaterialCommunityIcons name="tag-plus" size={32} />
+                </Pressable>
+
+                <Pressable onPress={() => viewAd(store)}>
+                  <MaterialCommunityIcons name="tag-multiple" size={32} />
+                </Pressable>
               </View>
             </Card>
           ))}
@@ -119,6 +134,16 @@ const ViewBusinessScreen = ({navigation}) => {
               onChangeText={(text) => setNewOffer(text)}
               style={styles.input}
               placeholder="offer goes here"
+            />
+
+            <Text style={styles.label}>
+              Offer Valid Till: {validTill.toISOString().split("T")[0]}
+            </Text>
+
+            <DatePicker
+              title="Select"
+              date={validTill}
+              onChange={onChangeDate}
             />
 
             <Dialog.Actions>
@@ -158,16 +183,15 @@ export default ViewBusinessScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 20,
-    marginBottom: 20,
   },
   cardContainer: {
     backgroundColor: "#ffffff",
     borderRadius: 10,
+    elevation: 10,
   },
   buttonContainer: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    justifyContent: "flex-start",
     marginTop: 10,
   },
   statusContainer: {
@@ -198,5 +222,10 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     fontSize: 15,
     borderBottomColor: "#000000",
+  },
+  label: {
+    color: "#5b5b5b",
+    fontSize: 15,
+    marginTop: 30,
   },
 })
