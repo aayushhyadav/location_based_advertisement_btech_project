@@ -61,7 +61,7 @@ const DashboardScreen = ({navigation}) => {
             <Card containerStyle={styles.cardContainer}>
               <Card.Title>{obj.name}</Card.Title>
               <Card.Divider />
-              <Image style={styles.image} source={obj.image} />
+              <Card.Image source={obj.image} style={styles.image} />
             </Card>
           </TouchableOpacity>
         ))}
@@ -75,8 +75,6 @@ export default DashboardScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 10,
-    marginBottom: 20,
   },
   image: {
     width: 350,
@@ -86,5 +84,6 @@ const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: "#ffffff",
     borderRadius: 10,
+    elevation: 10,
   },
 })

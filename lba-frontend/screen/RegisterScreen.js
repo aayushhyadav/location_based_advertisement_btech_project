@@ -32,12 +32,10 @@ const RegisterScreen = ({navigation}) => {
   ]
 
   const aorOptions = [
-    {label: "Within 0.5 km", value: "500"},
-    {label: "Within 1 km", value: "1000"},
-    {label: "Within 1.5 km", value: "1500"},
     {label: "Within 2 km", value: "2000"},
     {label: "Within 3 km", value: "3000"},
     {label: "Within 5 km", value: "5000"},
+    {label: "Within 10 km", value: "10000"},
   ]
 
   const RegisterAccount = async (
@@ -154,7 +152,7 @@ const RegisterScreen = ({navigation}) => {
             value={aor}
             selectedTextStyle={styles.selectedDropdownText}
             itemTextStyle={styles.listItemTextStyle}
-            maxHeight={100}
+            maxHeight={200}
           ></Dropdown>
 
           <Text style={styles.label}>Register as business owner</Text>

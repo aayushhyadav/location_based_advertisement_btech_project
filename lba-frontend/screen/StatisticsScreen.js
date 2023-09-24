@@ -82,7 +82,6 @@ export default StatisticsScreen
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginBottom: 20,
     backgroundColor: "#fff",
   },
   list: {
@@ -95,6 +94,7 @@ const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: "#ffffff",
     borderRadius: 10,
+    elevation: 10,
   },
   label: {
     fontSize: 30,

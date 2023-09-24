@@ -138,14 +138,15 @@ const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: "#ffffff",
     borderRadius: 10,
-    width: "40%",
+    width: "42%",
+    elevation: 10,
   },
   likesContainer: {
     flexDirection: "row",
     marginTop: 10,
   },
   image: {
-    width: 130,
+    width: 140,
     height: 100,
     resizeMode: "stretch",
   },
