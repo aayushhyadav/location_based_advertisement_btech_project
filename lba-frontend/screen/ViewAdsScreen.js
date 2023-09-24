@@ -74,6 +74,13 @@ const ViewAdsScreen = ({route, navigation}) => {
     }
   }
 
+  const getFormattedDate = (dateString) => {
+    const date = new Date(dateString)
+    const tokens = date.toUTCString().split(" ")
+    const formattedStr = `${tokens[0]} ${tokens[1]} ${tokens[2]}`
+    return formattedStr
+  }
+
   if (ads != null) {
     return (
       <ScrollView>
@@ -81,7 +88,25 @@ const ViewAdsScreen = ({route, navigation}) => {
           {ads.map((ad, index) => (
             <Card key={index} containerStyle={styles.cardContainer}>
               <Card.Title>{ad.offer}</Card.Title>
+
+              <View style={styles.likesContainer}>
+                <MaterialCommunityIcons
+                  name="alert-decagram"
+                  size={18}
+                  color="red"
+                />
+                <Text
+                  style={{
+                    ...styles.label,
+                    fontWeight: "bold",
+                  }}
+                >
+                  Ends on {getFormattedDate(ad.validTill)}
+                </Text>
+              </View>
+
               <Card.Divider></Card.Divider>
+
               <Image style={styles.image} source={rewardsBg} />
 
               {globalState.accType === "normal" && (
@@ -94,7 +119,7 @@ const ViewAdsScreen = ({route, navigation}) => {
                     />
                   </Pressable>
 
-                  <Text style={styles.label}>
+                  <Text style={{...styles.label, marginLeft: 5}}>
                     {likeCount[index]
                       ? `${likeCount[index]} people like this`
                       : ""}
@@ -112,7 +137,7 @@ const ViewAdsScreen = ({route, navigation}) => {
                     <MaterialCommunityIcons name="google-analytics" size={32} />
                   </Pressable>
 
-                  <Text style={{...styles.label, marginTop: 10}}>
+                  <Text style={{...styles.label, marginTop: 10, marginLeft: 5}}>
                     Get Insights!
                   </Text>
                 </View>
@@ -143,7 +168,7 @@ const styles = StyleSheet.create({
   },
   likesContainer: {
     flexDirection: "row",
-    marginTop: 10,
+    marginTop: 5,
   },
   image: {
     width: 140,

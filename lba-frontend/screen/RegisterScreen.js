@@ -7,7 +7,7 @@ import {
   ScrollView,
 } from "react-native"
 import React, {useContext} from "react"
-import {DateTimePickerAndroid} from "@react-native-community/datetimepicker"
+import DatePicker from "../utilComponents/DatePicker"
 import axios from "axios"
 import {Button} from "@rneui/themed"
 import {Dropdown} from "react-native-element-dropdown"
@@ -77,19 +77,6 @@ const RegisterScreen = ({navigation}) => {
 
   const onChangeDate = (event, selectedDate) => {
     setDate(selectedDate)
-  }
-
-  const showDatePicker = (mode) => {
-    DateTimePickerAndroid.open({
-      value: date,
-      onChange: onChangeDate,
-      mode,
-      display: "spinner",
-    })
-  }
-
-  const showMode = () => {
-    showDatePicker("date")
   }
 
   return (
@@ -169,9 +156,7 @@ const RegisterScreen = ({navigation}) => {
           <Text style={styles.label}>
             DoB: {date.toISOString().split("T")[0]}
           </Text>
-          <View style={styles.dateViewContainer}>
-            <Button title="Select" onPress={showMode} type="clear" size="sm" />
-          </View>
+          <DatePicker onChange={onChangeDate} title="Select" date={date} />
 
           <View style={styles.buttonContainer}>
             <Button
