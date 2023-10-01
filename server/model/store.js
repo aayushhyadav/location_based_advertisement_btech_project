@@ -51,6 +51,9 @@ const storeSchema = mongoose.Schema({
         type: String,
       },
       likedBy: [],
+      validTill: {
+        type: String,
+      },
     },
   ],
 })
