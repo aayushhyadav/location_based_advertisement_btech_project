@@ -20,7 +20,7 @@ router.post("/create", async (req, res) => {
 
     res.status(201).send({Msg: "Created new Advertisement!"})
   } catch (error) {
-    res.status(400).send(error)
+    res.status(500).send(error)
   }
 })
 
@@ -42,14 +42,24 @@ router.post("/delete", async (req, res) => {
 router.get("/view", async (req, res) => {
   try {
     const store = await Store.Store.findById(req.query.id)
-    const adList = store.advertisement
+    let adList = store.advertisement
+
+    if (req.query.accType === "normal") {
+      const curDate = new Date(Date.now())
+      const curDateString = new Date(curDate.toISOString().split("T")[0])
+
+      adList = adList.filter((ad) => {
+        const expiryDate = new Date(ad.validTill)
+        return expiryDate.getTime() - curDateString.getTime() >= 0
+      })
+    }
 
     if (adList.length == 0) {
       throw "Currently no advertisements are created."
     }
     res.status(200).send(adList)
   } catch (error) {
-    res.status(400).send(error)
+    res.status(500).send(error)
   }
 })
 
