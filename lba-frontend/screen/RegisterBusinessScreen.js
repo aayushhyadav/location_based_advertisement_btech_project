@@ -6,6 +6,8 @@ import {Button} from "@rneui/themed"
 import {Dropdown} from "react-native-element-dropdown"
 import Context from "../store/context"
 import Loader from "./Loader"
+import StatusDialog from "../utilComponents/StatusDialog"
+import constants from "../utils/constants"
 
 const RegisterBusinessScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -16,6 +18,9 @@ const RegisterBusinessScreen = ({navigation}) => {
   const [type, onChangeType] = React.useState(null)
   const [newType, onChangeNewType] = React.useState(null)
   const [loading, setLoading] = React.useState(false)
+  const [status, setStatus] = React.useState(false)
+  const [errorStatus, setErrorStatus] = React.useState(false)
+  const [statusMsg, setStatusMsg] = React.useState(constants.GENERIC_ERROR_MSG)
   const {globalState} = useContext(Context)
 
   const businessOptions = [
@@ -51,11 +56,21 @@ const RegisterBusinessScreen = ({navigation}) => {
       })
 
       setLoading(false)
-      alert("Store Registered!")
+      setStatus(true)
+      setErrorStatus(false)
+      setStatusMsg(constants.STORE_SETUP_SUCCESS)
     } catch (error) {
-      console.log(error)
-      alert("Please check your details.")
+      console.log(error.response.data.Msg)
+      setLoading(false)
+      setStatus(true)
+      setErrorStatus(true)
+      setStatusMsg(error.response.data.Msg)
     }
+  }
+
+  const closeStatusDialog = () => {
+    setStatus(false)
+    setStatusMsg(constants.GENERIC_ERROR_MSG)
   }
 
   return (
@@ -148,9 +163,25 @@ const RegisterBusinessScreen = ({navigation}) => {
                     contact
                   )
                 }
+                disabled={
+                  !storeName ||
+                  !emailAddress ||
+                  !address ||
+                  !city ||
+                  !contact ||
+                  !type ||
+                  (type === "OTHER" && !newType)
+                }
               />
             </View>
           </View>
+
+          <StatusDialog
+            isVisible={status}
+            handleOnBackDropPress={closeStatusDialog}
+            title={statusMsg}
+            status={errorStatus ? "error" : "success"}
+          />
         </ScrollView>
       )}
     </View>

@@ -16,6 +16,7 @@ import {Dialog} from "@rneui/themed"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import DatePicker from "../utilComponents/DatePicker"
 import Context from "../store/context"
+import constants from "../utils/constants"
 
 const RESTAURANT = require("../assets/RESTAURANT.jpg")
 const APPAREL = require("../assets/APPAREL.jpg")
@@ -44,6 +45,8 @@ const ViewBusinessScreen = ({navigation}) => {
   const [validTill, setValidTill] = useState(new Date(Date.now()))
   const [newOffer, setNewOffer] = useState(null)
   const [adCreationStatus, setAdCreationStatus] = useState(false)
+  const [errorStatus, setErrorStatus] = React.useState(false)
+  const [statusMsg, setStatusMsg] = React.useState(constants.GENERIC_ERROR_MSG)
   const {globalState} = useContext(Context)
   const stores = useViewBusiness()
 
@@ -54,6 +57,10 @@ const ViewBusinessScreen = ({navigation}) => {
   const handleCreateAdDialog = (item) => {
     setDialogVisible(!isDialogVisible)
     item ? setSelectedStoreId(item.id) : setSelectedStoreId(null)
+
+    if (!item) {
+      setNewOffer(null)
+    }
   }
 
   const closeStatusDialog = () => setAdCreationStatus(false)
@@ -68,11 +75,15 @@ const ViewBusinessScreen = ({navigation}) => {
         id: selectedStoreId,
         ad,
       })
-      setNewOffer(null)
       handleCreateAdDialog(null)
       setAdCreationStatus(true)
+      setStatusMsg(constants.ADD_NEW_AD_SUCCESS)
+      setErrorStatus(false)
     } catch (error) {
-      console.log(error)
+      handleCreateAdDialog(null)
+      setAdCreationStatus(true)
+      setStatusMsg(error.response.data.Msg)
+      setErrorStatus(true)
     }
   }
 
@@ -118,7 +129,11 @@ const ViewBusinessScreen = ({navigation}) => {
                 </Pressable>
 
                 <Pressable onPress={() => viewAd(store)}>
-                  <MaterialCommunityIcons name="tag-multiple" size={32} />
+                  <MaterialCommunityIcons
+                    name="tag-multiple"
+                    size={32}
+                    style={{marginLeft: 10}}
+                  />
                 </Pressable>
               </View>
             </Card>
@@ -136,28 +151,29 @@ const ViewBusinessScreen = ({navigation}) => {
               placeholder="offer goes here"
             />
 
-            <Text style={styles.label}>
-              Offer Valid Till: {validTill.toISOString().split("T")[0]}
-            </Text>
+            <View style={styles.dateContainer}>
+              <Text style={styles.label}>
+                Offer Valid Till: {validTill.toISOString().split("T")[0]}
+              </Text>
 
-            <DatePicker
-              title="Select"
-              date={validTill}
-              onChange={onChangeDate}
-            />
+              <DatePicker
+                title="Select"
+                date={validTill}
+                onChange={onChangeDate}
+              />
+            </View>
 
             <Dialog.Actions>
               <Dialog.Button
-                title="Create"
-                titleStyle={{fontWeight: "bold"}}
-                onPress={() => createAd()}
-                disabled={!newOffer}
-                color="black"
+                title="Cancel"
+                titleStyle={styles.dialogActionButtonTitleStyle}
+                onPress={() => handleCreateAdDialog(null)}
               />
               <Dialog.Button
-                title="Cancel"
-                titleStyle={{fontWeight: "bold"}}
-                onPress={() => handleCreateAdDialog(null)}
+                title="Create"
+                titleStyle={styles.dialogActionButtonTitleStyle}
+                onPress={() => createAd()}
+                disabled={!newOffer}
               />
             </Dialog.Actions>
           </Dialog>
@@ -171,6 +187,13 @@ const ViewBusinessScreen = ({navigation}) => {
               <Image source={TASK_COMPLETION} style={styles.statusImage} />
             </View>
           </Dialog>
+
+          <StatusDialog
+            isVisible={adCreationStatus}
+            handleOnBackDropPress={closeStatusDialog}
+            title={statusMsg}
+            status={errorStatus ? "error" : "success"}
+          />
         </ScrollView>
       </View>
     )
@@ -198,11 +221,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-evenly",
   },
-  buttonStyle: {
-    backgroundColor: "black",
-    borderWidth: 1,
-    borderColor: "white",
-    borderRadius: 5,
+  dateContainer: {
+    flexDirection: "row",
+  },
+  dialogActionButtonTitleStyle: {
+    fontWeight: "bold",
+    color: "black",
   },
   bgImage: {
     width: 350,
@@ -226,6 +250,7 @@ const styles = StyleSheet.create({
   label: {
     color: "#5b5b5b",
     fontSize: 15,
+    fontWeight: 500,
     marginTop: 30,
   },
 })
