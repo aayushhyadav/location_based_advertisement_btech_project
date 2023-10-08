@@ -87,13 +87,13 @@ const ViewAdsScreen = ({route, navigation}) => {
         <View style={styles.container}>
           {ads.map((ad, index) => (
             <Card key={index} containerStyle={styles.cardContainer}>
-              <Card.Title>{ad.offer}</Card.Title>
+              <Card.Title style={{fontSize: 13}}>{ad.offer}</Card.Title>
 
               <View style={styles.likesContainer}>
                 <MaterialCommunityIcons
                   name="alert-decagram"
                   size={18}
-                  color="red"
+                  color="#cc9900"
                 />
                 <Text
                   style={{
@@ -154,7 +154,6 @@ export default ViewAdsScreen
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     marginTop: 20,
     marginBottom: 20,
     flexWrap: "wrap",
