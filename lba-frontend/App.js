@@ -197,11 +197,15 @@ export default function App() {
     <GlobalStateProvider>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{headerTitle: "SafeDeals"}}
+          />
           <Stack.Screen
             name="Register"
             component={RegisterScreen}
-            options={{title: "Portal to exclusive offers!"}}
+            options={{headerTitle: "SafeDeals"}}
           />
           <Stack.Screen
             name="Dashboard"
