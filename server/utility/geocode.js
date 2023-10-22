@@ -14,9 +14,13 @@ if (envVar.error) {
 }
 
 const geocodeToCoords = async (address) => {
-  const url = GEO_URL + address + "&key=" + API_KEY
-  const res = await axios.get(url)
-  return res.data.results[0].geometry.location
+  try {
+    const url = GEO_URL + address + "&key=" + API_KEY
+    const res = await axios.get(url)
+    return res.data.results[0].geometry.location
+  } catch (error) {
+    throw new Error("Geocoding failed!")
+  }
 }
 
 const geocodeToCity = async (latitude, longitude) => {

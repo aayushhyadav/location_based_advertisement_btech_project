@@ -20,7 +20,9 @@ router.post("/create", async (req, res) => {
 
     res.status(201).send({Msg: "Created new Advertisement!"})
   } catch (error) {
-    res.status(500).send(error)
+    res.status(500).send({
+      Msg: "We encountered an error while saving offer details. Please try again or contact support.",
+    })
   }
 })
 
@@ -54,9 +56,6 @@ router.get("/view", async (req, res) => {
       })
     }
 
-    if (adList.length == 0) {
-      throw "Currently no advertisements are created."
-    }
     res.status(200).send(adList)
   } catch (error) {
     res.status(500).send(error)
