@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react"
+import React, {useContext, useEffect, useState} from "react"
 import {
   StyleSheet,
   View,
@@ -11,9 +11,10 @@ import {
 import useViewBusiness from "../hooks/useViewBusiness"
 import axios from "axios"
 import {REACT_APP_VIEW_ADS_API, REACT_APP_CREATE_ADS_API} from "@env"
-import {Card, Button, Image} from "@rneui/base"
+import {Card, Image} from "@rneui/base"
 import {Dialog} from "@rneui/themed"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
+import NoDataScreen from "./NoData"
 import DatePicker from "../utilComponents/DatePicker"
 import Context from "../store/context"
 import constants from "../utils/constants"
@@ -25,7 +26,6 @@ const ELECTRONICS = require("../assets/ELECTRONICS.jpg")
 const FOOTWEAR = require("../assets/FOOTWEAR.jpg")
 const GENERAL_STORE = require("../assets/GENERAL_STORE.jpg")
 const PHARMACY = require("../assets/PHARMACY.jpg")
-const TASK_COMPLETION = require("../assets/task_completion.png")
 const DEFAULT = require("../assets/DEFAULT.jpg")
 
 const bgImages = {
@@ -95,7 +95,7 @@ const ViewBusinessScreen = ({navigation}) => {
       const ads = res.data
       navigation.navigate("ViewAds", {ads, storeId: item.id})
     } catch (error) {
-      console.log(error)
+      console.log(error.response.data)
     }
   }
 
@@ -107,98 +107,87 @@ const ViewBusinessScreen = ({navigation}) => {
     setValidTill(selectedDate)
   }
 
-  if (stores != undefined) {
-    return (
-      <View style={styles.container}>
-        <ScrollView>
-          {stores.data.map((store, index) => (
-            <Card key={index} containerStyle={styles.cardContainer}>
-              <Card.Title>
-                {store.name} - {store.address}
-              </Card.Title>
-              <Card.Divider />
+  return stores?.data?.length === 0 ? (
+    <NoDataScreen message="Register your business today to view your stores!" />
+  ) : (
+    <View style={styles.container}>
+      <ScrollView>
+        {stores?.data.map((store, index) => (
+          <Card key={index} containerStyle={styles.cardContainer}>
+            <Card.Title>
+              {store.name} - {store.address}
+            </Card.Title>
+            <Card.Divider />
 
-              <Image
-                style={styles.bgImage}
-                source={bgImages[store.type] ?? bgImages["DEFAULT"]}
-              />
-
-              <View style={styles.buttonContainer}>
-                <Pressable onPress={() => handleCreateAdDialog(store)}>
-                  <MaterialCommunityIcons name="tag-plus" size={32} />
-                </Pressable>
-
-                <Pressable onPress={() => viewAd(store)}>
-                  <MaterialCommunityIcons
-                    name="tag-multiple"
-                    size={32}
-                    style={{marginLeft: 10}}
-                  />
-                </Pressable>
-              </View>
-            </Card>
-          ))}
-
-          <Dialog
-            isVisible={isDialogVisible}
-            onBackdropPress={() => handleCreateAdDialog(null)}
-          >
-            <Dialog.Title title="Post a new advertisement!" />
-            <TextInput
-              value={newOffer}
-              onChangeText={(text) => setNewOffer(text)}
-              style={styles.input}
-              placeholder="offer goes here"
+            <Image
+              style={styles.bgImage}
+              source={bgImages[store.type] ?? bgImages["DEFAULT"]}
             />
 
-            <View style={styles.dateContainer}>
-              <Text style={styles.label}>
-                Offer Valid Till: {validTill.toISOString().split("T")[0]}
-              </Text>
+            <View style={styles.buttonContainer}>
+              <Pressable onPress={() => handleCreateAdDialog(store)}>
+                <MaterialCommunityIcons name="tag-plus" size={32} />
+              </Pressable>
 
-              <DatePicker
-                title="Select"
-                date={validTill}
-                onChange={onChangeDate}
-              />
+              <Pressable onPress={() => viewAd(store)}>
+                <MaterialCommunityIcons
+                  name="tag-multiple"
+                  size={32}
+                  style={{marginLeft: 10}}
+                />
+              </Pressable>
             </View>
+          </Card>
+        ))}
 
-            <Dialog.Actions>
-              <Dialog.Button
-                title="Cancel"
-                titleStyle={styles.dialogActionButtonTitleStyle}
-                onPress={() => handleCreateAdDialog(null)}
-              />
-              <Dialog.Button
-                title="Create"
-                titleStyle={styles.dialogActionButtonTitleStyle}
-                onPress={() => createAd()}
-                disabled={!newOffer}
-              />
-            </Dialog.Actions>
-          </Dialog>
-
-          <Dialog
-            isVisible={adCreationStatus}
-            onBackdropPress={closeStatusDialog}
-          >
-            <View style={styles.statusContainer}>
-              <Dialog.Title title="Posted Successfully!" />
-              <Image source={TASK_COMPLETION} style={styles.statusImage} />
-            </View>
-          </Dialog>
-
-          <StatusDialog
-            isVisible={adCreationStatus}
-            handleOnBackDropPress={closeStatusDialog}
-            title={statusMsg}
-            status={errorStatus ? "error" : "success"}
+        <Dialog
+          isVisible={isDialogVisible}
+          onBackdropPress={() => handleCreateAdDialog(null)}
+        >
+          <Dialog.Title title="Post a new advertisement!" />
+          <TextInput
+            value={newOffer}
+            onChangeText={(text) => setNewOffer(text)}
+            style={styles.input}
+            placeholder="offer goes here"
           />
-        </ScrollView>
-      </View>
-    )
-  }
-  return null
+
+          <View style={styles.dateContainer}>
+            <Text style={styles.label}>
+              Offer Valid Till: {validTill.toISOString().split("T")[0]}
+            </Text>
+
+            <DatePicker
+              title="Select"
+              date={validTill}
+              onChange={onChangeDate}
+            />
+          </View>
+
+          <Dialog.Actions>
+            <Dialog.Button
+              title="Cancel"
+              titleStyle={styles.dialogActionButtonTitleStyle}
+              onPress={() => handleCreateAdDialog(null)}
+            />
+            <Dialog.Button
+              title="Create"
+              titleStyle={styles.dialogActionButtonTitleStyle}
+              onPress={() => createAd()}
+              disabled={!newOffer}
+            />
+          </Dialog.Actions>
+        </Dialog>
+
+        <StatusDialog
+          isVisible={adCreationStatus}
+          handleOnBackDropPress={closeStatusDialog}
+          title={statusMsg}
+          status={errorStatus ? "error" : "success"}
+        />
+      </ScrollView>
+    </View>
+  )
 }
 
 export default ViewBusinessScreen
