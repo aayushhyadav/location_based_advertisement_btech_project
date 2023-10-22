@@ -3,9 +3,11 @@ import {StyleSheet, Text, View, ScrollView} from "react-native"
 import {REACT_APP_SHOW_AD_STATS_API} from "@env"
 import axios from "axios"
 import {Card} from "@rneui/themed"
+import NoDataScreen from "./NoData"
 
 const StatisticsScreen = ({route, navigation}) => {
   const [statsData, setStatsData] = useState()
+  const [error, setError] = useState(false)
 
   useEffect(() => {
     fetchAdStats()
@@ -56,12 +58,15 @@ const StatisticsScreen = ({route, navigation}) => {
         },
       ]
 
+      if (res?.data?.Msg === "Access Forbidden due to Privacy Reasons") {
+        setError(true)
+      }
       setStatsData(data)
     } catch (error) {
       console.log(error)
     }
   }
-  return (
+  return !error ? (
     <View style={styles.container}>
       <ScrollView>
         {statsData &&
@@ -74,6 +79,8 @@ const StatisticsScreen = ({route, navigation}) => {
           ))}
       </ScrollView>
     </View>
+  ) : (
+    <NoDataScreen message="Access forbidden due to privacy reasons" />
   )
 }
 

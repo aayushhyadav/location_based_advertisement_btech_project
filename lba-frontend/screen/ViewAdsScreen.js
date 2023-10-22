@@ -1,11 +1,11 @@
 import React, {useContext, useState, useEffect} from "react"
 import {StyleSheet, View, ScrollView, Pressable, Text} from "react-native"
 import {Card, Image} from "@rneui/base"
-import {Button} from "@rneui/themed"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import Context from "../store/context"
 import axios from "axios"
 import {REACT_APP_UPDATE_ADS_API, REACT_APP_UPDATE_STATS_API} from "@env"
+import NoDataScreen from "./NoData"
 
 const rewardsBg = require("../assets/rewards.jpg")
 
@@ -14,13 +14,13 @@ const ViewAdsScreen = ({route, navigation}) => {
   const [likeCount, setLikeCount] = useState({})
   const {globalState} = useContext(Context)
 
+  const {ads, storeId} = route.params
+
   useEffect(() => {
     if (ads !== null && globalState.accType === "normal") {
       initLikeValues()
     }
   }, [ads])
-
-  const {ads, storeId} = route.params
 
   const initLikeValues = () => {
     let adNum
@@ -81,80 +81,79 @@ const ViewAdsScreen = ({route, navigation}) => {
     return formattedStr
   }
 
-  if (ads != null) {
-    return (
-      <ScrollView>
-        <View style={styles.container}>
-          {ads.map((ad, index) => (
-            <Card key={index} containerStyle={styles.cardContainer}>
-              <Card.Title>{ad.offer}</Card.Title>
+  return ads?.length > 0 ? (
+    <ScrollView>
+      <View style={styles.container}>
+        {ads.map((ad, index) => (
+          <Card key={index} containerStyle={styles.cardContainer}>
+            <Card.Title style={{fontSize: 13}}>{ad.offer}</Card.Title>
 
+            <View style={styles.likesContainer}>
+              <MaterialCommunityIcons
+                name="alert-decagram"
+                size={18}
+                color="#cc9900"
+              />
+              <Text
+                style={{
+                  ...styles.label,
+                  fontWeight: "bold",
+                }}
+              >
+                Ends on {getFormattedDate(ad.validTill)}
+              </Text>
+            </View>
+
+            <Card.Divider></Card.Divider>
+
+            <Image style={styles.image} source={rewardsBg} />
+
+            {globalState.accType === "normal" && (
               <View style={styles.likesContainer}>
-                <MaterialCommunityIcons
-                  name="alert-decagram"
-                  size={18}
-                  color="red"
-                />
-                <Text
-                  style={{
-                    ...styles.label,
-                    fontWeight: "bold",
-                  }}
-                >
-                  Ends on {getFormattedDate(ad.validTill)}
+                <Pressable onPress={() => onChangeLike(ad._id, index)}>
+                  <MaterialCommunityIcons
+                    name={like[index] ? "heart" : "heart-outline"}
+                    size={24}
+                    color={like[index] ? "red" : "black"}
+                  />
+                </Pressable>
+
+                <Text style={{...styles.label, marginLeft: 5}}>
+                  {likeCount[index]
+                    ? `${likeCount[index]} people like this`
+                    : ""}
                 </Text>
               </View>
+            )}
 
-              <Card.Divider></Card.Divider>
+            {globalState.accType === "business" && (
+              <View style={styles.likesContainer}>
+                <Pressable
+                  onPress={() =>
+                    navigation.navigate("Statistics", {adId: ad._id})
+                  }
+                >
+                  <MaterialCommunityIcons name="google-analytics" size={32} />
+                </Pressable>
 
-              <Image style={styles.image} source={rewardsBg} />
-
-              {globalState.accType === "normal" && (
-                <View style={styles.likesContainer}>
-                  <Pressable onPress={() => onChangeLike(ad._id, index)}>
-                    <MaterialCommunityIcons
-                      name={like[index] ? "heart" : "heart-outline"}
-                      size={24}
-                      color={like[index] ? "red" : "black"}
-                    />
-                  </Pressable>
-
-                  <Text style={{...styles.label, marginLeft: 5}}>
-                    {likeCount[index]
-                      ? `${likeCount[index]} people like this`
-                      : ""}
-                  </Text>
-                </View>
-              )}
-
-              {globalState.accType === "business" && (
-                <View style={styles.likesContainer}>
-                  <Pressable
-                    onPress={() =>
-                      navigation.navigate("Statistics", {adId: ad._id})
-                    }
-                  >
-                    <MaterialCommunityIcons name="google-analytics" size={32} />
-                  </Pressable>
-
-                  <Text style={{...styles.label, marginTop: 10, marginLeft: 5}}>
-                    Get Insights!
-                  </Text>
-                </View>
-              )}
-            </Card>
-          ))}
-        </View>
-      </ScrollView>
-    )
-  }
+                <Text style={{...styles.label, marginTop: 10, marginLeft: 5}}>
+                  Get Insights!
+                </Text>
+              </View>
+            )}
+          </Card>
+        ))}
+      </View>
+    </ScrollView>
+  ) : (
+    <NoDataScreen message="Post an advertisement today!" />
+  )
 }
 
 export default ViewAdsScreen
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     marginTop: 20,
     marginBottom: 20,
     flexWrap: "wrap",

@@ -4,10 +4,14 @@ import axios from "axios"
 import {Button} from "@rneui/themed"
 import {REACT_APP_LOGIN_API} from "@env"
 import Context from "../store/context"
+import StatusDialog from "../utilComponents/StatusDialog"
+import constants from "../utils/constants"
 
 const LoginScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
   const [password, onChangePassword] = React.useState(null)
+  const [errorStatus, setErrorStatus] = React.useState(false)
+  const [statusMsg, setStatusMsg] = React.useState(constants.GENERIC_ERROR_MSG)
   const {globalDispatch} = React.useContext(Context)
 
   const authenticate = async () => {
@@ -25,10 +29,17 @@ const LoginScreen = ({navigation}) => {
         navigation.navigate("Dashboard")
       }
     } catch (error) {
-      console.log({error, message: error.message})
-      alert("Please check your credentials.")
+      console.log(error.response.data.Msg)
+      setErrorStatus(true)
+      setStatusMsg(error.response.data.Msg)
     }
   }
+
+  const closeStatusDialog = () => {
+    setErrorStatus(false)
+    setStatusMsg(constants.GENERIC_ERROR_MSG)
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.heading}>Welcome Back!</Text>
@@ -60,6 +71,7 @@ const LoginScreen = ({navigation}) => {
               buttonStyle={styles.loginButtonStyle}
               titleStyle={{fontWeight: "bold"}}
               onPress={() => authenticate()}
+              disabled={!emailAddress || !password}
             />
           </View>
 
@@ -71,6 +83,13 @@ const LoginScreen = ({navigation}) => {
           </View>
         </View>
       </View>
+
+      <StatusDialog
+        isVisible={errorStatus}
+        handleOnBackDropPress={closeStatusDialog}
+        title={statusMsg}
+        status="error"
+      />
     </View>
   )
 }

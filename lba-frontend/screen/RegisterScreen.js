@@ -13,6 +13,8 @@ import {Button} from "@rneui/themed"
 import {Dropdown} from "react-native-element-dropdown"
 import {REACT_APP_REGISTER_API} from "@env"
 import Context from "../store/context"
+import StatusDialog from "../utilComponents/StatusDialog"
+import constants from "../utils/constants"
 
 const RegisterScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -22,6 +24,8 @@ const RegisterScreen = ({navigation}) => {
   const [aor, onChangeAor] = React.useState(null)
   const [date, setDate] = React.useState(new Date(Date.now()))
   const [isEnabled, setIsEnabled] = React.useState(false)
+  const [errorStatus, setErrorStatus] = React.useState(false)
+  const [statusMsg, setStatusMsg] = React.useState(constants.GENERIC_ERROR_MSG)
   const {globalDispatch} = useContext(Context)
 
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
@@ -70,13 +74,19 @@ const RegisterScreen = ({navigation}) => {
         navigation.navigate("Dashboard")
       }
     } catch (error) {
-      console.log(error)
-      alert("Please check your credentials.")
+      console.log(error.response.data.Msg)
+      setErrorStatus(true)
+      setStatusMsg(error.response.data.Msg)
     }
   }
 
   const onChangeDate = (event, selectedDate) => {
     setDate(selectedDate)
+  }
+
+  const closeStatusDialog = () => {
+    setErrorStatus(false)
+    setStatusMsg(constants.GENERIC_ERROR_MSG)
   }
 
   return (
@@ -174,8 +184,18 @@ const RegisterScreen = ({navigation}) => {
                   isEnabled
                 )
               }
+              disabled={
+                !username || !emailAddress || !password || !gender || !aor
+              }
             />
           </View>
+
+          <StatusDialog
+            isVisible={errorStatus}
+            handleOnBackDropPress={closeStatusDialog}
+            title={statusMsg}
+            status="error"
+          />
         </ScrollView>
       </View>
     </View>

@@ -1,4 +1,3 @@
-import {StatusBar} from "expo-status-bar"
 import {StyleSheet, Text, View} from "react-native"
 import {NavigationContainer} from "@react-navigation/native"
 import {createNativeStackNavigator} from "@react-navigation/native-stack"
@@ -15,9 +14,11 @@ import StatisticsScreen from "./screen/StatisticsScreen"
 import ProfileScreen from "./screen/ProfileScreen"
 import HelpScreen from "./screen/HelpScreen"
 import GlobalStateProvider from "./store/GlobalStateProvider"
-import {useContext, useEffect} from "react"
+import {useContext} from "react"
 import Context from "./store/context"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
+import {Button} from "@rneui/themed"
+import constants from "./utils/constants"
 
 const Stack = createNativeStackNavigator()
 const DashboardStack = createNativeStackNavigator()
@@ -37,8 +38,20 @@ const BusinessUserTabNavigator = () => (
       component={DashboardStackScreen}
       options={{headerShown: false}}
     />
-    <Tab.Screen name="Profile" component={ProfileScreen} />
-    <Tab.Screen name="Help" component={HelpScreen} />
+    <Tab.Screen
+      name="Profile"
+      component={ProfileScreen}
+      options={({navigation}) => ({
+        headerRight: () => logoutButtonComponent(navigation),
+      })}
+    />
+    <Tab.Screen
+      name="Help"
+      component={HelpScreen}
+      options={({navigation}) => ({
+        headerRight: () => logoutButtonComponent(navigation),
+      })}
+    />
   </Tab.Navigator>
 )
 
@@ -55,9 +68,31 @@ const NormalUserTabNavigator = () => (
       component={ExploreStackScreen}
       options={{headerShown: false}}
     />
-    <Tab.Screen name="Profile" component={ProfileScreen} />
-    <Tab.Screen name="Help" component={HelpScreen} />
+    <Tab.Screen
+      name="Profile"
+      component={ProfileScreen}
+      options={({navigation}) => ({
+        headerRight: () => logoutButtonComponent(navigation),
+      })}
+    />
+    <Tab.Screen
+      name="Help"
+      component={HelpScreen}
+      options={({navigation}) => ({
+        headerRight: () => logoutButtonComponent(navigation),
+      })}
+    />
   </Tab.Navigator>
+)
+
+const logoutButtonComponent = (navigation) => (
+  <Button
+    title={constants.SIGN_OUT_BUTTON_LABEL}
+    buttonStyle={styles.logoutButtonStyle}
+    titleStyle={{fontWeight: "500"}}
+    onPress={() => navigation.navigate("Login")}
+    size="sm"
+  />
 )
 
 const DashboardStackScreen = () => {
@@ -68,32 +103,50 @@ const DashboardStackScreen = () => {
       <DashboardStack.Screen
         name="MyDashboard"
         component={DashboardScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
       <DashboardStack.Screen
         name="ViewBusiness"
         component={ViewBusinessScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
       <DashboardStack.Screen
         name="ViewAds"
         component={ViewAdsScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
       <DashboardStack.Screen
         name="Statistics"
         component={StatisticsScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
       <DashboardStack.Screen
         name="RegisterBusiness"
         component={RegisterBusinessScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
       <DashboardStack.Screen
         name="Explore"
         component={ExploreScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
     </DashboardStack.Navigator>
   )
@@ -107,12 +160,18 @@ const ExploreStackScreen = () => {
       <ExploreStack.Screen
         name="MyExplore"
         component={ExploreScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
       <ExploreStack.Screen
         name="ViewAds"
         component={ViewAdsScreen}
-        options={{title: `Welcome ${globalState.name}!`}}
+        options={({navigation}) => ({
+          title: `Hi ${globalState.name}!`,
+          headerRight: () => logoutButtonComponent(navigation),
+        })}
       />
     </ExploreStack.Navigator>
   )
@@ -138,11 +197,15 @@ export default function App() {
     <GlobalStateProvider>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Login" component={LoginScreen} />
+          <Stack.Screen
+            name="Login"
+            component={LoginScreen}
+            options={{headerTitle: "SafeDeals"}}
+          />
           <Stack.Screen
             name="Register"
             component={RegisterScreen}
-            options={{title: "Portal to exclusive offers!"}}
+            options={{headerTitle: "SafeDeals"}}
           />
           <Stack.Screen
             name="Dashboard"
@@ -166,5 +229,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  logoutButtonStyle: {
+    backgroundColor: "black",
+    borderWidth: 1,
+    borderColor: "white",
+    borderRadius: 5,
   },
 })
