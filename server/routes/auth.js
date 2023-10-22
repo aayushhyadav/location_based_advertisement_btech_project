@@ -13,7 +13,7 @@ router.post("/userSignup", async (req, res) => {
     await user.save()
     res.status(201).send({user})
   } catch (error) {
-    res.status(400).send({
+    res.status(500).send({
       Msg: "Please ensure password contains at-least 7 characters and email is unique.",
     })
   }
@@ -26,7 +26,8 @@ router.post("/userLogin", async (req, res) => {
     const user = await User.User.findOne({email: email, password: password})
 
     if (user == null) {
-      throw "User not found. Please check your credentials."
+      res.status(404).send({Msg: "User not found!"})
+      return
     }
 
     const userDetails = {
@@ -39,7 +40,7 @@ router.post("/userLogin", async (req, res) => {
 
     res.status(200).send(userDetails)
   } catch (error) {
-    res.status(400).send({error})
+    res.status(500).send({error})
   }
 })
 
@@ -73,7 +74,23 @@ router.post("/businessSignup", async (req, res) => {
 
     res.status(201).send({store})
   } catch (error) {
-    res.status(400).send(error)
+    console.log(error.message)
+
+    let Msg
+    if (error?.errors?.email) {
+      Msg = "Please enter a valid email!"
+    } else if (error?.errors?.contact) {
+      Msg = "Please enter a valid contact number!"
+    } else if (error?.message === "Geocoding failed!") {
+      Msg = "Please enter a valid address!"
+    } else {
+      Msg =
+        "We encountered an error while setting up your business. Please try again or contact support."
+    }
+
+    res.status(500).send({
+      Msg,
+    })
   }
 })
 
@@ -81,10 +98,6 @@ router.get("/viewBusiness", async (req, res) => {
   try {
     const stores = await Store.Store.find({owner: req.query.id})
     const storeDetails = []
-
-    if (stores.length == 0) {
-      throw "No businesses have been registered by you."
-    }
 
     stores.forEach((store) => {
       const details = {}
@@ -98,7 +111,7 @@ router.get("/viewBusiness", async (req, res) => {
 
     res.status(200).send(storeDetails)
   } catch (error) {
-    res.status(400).send(error)
+    res.status(500).send(error)
   }
 })
 

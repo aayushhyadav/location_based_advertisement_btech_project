@@ -60,6 +60,7 @@ router.get("/getStats", async (req, res) => {
     _60AndAbove: 0,
   }
   const stats = []
+  let noisyStats = []
 
   try {
     const adStats = await Stats.Stats.findOne({adId: req.query.adId})
@@ -72,6 +73,8 @@ router.get("/getStats", async (req, res) => {
       stats.push(ageGroupCount._18To30)
       stats.push(ageGroupCount._31To59)
       stats.push(ageGroupCount._60AndAbove)
+
+      noisyStats = [...stats]
 
       if (
         genderCount.male +
