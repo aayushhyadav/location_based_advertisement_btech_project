@@ -64,7 +64,7 @@ const ExploreScreen = ({navigation}) => {
               title={marker.title + " - " + constants.EXCLUSIVE_OFFERS}
               onPress={() => viewAds(index)}
             >
-              <MaterialCommunityIcons name="star" size={48} color="#cc9900" />
+              <MaterialCommunityIcons name="map-marker-radius" size={48} />
             </Marker>
           ))}
         </MapView>

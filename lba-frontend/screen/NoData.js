@@ -8,12 +8,7 @@ const animation = require("../assets/no_data_animation.json")
 export default NoDataScreen = ({message}) => {
   return (
     <View style={styles.container}>
-      <LottieView
-        style={styles.animationContainer}
-        source={animation}
-        loop={true}
-        autoPlay
-      />
+      <LottieView source={animation} loop={true} autoPlay />
       <Text style={styles.label}>{message}</Text>
     </View>
   )
@@ -24,7 +19,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flex: 1,
   },
-  animationContainer: {},
   label: {
     fontSize: 20,
     fontWeight: 300,
