@@ -19,6 +19,7 @@ import Context from "./store/context"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import {Button} from "@rneui/themed"
 import constants from "./utils/constants"
+import SplashScreen from "./screen/SplashScreen"
 
 const Stack = createNativeStackNavigator()
 const DashboardStack = createNativeStackNavigator()
@@ -195,6 +196,7 @@ const getIcon = (route, focused) => {
 export default function App() {
   return (
     <GlobalStateProvider>
+      <SplashScreen />
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen
