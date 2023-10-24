@@ -8,6 +8,7 @@ import Context from "../store/context"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import Loader from "./Loader"
 import StatusDialog from "../utilComponents/StatusDialog"
+import constants from "../utils/constants"
 
 const ExploreScreen = ({navigation}) => {
   const data = useLocation()
@@ -60,7 +61,7 @@ const ExploreScreen = ({navigation}) => {
             <Marker
               key={index}
               coordinate={marker.coordinates}
-              title={marker.title + " - Exclusive Offers!"}
+              title={marker.title + " - " + constants.EXCLUSIVE_OFFERS}
               onPress={() => viewAds(index)}
             >
               <MaterialCommunityIcons name="star" size={48} color="#cc9900" />
@@ -71,7 +72,7 @@ const ExploreScreen = ({navigation}) => {
         {data?.adData?.data?.markers?.length === 0 && (
           <StatusDialog
             isVisible={true}
-            title="We could not find any offers around you"
+            title={constants.NO_OFFERS_FOUND}
             status="error"
             isMapView={true}
           />
@@ -79,7 +80,7 @@ const ExploreScreen = ({navigation}) => {
       </View>
     )
   }
-  return <Loader status="Searching exciting offers..." />
+  return <Loader status={constants.SEARCHING_OFFERS} />
 }
 
 export default ExploreScreen

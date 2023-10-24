@@ -6,6 +6,7 @@ import Context from "../store/context"
 import axios from "axios"
 import {REACT_APP_UPDATE_ADS_API, REACT_APP_UPDATE_STATS_API} from "@env"
 import NoDataScreen from "./NoData"
+import constants from "../utils/constants"
 
 const rewardsBg = require("../assets/rewards.jpg")
 
@@ -146,7 +147,7 @@ const ViewAdsScreen = ({route, navigation}) => {
       </View>
     </ScrollView>
   ) : (
-    <NoDataScreen message="Post an advertisement today!" />
+    <NoDataScreen message={constants.NO_ADS_MESSAGE} />
   )
 }
 

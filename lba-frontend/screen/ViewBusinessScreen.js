@@ -108,7 +108,7 @@ const ViewBusinessScreen = ({navigation}) => {
   }
 
   return stores?.data?.length === 0 ? (
-    <NoDataScreen message="Register your business today to view your stores!" />
+    <NoDataScreen message={constants.NO_BUSINESS_REGISTERED} />
   ) : (
     <View style={styles.container}>
       <ScrollView>
