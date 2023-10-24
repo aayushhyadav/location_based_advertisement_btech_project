@@ -27,7 +27,7 @@ const getAdData = async (epsilon, lat, long, aor) => {
       newAor
 
     const nearByStores = await axios.get(url)
-    return nearByStores
+    return {nearByStores, newAor}
   } catch (error) {
     console.log(error)
   }
@@ -60,6 +60,7 @@ const findEpsilon = async (cityClusters, latitude, longitude) => {
 export default useLocation = () => {
   const [location, setLocation] = useState()
   const [adData, setAdData] = useState()
+  const [newAor, setNewAor] = useState()
   const {globalState} = useContext(Context)
 
   useEffect(() => {
@@ -93,10 +94,11 @@ export default useLocation = () => {
         globalState.aor
       )
 
-      setAdData(data)
+      setAdData(data.nearByStores)
+      setNewAor(newAor)
     } catch (error) {
       console.log({error, message: error.message})
     }
   }
-  return {adData, location}
+  return {adData, location, newAor}
 }
