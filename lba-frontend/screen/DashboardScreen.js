@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   image: {
-    width: 350,
+    width: 300,
     height: 200,
     resizeMode: "stretch",
   },
@@ -85,5 +85,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#ffffff",
     borderRadius: 10,
     elevation: 10,
+    alignItems: "center",
   },
 })

@@ -218,8 +218,9 @@ const styles = StyleSheet.create({
     color: "black",
   },
   bgImage: {
-    width: 350,
-    height: 200,
+    width: 250,
+    height: 180,
+    marginLeft: 50,
     resizeMode: "stretch",
   },
   statusImage: {
