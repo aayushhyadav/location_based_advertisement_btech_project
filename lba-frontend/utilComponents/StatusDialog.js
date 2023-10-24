@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import {Dialog} from "@rneui/themed"
 import {View, StyleSheet, Text} from "react-native"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
@@ -8,9 +8,21 @@ export default StatusDialog = ({
   handleOnBackDropPress,
   title,
   status,
+  isMapView = false,
 }) => {
+  const [visibility, setVisibility] = useState(isVisible)
+
+  if (isMapView) {
+    setTimeout(() => {
+      setVisibility(false)
+    }, 5000)
+  }
+
   return (
-    <Dialog isVisible={isVisible} onBackdropPress={handleOnBackDropPress}>
+    <Dialog
+      isVisible={isMapView ? visibility : isVisible}
+      onBackdropPress={handleOnBackDropPress ?? null}
+    >
       <View style={styles.statusContainer}>
         <Text style={styles.label}>{title}</Text>
         <MaterialCommunityIcons
