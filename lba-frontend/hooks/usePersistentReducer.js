@@ -9,6 +9,8 @@ const reducer = (state, action) => {
         _id: action.payload._id,
         name: action.payload.name,
         email: action.payload.email,
+        gender: action.payload.gender,
+        dob: action.payload.dob,
         aor: action.payload.radiusOfChoice,
         accType: action.payload.accType,
       }

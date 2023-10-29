@@ -4,6 +4,7 @@ import {REACT_APP_SHOW_AD_STATS_API} from "@env"
 import axios from "axios"
 import {Card} from "@rneui/themed"
 import NoDataScreen from "./NoData"
+import constants from "../utils/constants"
 
 const StatisticsScreen = ({route, navigation}) => {
   const [statsData, setStatsData] = useState()
@@ -80,7 +81,7 @@ const StatisticsScreen = ({route, navigation}) => {
       </ScrollView>
     </View>
   ) : (
-    <NoDataScreen message="Access forbidden due to privacy reasons" />
+    <NoDataScreen message={constants.PRIVACY_ISSUE} />
   )
 }
 

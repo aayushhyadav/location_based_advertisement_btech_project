@@ -76,7 +76,7 @@ const RegisterBusinessScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       {loading ? (
-        <Loader status="Hang tight while we setup your business" />
+        <Loader status={constants.SETTING_UP_BUSINESS} />
       ) : (
         <ScrollView style={styles.scrollViewContainer}>
           <Text style={styles.heading}>Lets Onboard Your Business!</Text>
@@ -87,7 +87,7 @@ const RegisterBusinessScreen = ({navigation}) => {
               onChangeText={(text) => onChangeStoreName(text)}
               value={storeName}
               keyboardType="default"
-              placeholder="Puma"
+              placeholder="store name"
             />
 
             <Text style={styles.label}>Email</Text>
@@ -112,7 +112,7 @@ const RegisterBusinessScreen = ({navigation}) => {
               style={styles.input}
               onChangeText={(text) => onChangeCity(text)}
               value={city}
-              placeholder="Pune"
+              placeholder="city"
             />
 
             <Text style={styles.label}>Contact</Text>
@@ -120,7 +120,7 @@ const RegisterBusinessScreen = ({navigation}) => {
               style={styles.input}
               onChangeText={(text) => onChangeContact(text)}
               value={contact}
-              placeholder="1234567890"
+              placeholder="9999999999"
             />
 
             <Text style={styles.label}>Type of Business</Text>

@@ -19,6 +19,7 @@ import Context from "./store/context"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import {Button} from "@rneui/themed"
 import constants from "./utils/constants"
+import SplashScreen from "./screen/SplashScreen"
 
 const Stack = createNativeStackNavigator()
 const DashboardStack = createNativeStackNavigator()
@@ -39,7 +40,7 @@ const BusinessUserTabNavigator = () => (
       options={{headerShown: false}}
     />
     <Tab.Screen
-      name="Profile"
+      name="Account"
       component={ProfileScreen}
       options={({navigation}) => ({
         headerRight: () => logoutButtonComponent(navigation),
@@ -69,7 +70,7 @@ const NormalUserTabNavigator = () => (
       options={{headerShown: false}}
     />
     <Tab.Screen
-      name="Profile"
+      name="Account"
       component={ProfileScreen}
       options={({navigation}) => ({
         headerRight: () => logoutButtonComponent(navigation),
@@ -182,7 +183,7 @@ const getIcon = (route, focused) => {
 
   if (route.name === "Home") {
     iconName = focused ? "home" : "home-outline"
-  } else if (route.name === "Profile") {
+  } else if (route.name === "Account") {
     iconName = focused ? "account" : "account-outline"
   } else if (route.name === "Help") {
     iconName = focused ? "help-circle" : "help-circle-outline"
@@ -195,6 +196,7 @@ const getIcon = (route, focused) => {
 export default function App() {
   return (
     <GlobalStateProvider>
+      <SplashScreen />
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen

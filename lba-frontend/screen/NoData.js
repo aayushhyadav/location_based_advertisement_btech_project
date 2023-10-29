@@ -1,11 +1,14 @@
 import React from "react"
 import {View, StyleSheet, Text} from "react-native"
 import {MaterialCommunityIcons} from "@expo/vector-icons"
+import LottieView from "lottie-react-native"
+
+const animation = require("../assets/no_data_animation.json")
 
 export default NoDataScreen = ({message}) => {
   return (
     <View style={styles.container}>
-      <MaterialCommunityIcons name="emoticon-sad" size={80} />
+      <LottieView source={animation} loop={true} autoPlay />
       <Text style={styles.label}>{message}</Text>
     </View>
   )
@@ -13,11 +16,11 @@ export default NoDataScreen = ({message}) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 250,
     alignItems: "center",
+    flex: 1,
   },
   label: {
-    fontSize: 15,
-    fontWeight: 500,
+    fontSize: 20,
+    fontWeight: 300,
   },
 })
