@@ -2,6 +2,7 @@ import {StyleSheet, Text, View} from "react-native"
 import {NavigationContainer} from "@react-navigation/native"
 import {createNativeStackNavigator} from "@react-navigation/native-stack"
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs"
+import AsyncStorage from "@react-native-async-storage/async-storage"
 
 import LoginScreen from "./screen/LoginScreen"
 import RegisterScreen from "./screen/RegisterScreen"
@@ -86,12 +87,17 @@ const NormalUserTabNavigator = () => (
   </Tab.Navigator>
 )
 
+const logout = (navigation) => {
+  AsyncStorage.removeItem("sessionToken")
+  navigation.navigate("Login")
+}
+
 const logoutButtonComponent = (navigation) => (
   <Button
     title={constants.SIGN_OUT_BUTTON_LABEL}
     buttonStyle={styles.logoutButtonStyle}
     titleStyle={{fontWeight: "500"}}
-    onPress={() => navigation.navigate("Login")}
+    onPress={() => logout(navigation)}
     size="sm"
   />
 )
@@ -237,5 +243,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "white",
     borderRadius: 5,
+    marginRight: 5,
   },
 })
