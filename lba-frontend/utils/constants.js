@@ -22,4 +22,7 @@ export default CONSTANTS = {
 
   // View Ad Screen
   NO_ADS_MESSAGE: "Post an advertisement today!",
+
+  // Generic Constants
+  SESSION_TOKEN: "sessionToken",
 }

@@ -1,11 +1,13 @@
 import {StyleSheet, Text, View, TextInput, TouchableOpacity} from "react-native"
-import React from "react"
+import React, {useEffect} from "react"
 import axios from "axios"
 import {Button} from "@rneui/themed"
 import {REACT_APP_LOGIN_API} from "@env"
 import Context from "../store/context"
 import StatusDialog from "../utilComponents/StatusDialog"
 import constants from "../utils/constants"
+import AsyncStorage from "@react-native-async-storage/async-storage"
+import {getSessionToken} from "../utils/helper"
 
 const LoginScreen = ({navigation}) => {
   const [emailAddress, onChangeEmailAddress] = React.useState(null)
@@ -14,20 +16,38 @@ const LoginScreen = ({navigation}) => {
   const [statusMsg, setStatusMsg] = React.useState(constants.GENERIC_ERROR_MSG)
   const {globalDispatch} = React.useContext(Context)
 
+  useEffect(() => {
+    async function fetchSessionToken() {
+      const sessionToken = await getSessionToken()
+
+      if (sessionToken) {
+        const res = await axios.post(`${REACT_APP_LOGIN_API}`, {
+          sessionToken,
+        })
+        redirectUser(res)
+      }
+    }
+    fetchSessionToken()
+  }, [])
+
+  const redirectUser = (response) => {
+    globalDispatch({type: "LOGIN", payload: response.data})
+
+    if (response.data.accType == "normal") {
+      navigation.navigate("Explore")
+    } else {
+      navigation.navigate("Dashboard")
+    }
+  }
+
   const authenticate = async () => {
     try {
       const res = await axios.post(`${REACT_APP_LOGIN_API}`, {
         email: emailAddress,
         password: password,
       })
-
-      globalDispatch({type: "LOGIN", payload: res.data})
-
-      if (res.data.accType == "normal") {
-        navigation.navigate("Explore")
-      } else {
-        navigation.navigate("Dashboard")
-      }
+      AsyncStorage.setItem("sessionToken", res.data.sessionToken)
+      redirectUser(res)
     } catch (error) {
       console.log(error.response.data.Msg)
       setErrorStatus(true)

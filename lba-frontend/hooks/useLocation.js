@@ -81,7 +81,7 @@ export default useLocation = () => {
 
       const cityObj = await Location.reverseGeocodeAsync({latitude, longitude})
       const cityClusters = await axios.get(
-        `${REACT_APP_GET_CITY_CLUSTERS}${cityObj[0].city}`
+        `${REACT_APP_GET_CITY_CLUSTERS}${cityObj[0]?.city}`
       )
 
       const epsilon = cityClusters
