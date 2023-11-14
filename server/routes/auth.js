@@ -5,11 +5,13 @@ const Cluster = require("../model/cluster")
 const geocode = require("../utility/geocode")
 const createCluster = require("../utility/createCluster")
 const {decodeJwt, generateJwt} = require("../utility/tokenHelper")
+const {computeAge} = require("../utility/computeAge")
 
 const router = express.Router()
 
 router.post("/userSignup", async (req, res) => {
   try {
+    req.body.age = computeAge(req.body.dob)
     const user = new User.User(req.body)
     await user.save()
     res.status(201).send({user})
