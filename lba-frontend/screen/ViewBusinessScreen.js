@@ -199,7 +199,6 @@ const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: "#ffffff",
     borderRadius: 10,
-    elevation: 10,
   },
   buttonContainer: {
     flexDirection: "row",

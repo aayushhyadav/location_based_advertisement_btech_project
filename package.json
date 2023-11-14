@@ -24,7 +24,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.2",
-    "node-geocoder": "^3.28.0",
+    "node-geocoder": "^3.29.0",
     "node-kmeans": "^1.1.9",
     "nodemon": "^2.0.15",
     "validator": "^13.7.0"

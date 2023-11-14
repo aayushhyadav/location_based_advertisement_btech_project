@@ -111,7 +111,7 @@ const RegisterScreen = ({navigation}) => {
             onChangeText={(text) => onChangeEmailAddress(text)}
             value={emailAddress}
             keyboardType="email-address"
-            placeholder="Your@email.com"
+            placeholder="Yourid@email.com"
             autoComplete="email"
           />
 
@@ -152,21 +152,26 @@ const RegisterScreen = ({navigation}) => {
             maxHeight={200}
           ></Dropdown>
 
-          <Text style={styles.label}>Register as business owner</Text>
           <View style={styles.toggleContainer}>
-            <Switch
-              trackColor={{false: "#767577", true: "#81b0ff"}}
-              thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
-              ios_backgroundColor="#3e3e3e"
-              onValueChange={toggleSwitch}
-              value={isEnabled}
-            />
+            <Text style={styles.label}>Register as business owner</Text>
+            <View>
+              <Switch
+                trackColor={{false: "#767577", true: "#81b0ff"}}
+                thumbColor={isEnabled ? "#f5dd4b" : "#f4f3f4"}
+                ios_backgroundColor="#3e3e3e"
+                onValueChange={toggleSwitch}
+                value={isEnabled}
+                style={styles.switchStyle}
+              />
+            </View>
           </View>
 
-          <Text style={styles.label}>
-            DoB: {date.toISOString().split("T")[0]}
-          </Text>
-          <DatePicker onChange={onChangeDate} title="Select" date={date} />
+          <View style={styles.dateViewContainer}>
+            <Text style={styles.label}>
+              DoB: {date.toISOString().split("T")[0]}
+            </Text>
+            <DatePicker onChange={onChangeDate} title="Select" date={date} />
+          </View>
 
           <View style={styles.buttonContainer}>
             <Button
@@ -245,11 +250,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   toggleContainer: {
-    marginHorizontal: 10,
-    marginVertical: -30,
+    flexDirection: "row",
+    justifyContent: "flex-start",
   },
   dateViewContainer: {
-    alignItems: "flex-start",
+    flexDirection: "row",
+    justifyContent: "flex-start",
   },
   placeholderStyle: {
     fontSize: 12,
@@ -260,5 +266,9 @@ const styles = StyleSheet.create({
   },
   listItemTextStyle: {
     fontSize: 12,
+  },
+  switchStyle: {
+    marginTop: 15,
+    marginLeft: 10,
   },
 })
