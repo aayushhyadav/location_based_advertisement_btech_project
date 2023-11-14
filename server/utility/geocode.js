@@ -29,9 +29,14 @@ const geocodeToCity = async (latitude, longitude) => {
     httpAdapter: "https",
     formatter: "json",
   }
-  const geocoder = nodeGeocoder(options)
-  const res = await geocoder.reverse({lat: latitude, lon: longitude})
-  return res[0].city
+
+  try {
+    const geocoder = nodeGeocoder(options)
+    const res = await geocoder.reverse({lat: latitude, lon: longitude})
+    return res[0].city
+  } catch (error) {
+    throw new Error("Reverse Geocoding failed!")
+  }
 }
 
 module.exports = {geocodeToCoords, geocodeToCity}

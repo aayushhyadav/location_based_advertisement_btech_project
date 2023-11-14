@@ -1,7 +1,10 @@
 import React, {useState} from "react"
 import {Dialog} from "@rneui/themed"
 import {View, StyleSheet, Text} from "react-native"
-import {MaterialCommunityIcons} from "@expo/vector-icons"
+import LottieView from "lottie-react-native"
+
+const errorAnimation = require("../assets/error_animation.json")
+const successAnimation = require("../assets/success_animation.json")
 
 export default StatusDialog = ({
   isVisible,
@@ -25,12 +28,21 @@ export default StatusDialog = ({
     >
       <View style={styles.statusContainer}>
         <Text style={styles.label}>{title}</Text>
-        <MaterialCommunityIcons
-          name={status === "success" ? "check-circle" : "alert"}
-          size={32}
-          style={styles.statusIcon}
-          color={status === "success" ? "gold" : "red"}
-        />
+        {status !== "success" ? (
+          <LottieView
+            style={{width: "30%"}}
+            source={errorAnimation}
+            loop={true}
+            autoPlay
+          />
+        ) : (
+          <LottieView
+            style={{width: "30%"}}
+            source={successAnimation}
+            loop={true}
+            autoPlay
+          />
+        )}
       </View>
     </Dialog>
   )
@@ -39,11 +51,11 @@ export default StatusDialog = ({
 const styles = StyleSheet.create({
   statusContainer: {
     alignItems: "center",
-    justifyContent: "center",
   },
   label: {
     fontSize: 15,
-    fontWeight: "500",
+    fontWeight: "300",
+    textAlign: "center",
   },
   statusIcon: {
     marginTop: 10,
