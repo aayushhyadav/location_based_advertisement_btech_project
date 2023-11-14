@@ -44,7 +44,7 @@ router.post("/update", async (req, res) => {
     await adStats.save()
     res.status(200).send({Msg: "Stats updated!"})
   } catch (error) {
-    res.status(400).send(error)
+    res.status(500).send(error)
   }
 })
 
