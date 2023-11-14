@@ -3,7 +3,7 @@ export default CONSTANTS = {
   SIGN_OUT_BUTTON_LABEL: "Sign Out",
 
   // Business Register Screen
-  STORE_SETUP_SUCCESS: "Your business has been setup successfully!",
+  STORE_SETUP_SUCCESS: "Business setup successfully!",
 
   // View Business Screen
   ADD_NEW_AD_SUCCESS: "Created new advertisement successfully!",
@@ -21,7 +21,8 @@ export default CONSTANTS = {
   PRIVACY_ISSUE: "Access forbidden due to privacy reasons",
 
   // View Ad Screen
-  NO_ADS_MESSAGE: "Post an advertisement today!",
+  POST_AD_TODAY: "Post an advertisement today!",
+  STAY_TUNED_FOR_ADS: "Stay tuned for exciting deals!",
 
   // Generic Constants
   SESSION_TOKEN: "sessionToken",

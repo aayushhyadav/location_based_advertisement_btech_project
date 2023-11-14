@@ -147,7 +147,13 @@ const ViewAdsScreen = ({route, navigation}) => {
       </View>
     </ScrollView>
   ) : (
-    <NoDataScreen message={constants.NO_ADS_MESSAGE} />
+    <NoDataScreen
+      message={
+        globalState.accType === "business"
+          ? constants.POST_AD_TODAY
+          : constants.STAY_TUNED_FOR_ADS
+      }
+    />
   )
 }
 
