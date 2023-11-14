@@ -28,7 +28,7 @@ router.get("/checkProximity", async (req, res) => {
       clusterNum = 0
 
     /*
-     *  finds clusters within 3km proximity
+     *  finds clusters within 10km proximity
      *  if none then, finds the closest cluster
      */
     if (cityClusters !== null) {
@@ -40,7 +40,7 @@ router.get("/checkProximity", async (req, res) => {
           cluster.centroid[1]
         )
 
-        if (curDistance <= 3) {
+        if (curDistance <= 10) {
           closestClusters.push(cluster)
 
           if (minDistance > curDistance) {
@@ -50,7 +50,7 @@ router.get("/checkProximity", async (req, res) => {
         }
       }
 
-      /* find stores within 500m proximity of user's location */
+      /* find stores within user's area of retrieval */
       if (closestClusters.length != 0) {
         for (const cluster of closestClusters) {
           for (var i = 0; i < cluster.clusterInd.length; i++) {
